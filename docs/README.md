@@ -2,7 +2,7 @@
 
 ### Github Pipeline
 
-Wurde grössenteils vonm SE Project übernommen.
+Wurde grössenteils vom SE Project übernommen.
 
 ### Spellcheck
 

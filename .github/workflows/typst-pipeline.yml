@@ -213,7 +213,7 @@ jobs:
           GH_TOKEN=${{ secrets.GITHUB_TOKEN }} gh pr review "$UPDATE_BRANCH" --approve
           gh pr merge "$UPDATE_BRANCH" --auto --squash --delete-branch
 
-    lint-typst-files:
+  lint-typst-files:
     name: Lint Typst Files
     needs: [determine-version]
     if: |
