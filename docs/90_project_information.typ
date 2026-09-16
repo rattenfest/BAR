@@ -1,4 +1,5 @@
 #import "@preview/gantty:0.5.1": gantt
+#import "@preview/kantan:0.1.0": *
 
 = Projektinformationen
 
@@ -6,19 +7,25 @@
 
 // == Scope -- Estimated Features
 
+Der Aufwand beträgt 2 Arbeitstage pro Woche für ca. 17h/W , insgesamt 240 Stunden Aufwand.
+
+// ich (jasmin) notiere die verwendete Zeit in einer einfachen Notiztabelle, um sicherzugehen, dass ich die Zeit einhalte.
+
 
 
 === Meilensteine
-
-==== M1: Recherche
-...
+// 3 sehr wichtiger Meilensteine
+==== M1: Recherche + Konzept fertig
+==== M2: Programmierung abgeschlossen
+==== M3: Dokumentation bereit zum Korrekturlesen
 
 
 
 #set page(flipped: true)
 == Langfristiger Zeitplan
 
-// 2 Arbeitstage pro Woche für ca. 17h/W , insgesamt 240 Stunden Aufwand
+
+// meilensteinebene + burndownchart mit 3 punkten genügt
 
 #figure(
     scale(80%, reflow: true, gantt(yaml("resources/project-time-plan.yaml"))),
@@ -30,18 +37,82 @@
 #set page(flipped: false)
 
 
-// == Kurzfristiger Plan
-// Kanban Board
+== Kurzfristiger Plan
 
-// z.B. Storypoints für Burndownchart
+Punkte die erledigt werden pro Woche, Struktur und ausführlichkeit kann sich ändern.
 
-// == Meetings
+
+Woche 1:
+- Kickoff
+- Dokumentationstruktur aufbauen + Link zu PDF
+- Aufgabe konkretisieren/Arbeit grob planen
+- Erfolgszenario definieren
+
+offene Fragen: TODOs im typst
+
+Woche 2:
+-
+
+=== Kanban Board
+
+// Wichtigkeit + Dringlichkeit:
+#let high = rgb("#FF5733");
+#let normal = rgb("#ebff33");
+#let low = rgb("#33ff44");
+
+// Info zur Verwendung vom Kantan Board:
+// - Farbe für Priorität, ein Task ist nur in Ausnahmefällen sehr wichtig (high).
+// - `[]` Feld für Typ vom Task (Dok/Code) und wer (A=Andrin, J=Jasmin)
+// - Tasks erstellen, so detailiert wie es hilfreich ist
+// - Zeitschätzung und Aufwand direkt beim Task notieren, dann am Besten ein Task pro Woche/Tag
+// - Meetings werden hier nicht erfasst
+
+
+#kanban(
+    font-size: 0.80em,
+    font: "Liberation Sans",
+    kanban-column(
+        "Backlog",
+        color: red,
+        kanban-item(
+            stroke: normal,
+        )[doc][A][Dokumentationsstruktur anpassen/ergänzen + Requirements genauer definieren], // Start: 16.9.2026, Ende: ..
+        kanban-item(stroke: normal)[doc][?][Erfolgszenario definieren], // Start: 16.9.2026, Ende: ..
+    ),
+    kanban-column(
+        "In Arbeit",
+        color: yellow,
+    ),
+    kanban-column(
+        "Done",
+        color: green,
+        kanban-item(
+            stroke: normal,
+        )[doc][J][Typst aufsetzen, Dokumentationsstruktur erstellen und erstes Brainstorming], // Start: 16.9.2026, Ende: 16.9.2026,
+    ),
+    /*
+    kanban-column(
+        "Done last week",
+        color: green,
+        // fertige Tasks nach einer Woche hierhin verschieben (auskommentieren) und ungefähre Zeitschätzung ergänzen
+        // ---
+
+        // ---
+    ),
+    */
+)
+
+
+
+== Meeting Notizen
+Meetingnotizen werden separat erstellt, hier werden nur wichtige Entscheidungen notiert.
+
+- Wöchentliches Meeting am Dienstag mit Betreuer
 // wöchentlich im Team + wöchtentlich mit Betreuer, kann sich ändern, wenn nicht mehr nötig
+// keine so strikten Guidelines wie bei SEP: Stil von wissenschaftlicher Arbeit
+// Code+Git Guidelines machen wir ähnlich wie bei SeProject
 
 
-// keine Guidelines: Stil von wissenschaftlicher Arbeit, Code+Git ähnlich wie bei SeProject
-
-// issues + time tracking
 
 
 
