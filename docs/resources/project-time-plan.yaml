@@ -1,0 +1,36 @@
+show-today: false
+# Headers at the top of the gantt chart. Can include `year`, `month`,
+# `week`, or `day`
+headers:
+  - month
+  - week
+
+start: 2026-09-14
+end: 2026-12-18
+
+tasks:
+  - name: Phasen
+    subtasks:
+      - name: Inception
+        start: 2026-09-16
+        end: 2026-09-23
+      - name: Elaboration
+        start: 2026-09-23
+        end: 2026-10-26
+      - name: Construction
+        start: 2026-10-26
+        end: 2026-11-18
+      - name: Transition
+        start: 2026-11-18
+        end: 2026-12-05
+
+milestones:
+  - name: Kickoff-Meeting
+    date: 2026-09-15
+    show-date: true
+  - name: "M1: Recherche abgeschlossen"
+    date: 2026-10-01
+    show-date: true
+  - name: "Abgabe SA, 17 Uhr"
+    date: 2026-12-18
+    show-date: true
