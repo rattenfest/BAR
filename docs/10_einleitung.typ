@@ -159,3 +159,25 @@ Spezielle Umgebung: während Rattenfest
 == Anwendungsszenarien (detailierter)
 // TODO: in welcher Form?
 
+1. Vorbereitung & Inventar
+    - Ersteinlagerung: Die gesamte eingekaufte Ware wird digital erfasst und bildet das
+    zentrale Live-Inventar.
+2. Bestellprozess für Bars
+    - Zugang: Jede Bar erhält einen eigenen Zugangslink (z.B. app.com/UUID).
+    - Bestelllogik:
+        - Bars bestellen flexibel nach Bedarf.
+        - Nachbestellungen über die ursprüngliche Schätzung hinaus sind möglich, solange der Artikel im zentralen Inventar verfügbar ist.
+        - Optional: Ein automatisches Warnsystem meldet den Organisatoren kritisch tiefe Lagerbestände, erlaubt nur noch eine bestimmte Anzahl pro Bestellung (Falls eigenes Limit bereits erreicht ist).
+3. Abwicklung & Abholung
+    1. Bestellung: Die Bar sendet eine Bestellung über die App ab.
+    2. Benachrichtigung: Das RF-Team wird sofort digital informiert.
+    3. Bereitstellung: Das Team stellt die Ware zusammen und markiert die Bestellung in der App als "Abholbereit".
+    4. Abholung: Die Bar sieht das Status-Update in Echtzeit und holt die Ware ab, was unnötige Wege vermeidet.
+4. Prozess für Getränkerücknahmen
+    1. Bars können wie bei einer Bestellung eine Rückgabe erfassen und bringen die Ware zum Lager.
+    2. Admin-Funktion: Nur ein Admin kann Rücknahmen bearbeiten… (Wichtig bei Rueckgabe von Schrumpfpackungen, da diese nur als Einheit angenommen werden)
+5. Erweitert
+    Analytics, Umsatz pro Bar, pro Getränk etc.
+    Export von Bezugslisten, Bestellhistorie, Rechnung etc.
+    Initiale Bestellung, Getränkewünsche ebenfalls über die App
+
