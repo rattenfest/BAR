@@ -77,15 +77,19 @@ Woche 2:
         kanban-item(
             stroke: normal,
         )[doc][A][Dokumentationsstruktur anpassen/ergänzen + Requirements genauer definieren], // Start: 16.9.2026, Ende: ..
-        kanban-item(stroke: normal)[doc][?][Erfolgszenario definieren], // Start: 16.9.2026, Ende: ..
     ),
     kanban-column(
         "In Arbeit",
         color: yellow,
+
+        kanban-item(
+            stroke: normal,
+        )[doc][J][Anpassungen von Andrin übernehmen, Erfolgszenario/Anwendungsszenarien Entwurf], // Start: 18.9.2026, Ende: 18.9.2026,
     ),
     kanban-column(
-        "Done",
+        "In Review / Done",
         color: green,
+
         kanban-item(
             stroke: normal,
         )[doc][J][Typst aufsetzen, Dokumentationsstruktur erstellen und erstes Brainstorming], // Start: 16.9.2026, Ende: 16.9.2026,
