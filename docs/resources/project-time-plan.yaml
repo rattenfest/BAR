@@ -28,9 +28,17 @@ milestones:
   - name: Kickoff-Meeting
     date: 2026-09-15
     show-date: true
-  - name: "M1: Recherche abgeschlossen"
-    date: 2026-10-01
+
+  - name: "M1: Recherche fertig"
+    date: 2026-10-12
     show-date: true
+  - name: "M2: Umsetzung fertig"
+    date: 2026-11-23
+    show-date: true
+  - name: "M3: Dokumentation fertig"
+    date: 2026-12-07
+    show-date: true
+
   - name: "Abgabe SA, 17 Uhr"
     date: 2026-12-18
     show-date: true

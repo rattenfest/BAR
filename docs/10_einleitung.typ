@@ -13,7 +13,8 @@ Vor dem Rattenfest erstellen die Bars eine Schätzung an benötigten Getränken,
 
 Ziel: gute Website mit guter Architektur die lange verwendet werden kann und ihren Zweck erfüllt. Lösung massgeschneidert für das Rattenfest.
 
-=== These (?)
+=== These
+> wie soll die These aussehen? Wir betrachten sehr viele Dinge in der Arbeit, theoretisch gäbe es mehrere Thesen?
 
 ===== 1. Erfolgszenario vom gesamten Projekt
 // Die Arbeit war erfolgreich, wenn ...
@@ -29,7 +30,8 @@ Es ist möglich ein Getränkeverwaltungssystem für das Rattenfest zu konzeptier
 
 
 === Anforderungen
-// TODO
+
+
 Es wird eine Lösung gesucht, die einfach nutzbar ist (keine versteckten Buttons, suchen von Funktionen..) und während dem Rattenfest muss es fehlerfrei laufen.
 
 Kompromisse
@@ -57,8 +59,9 @@ weitere Anforderungen (noch priorisieren) :
         - (Bestellung per Touchscreen, andere Bedienfunktionen machen am Rattenfest keinen Sinn. Die Altersgruppe kennt sich mit dem Smartphone aus.)
     - Weitere mögliche Bedienbarkeit Features für Bars
         - Getränke als Favoriten vermerken (automatisch die vorbestellten Getränke markieren) ohne das dieses Feature im Weg ist
+        - nach Alkohol und Alkoholfrei filtern (wäre das nützlich?) und sortieren nach Kriterien
         - OK Notfallmeldung per Chat/Telefon/Treffen ermöglichen für Ausnahmefälle und Probleme > einfach halten
-        -
+            - wenn Website nicht läuft, eine Telefonnummer einblenden die auch offline angezeigt wird.
 
 
 - wartbarkeit:
@@ -129,7 +132,7 @@ weitere Anforderungen (noch priorisieren) :
 - Undo/Redo (siehe oben)
 - History > alte Bestellungen betrachten, prüfen, wiederholen
 - Abholung > Identität verifizieren nötig? Abholung bestätigen
-- Kontaktfunktion (allgemeine Probleme/Fragen melden, Notfallmeldungen während Fest, wer von RF behandelt Meldungen)
+- Kontaktfunktion (allgemeine Probleme/Fragen melden, Notfallmeldungen während Fest, wer von RF behandelt Meldungen?)
 
 
 === Risiken und Unsicherheiten
@@ -145,23 +148,12 @@ Spezielle Umgebung: während Rattenfest
 // ähnliche Recherchen (finde auf die schnelle Ideen für Apps, die prüfen, ob jemand betrunken ist. Auch Recherchen, dass Prototypen von Betrunkenen getestet werden können, wenn es dann bedienbar ist, ist es gutes UX. Analyse von ähnlichen Arbeiten
 
 
-
-== Vorhandene Lösungswege
-// (Konkurrenzanalyse/Wettbewerbsanalyse)
-
-// TODO: konkrete gut dokumentierte Lösungen finden
-
-- event organisations softwares > meiste haben nicht fokus Getränkbestellung sondern tickets, zeitmanagement..
-- Getränkelieferanten/Webshop Lösungen (Ziel: wenig Performance, es läuft das ganze Jahr durch)
-- Lösungen ohne Website?
-- der Vorteil gegenüber einem Chat wo man Bestellungen schreibt ist offensichtlich, aber freie Textnachrichten haben auch Vorteile > Bemerkungen-Möglichkeit bei Bestellung einbauen?
-
 == Anwendungsszenarien (detailierter)
-// TODO: in welcher Form?
+
+> in welcher Form?
 
 1. Vorbereitung & Inventar
-    - Ersteinlagerung: Die gesamte eingekaufte Ware wird digital erfasst und bildet das
-    zentrale Live-Inventar.
+    - Ersteinlagerung: Die gesamte eingekaufte Ware wird digital erfasst und bildet das zentrale Live-Inventar.
 2. Bestellprozess für Bars
     - Zugang: Jede Bar erhält einen eigenen Zugangslink (z.B. app.com/UUID).
     - Bestelllogik:
@@ -170,14 +162,46 @@ Spezielle Umgebung: während Rattenfest
         - Optional: Ein automatisches Warnsystem meldet den Organisatoren kritisch tiefe Lagerbestände, erlaubt nur noch eine bestimmte Anzahl pro Bestellung (Falls eigenes Limit bereits erreicht ist).
 3. Abwicklung & Abholung
     1. Bestellung: Die Bar sendet eine Bestellung über die App ab.
+        - Bestellung für wenige verschiedene Getränke
+        - Bestellung für ein Getränk in grossen Mengen
+        - eine Bestellung von vorher anpassen und nochmals bestellen
+        a. Bar kann die Bestellung stornieren, anpassen und neu senden.
     2. Benachrichtigung: Das RF-Team wird sofort digital informiert.
     3. Bereitstellung: Das Team stellt die Ware zusammen und markiert die Bestellung in der App als "Abholbereit".
+        a. RF-Team sieht Problem und kann Bestellung stornieren/markieren.
     4. Abholung: Die Bar sieht das Status-Update in Echtzeit und holt die Ware ab, was unnötige Wege vermeidet.
+        a. RF-Team kann Bestellung stornieren/markieren wenn zu lange nicht abgeholt.
+    0. Bar/RF kann bei technischen Problemen eine Person vom RF mit einer Notfallmeldung erreichen.
 4. Prozess für Getränkerücknahmen
     1. Bars können wie bei einer Bestellung eine Rückgabe erfassen und bringen die Ware zum Lager.
-    2. Admin-Funktion: Nur ein Admin kann Rücknahmen bearbeiten… (Wichtig bei Rueckgabe von Schrumpfpackungen, da diese nur als Einheit angenommen werden)
+    2. Admin-Funktion: Nur ein Admin kann Rücknahmen bearbeiten… (Wichtig bei Rückgabe von Schrumpfpackungen, da diese nur als Einheit angenommen werden)
 5. Erweitert
     Analytics, Umsatz pro Bar, pro Getränk etc.
     Export von Bezugslisten, Bestellhistorie, Rechnung etc.
     Initiale Bestellung, Getränkewünsche ebenfalls über die App
+    > Analyse, ob ein Getränk viel zu wenig gekauft wurde und durch ein trendigeres Getränk ersetzen vor Schritt 1?
 
+
+Weitere Features, z.B. "3.1 Bestellung" "die Bestellung für später vorbereiten und noch nicht senden, RF kann diese bereits sehen und sich besser vorbereiten"
+- Konkurrenzanalyse durchführen, schauen was die gut machen und wir übernehmen können, ergänzen.
+- User Befragung, wäre es sinnvoll oder unnötig
+- Abwägen wie gross der Aufwand für den Nutzen ist
+
+
+
+
+== Vorhandene Lösungswege
+// (Konkurrenzanalyse/Wettbewerbsanalyse)
+
+> konkrete gut dokumentierte Lösungen finden
+
+- event organisations softwares > meiste haben nicht fokus Getränkbestellung sondern tickets, zeitmanagement..
+- Getränkelieferanten/Webshop Lösungen (Ziel: wenig Performance, es läuft das ganze Jahr durch)
+- Lösungen ohne Website?
+- der Vorteil gegenüber einem Chat wo man Bestellungen schreibt ist offensichtlich, aber freie Textnachrichten haben auch Vorteile > Bemerkungen-Möglichkeit bei Bestellung einbauen?
+
+=== Webshops
+
+https://www.rewe.de/shop/c/getraenke-genussmittel/
+- Angenehme Navigation durch farbige Bilder und Icons
+    - einzelne Getränke und 6er Packs werden jeweils so auf dem Bild abgebildet
