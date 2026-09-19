@@ -3,18 +3,23 @@
 // Was wollen wir machen, wieso? Sozusagen die Requirements FR/NFR. Mit Zielgruppe und was speziell ist
 // (Problemstellung, Forschungsfrage, Aufbau)
 
-// Evtl
-// start mit "Background" und "Objective" als Einfuehrung
-
 == Hintergrund
+Das Rattenfest ist ein jährlich stattfindendes Festival, das von Studierenden der OST organisiert wird und rund 3'000 Personen besucht. Die Getränke werden an mehreren Bars ausgeschenkt, die unabhängig vom Rattenfest betrieben werden. Damit nicht jede Bar ihre Versorgung selbst organisieren muss, betreibt das Rattenfest ein zentrales Getränkelager, aus dem die Bars während des Fests laufend beziehen.
 
-Digitalisierung der Getränkeverwaltung während dem Rattenfest zur Effizienzsteigerung während dem Event aber auch bei der Nachbearbeitung (Abrechnung und Buchhaltung). Getränke werden zwischen dem Zentrallager (Kühlwagen) und den
-Verkaufsstellen (Bars, Backstage) transportiert. Bars (Bar Mitarbeiter) bestellen die Getränke, die Rattenfest Arbeiter stellen die Getränke bereit und die Bar Mitarbeiter holen die Getränke ab.
+Dieser Prozess wurde in den letzten Jahren versucht zunehmend zu digitalisieren, die bisherigen Lösungen blieben jedoch unzureichend.
 
-Vorher mussten Bar Mitarbeiter zum Kühlwagen, ihre Bestellung aufgeben, warten und diese zurücktransportieren. Während dem Rattenfest gibt eine Bar 20-40 Bestellungen auf. Es wurde bereits ein einfacher Prototyp erstellt und getestet.
-Vor dem Rattenfest erstellen die Bars eine Schätzung an benötigten Getränken, damit das Rattenfest OK offensichtliche Fehler korrigiert und Getränke vorbestellt. Dies wurde bisher mit einem Excel Sheet gelöst.
 == Ziel
-gute Website mit guter Architektur die lange verwendet werden kann und ihren Zweck erfüllt. Lösung massgeschneidert für das Rattenfest.
+Ziel dieser Arbeit ist eine Webapplikation, die den gesamten Lebenszyklus der Getränke abbildet, von der ersten Bedarfsschätzung bis zur Abrechnung nach dem Fest:
+
+- *Vor dem Fest* erfassen die Bars ihre Bedarfsschätzung in der Applikation. Das OK prüft und korrigiert diese und leitet daraus die Bestellung beim Getränkehändler ab. Die gelieferte Ware bildet den Anfangsbestand des Lagers.
+- *Während des Fests* bestellen die Bars laufend aus diesem Bestand. Das Lagerteam stellt die Bestellungen bereit und informiert die Bars über den Status.
+- *Nach dem Fest* lässt sich für jede Bar eine detaillierte Abrechnung erstellen.
+
+Neben der Funktionalität soll die Lösung auf das Rattenfest zugeschnitten und für den langfristigen Einsatz geeignet sein. Dabei sind drei Eigenschaften besonders wichtig:
+
+- *Bedienbarkeit* unter den Bedingungen am Fest: dunkel, laut, unter Zeitdruck und mit Personal, dessen Aufmerksamkeit im Verlauf des Abends nachlässt.
+- *Zuverlässigkeit* während des Fests. Sobald die Bars auf den manuellen Weg ausweichen müssen, verliert die Applikation ihren Zweck.
+- *Verwendbarkeit und Wartbarkeit* durch ein jährlich wechselndes OK mit unterschiedlichen technischen Kenntnissen.
 
 == These
 > wie soll die These aussehen? Wir betrachten sehr viele Dinge in der Arbeit, theoretisch gäbe es mehrere Thesen?
