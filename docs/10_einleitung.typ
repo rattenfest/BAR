@@ -47,7 +47,7 @@ Neben der Funktionalität soll die Lösung auf das Rattenfest zugeschnitten und 
 *US-01:* Als RF-OK möchte ich eine neue Festausgabe anlegen, damit die Daten
 jedes Jahrgangs getrennt bleiben und vergleichbar werden.
 - *FR-01*: Das System muss erlauben, eine Festausgabe anzulegen und als aktiv zu
-  setzen. Sortiment, Bestände, Schätzungen, Bestellungen und Rückgaben sind
+  setzen. Sortiment, Bestände, Bestellungen und Rückgaben sind
   jeweils einer Festausgabe zugeordnet.
 - *FR-02*: Das System muss erlauben, Sortiment und Bars einer früheren
   Festausgabe als Ausgangslage zu übernehmen.
@@ -59,49 +59,41 @@ Bestellungen eindeutig zugeordnet sind.
 - *FR-04*: Das System muss pro Bar einen Zugang als teilbaren Link erzeugen und
   erlauben, diesen neu zu erzeugen, womit der bisherige ungültig wird.
 
-*US-03:* Als RF-OK möchte ich das Getränkesortiment pflegen, damit die Bars nur
-bestellbare Artikel sehen.
+*US-03:* Als RF-OK möchte ich das Getränkesortiment unseres Lieferanten den Bars zur Verfügung stellen.
 - *FR-05*: Das System muss erlauben, Getränke mit Bezeichnung, Gebindegrösse und
-  Preis zu erfassen, zu ändern und zu deaktivieren.
+  Preis zu erfassen.
 - *FR-06*: Das System muss erlauben, ein Sortiment aus einer Datei zu
   importieren.
 
 *US-04:* Als Bar-Team möchte ich meinen Bedarf vor dem Fest schätzen, damit die
-benötigte Ware rechtzeitig eingekauft wird.
+benötigte Ware eingekauft wird.
 - *FR-07*: Das System muss erlauben, pro Bar eine Bedarfsschätzung über das
   Sortiment zu erfassen und bis zu einem Stichtag zu ändern.
 
 *US-05:* Als RF-OK möchte ich die Schätzungen prüfen und zusammenfassen, damit
 ich daraus die Bestellung beim Getränkehändler ableiten kann.
-- *FR-08*: Das System muss die Schätzungen aller Bars pro Artikel aufsummiert
-  darstellen und einzeln korrigierbar machen.
+- *FR-08*: Das System muss die Schätzungen aller Bars darstellen und einzeln korrigierbar machen.
 
 *US-06:* Als RF-OK möchte ich die gelieferte Ware einlagern, damit der
 Lagerbestand von Beginn an stimmt.
-- *FR-09*: Das System muss erlauben, den Anfangsbestand pro Artikel zu erfassen
-  und während des Fests zu korrigieren.
+- *FR-09*: Das System soll den Anfangsbestand anhand der Bestellung uebernehmen und erlauben, diesen zu korrigieren.
 
 ==== Bestellung während des Fests
 
-*US-07:* Als Bar-Team möchte ich Getränke bestellen, ohne dafür zum Lager gehen
-zu müssen.
+*US-07:* Als Bar-Team möchte ich online Getränke bestellen.
 - *FR-10*: Das System muss erlauben, eine Bestellung über mehrere Artikel mit
   Mengenangabe abzusenden.
-- *FR-11*: Das System muss zur Mengeneingabe Schrittwerte anbieten, die den
-  üblichen Gebindegrössen entsprechen.
+- *FR-11*: Das System darf nur Mengeneingaben erlauben die den Gebindegrössen entsprechen.
 - *FR-12*: Das System muss verhindern, dass mehr bestellt wird, als im Lager
   verfügbar ist.
 - *FR-13*: Das System muss vor dem Absenden einen Hinweis anzeigen, wenn eine
-  Bestellung auffällig ist, insbesondere bei ungewöhnlicher Menge eines Artikels
-  oder bei einem Artikel ausserhalb der Bedarfsschätzung der Bar.
+  Bestellung einen Artikel enthält, der sich von der Reservation der Bar unterscheidet.
 
-*US-08:* Als Bar-Team möchte ich eine abgesendete Bestellung stornieren können,
-damit eine Fehleingabe keinen Aufwand im Lager verursacht.
+*US-08:* Als Bar-Team möchte ich eine abgesendete Bestellung stornieren können.
 - *FR-14*: Das System muss erlauben, eine Bestellung zu stornieren, solange das
-  Lagerteam sie nicht als abholbereit markiert hat.
+  Lagerteam noch nicht bearbeitet hat.
 
-*US-09:* Als Bar-Team möchte ich eine frühere Bestellung wiederholen, damit ich
-bei gleichbleibendem Bedarf nicht alles neu erfasse.
+*US-09:* Als Bar-Team möchte ich eine frühere Bestellung wiederholen.
 - *FR-15*: Das System muss die Bestellhistorie der eigenen Bar anzeigen und
   erlauben, einen früheren Eintrag als Vorlage zu übernehmen und vor dem
   Absenden anzupassen.
