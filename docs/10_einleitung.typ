@@ -21,23 +21,207 @@ Neben der Funktionalität soll die Lösung auf das Rattenfest zugeschnitten und 
 - *Zuverlässigkeit* während des Fests. Sobald die Bars auf den manuellen Weg ausweichen müssen, verliert die Applikation ihren Zweck.
 - *Verwendbarkeit und Wartbarkeit* durch ein jährlich wechselndes OK mit unterschiedlichen technischen Kenntnissen.
 
-== These
-> wie soll die These aussehen? Wir betrachten sehr viele Dinge in der Arbeit, theoretisch gäbe es mehrere Thesen?
+// == These
+// > wie soll die These aussehen? Wir betrachten sehr viele Dinge in der Arbeit, theoretisch gäbe es mehrere Thesen?
 
-===== 1. Erfolgszenario vom gesamten Projekt // das gleiche wie Ziel?
-// Die Arbeit war erfolgreich, wenn ...
-Die Getränkeverwaltung ist ein Erfolg, wenn es alle Anforderungen sinnvoll erfüllt und die Bedienung für RF Arbeiter und Bar Arbeiter angenehm ist. Es soll möglich sein, die Getränkeverwaltung mit mehr Features zu ergänzen, aber es soll nicht nötig sein, programmierte Teile abzuändern.
-Das wird erreicht durch gutes Planen und Fokus auf das Wichtigste, wobei eventuell nicht jedes nützliche Feature eingebaut wird.
+// ===== 1. Erfolgszenario vom gesamten Projekt // das gleiche wie Ziel?
+// // Die Arbeit war erfolgreich, wenn ...
+// Die Getränkeverwaltung ist ein Erfolg, wenn es alle Anforderungen sinnvoll erfüllt und die Bedienung für RF Arbeiter und Bar Arbeiter angenehm ist. Es soll möglich sein, die Getränkeverwaltung mit mehr Features zu ergänzen, aber es soll nicht nötig sein, programmierte Teile abzuändern.
+// Das wird erreicht durch gutes Planen und Fokus auf das Wichtigste, wobei eventuell nicht jedes nützliche Feature eingebaut wird.
 
-===== 2. These wie an einer Arbeit?
-Es ist möglich ein Getränkeverwaltungssystem für das Rattenfest zu konzeptieren und umzusetzen, welches benutzerfreundlich, erweiterbar und einfach wartbar ist.
-(sind wahrscheinlich die wichtigsten 3 Anforderungen)
+// ===== 2. These wie an einer Arbeit?
+// Es ist möglich ein Getränkeverwaltungssystem für das Rattenfest zu konzeptieren und umzusetzen, welches benutzerfreundlich, erweiterbar und einfach wartbar ist.
+// (sind wahrscheinlich die wichtigsten 3 Anforderungen)
 
+=== Akteure
 
+- *Bar-Team*: bestellt Getränke für seine Bar und holt sie ab.
+- *Lagerteam*: nimmt Bestellungen entgegen, stellt sie bereit und übergibt sie.
+- *Getränkechef (RF-OK)*: verwaltet Festausgabe, Sortiment, Bars, Rücknahmen und
+  Abrechnung.
 
+=== User Stories und Functional Requirements
 
+==== Vorbereitung
 
-=== Anforderungen
+*US-01:* Als RF-OK möchte ich eine neue Festausgabe anlegen, damit die Daten
+jedes Jahrgangs getrennt bleiben und vergleichbar werden.
+- *FR-01*: Das System muss erlauben, eine Festausgabe anzulegen und als aktiv zu
+  setzen. Sortiment, Bestände, Schätzungen, Bestellungen und Rückgaben sind
+  jeweils einer Festausgabe zugeordnet.
+- *FR-02*: Das System muss erlauben, Sortiment und Bars einer früheren
+  Festausgabe als Ausgangslage zu übernehmen.
+
+*US-02:* Als RF-OK möchte ich die Bars erfassen und ihnen Zugänge geben, damit
+Bestellungen eindeutig zugeordnet sind.
+- *FR-03*: Das System muss erlauben, Bars mit Bezeichnung und Kontaktangabe zu
+  erfassen, zu ändern und zu deaktivieren.
+- *FR-04*: Das System muss pro Bar einen Zugang als teilbaren Link erzeugen und
+  erlauben, diesen neu zu erzeugen, womit der bisherige ungültig wird.
+
+*US-03:* Als RF-OK möchte ich das Getränkesortiment pflegen, damit die Bars nur
+bestellbare Artikel sehen.
+- *FR-05*: Das System muss erlauben, Getränke mit Bezeichnung, Gebindegrösse und
+  Preis zu erfassen, zu ändern und zu deaktivieren.
+- *FR-06*: Das System muss erlauben, ein Sortiment aus einer Datei zu
+  importieren.
+
+*US-04:* Als Bar-Team möchte ich meinen Bedarf vor dem Fest schätzen, damit die
+benötigte Ware rechtzeitig eingekauft wird.
+- *FR-07*: Das System muss erlauben, pro Bar eine Bedarfsschätzung über das
+  Sortiment zu erfassen und bis zu einem Stichtag zu ändern.
+
+*US-05:* Als RF-OK möchte ich die Schätzungen prüfen und zusammenfassen, damit
+ich daraus die Bestellung beim Getränkehändler ableiten kann.
+- *FR-08*: Das System muss die Schätzungen aller Bars pro Artikel aufsummiert
+  darstellen und einzeln korrigierbar machen.
+
+*US-06:* Als RF-OK möchte ich die gelieferte Ware einlagern, damit der
+Lagerbestand von Beginn an stimmt.
+- *FR-09*: Das System muss erlauben, den Anfangsbestand pro Artikel zu erfassen
+  und während des Fests zu korrigieren.
+
+==== Bestellung während des Fests
+
+*US-07:* Als Bar-Team möchte ich Getränke bestellen, ohne dafür zum Lager gehen
+zu müssen.
+- *FR-10*: Das System muss erlauben, eine Bestellung über mehrere Artikel mit
+  Mengenangabe abzusenden.
+- *FR-11*: Das System muss zur Mengeneingabe Schrittwerte anbieten, die den
+  üblichen Gebindegrössen entsprechen.
+- *FR-12*: Das System muss verhindern, dass mehr bestellt wird, als im Lager
+  verfügbar ist.
+- *FR-13*: Das System muss vor dem Absenden einen Hinweis anzeigen, wenn eine
+  Bestellung auffällig ist, insbesondere bei ungewöhnlicher Menge eines Artikels
+  oder bei einem Artikel ausserhalb der Bedarfsschätzung der Bar.
+
+*US-08:* Als Bar-Team möchte ich eine abgesendete Bestellung stornieren können,
+damit eine Fehleingabe keinen Aufwand im Lager verursacht.
+- *FR-14*: Das System muss erlauben, eine Bestellung zu stornieren, solange das
+  Lagerteam sie nicht als abholbereit markiert hat.
+
+*US-09:* Als Bar-Team möchte ich eine frühere Bestellung wiederholen, damit ich
+bei gleichbleibendem Bedarf nicht alles neu erfasse.
+- *FR-15*: Das System muss die Bestellhistorie der eigenen Bar anzeigen und
+  erlauben, einen früheren Eintrag als Vorlage zu übernehmen und vor dem
+  Absenden anzupassen.
+
+==== Bearbeitung und Abholung
+
+*US-10:* Als Lagerteam möchte ich eingehende Bestellungen sofort sehen, damit ich
+ohne Verzögerung mit dem Bereitstellen beginnen kann.
+- *FR-16*: Das System muss Bestellungen und deren Statusänderungen bei Bar-Team
+  und Lagerteam ohne manuelles Neuladen aktualisieren.
+- *FR-17*: Das System muss offene Bestellungen in der Reihenfolge ihres Eingangs
+  darstellen.
+
+*US-11:* Als Bar-Team möchte ich wissen, wann meine Bestellung bereitsteht, damit
+ich den Weg zum Lager nur einmal gehe.
+- *FR-18*: Das System muss erlauben, eine Bestellung als abholbereit zu markieren.
+- *FR-19*: Das System muss erlauben, die Abholung zu bestätigen, womit die
+  Bestellung abgeschlossen und der Lagerbestand reduziert wird.
+- *FR-20*: Das System muss Bar-Team und Lagerteam über für sie relevante
+  Statusänderungen benachrichtigen, auch wenn die Applikation nicht im
+  Vordergrund ist.
+
+*US-12:* Als Lagerteam möchte ich Abweichungen festhalten, damit sie bei der
+Abrechnung nachvollziehbar sind.
+- *FR-21*: Das System muss erlauben, eine Bestellung mit Begründung zu stornieren
+  oder als nicht abgeholt zu kennzeichnen.
+
+*US-13:* Als Bar-Team möchte ich bei technischen Problemen oder Zwischenfällen
+jemanden erreichen, damit das Fest nicht an der Applikation scheitert.
+- *FR-22*: Das System muss eine Kontaktmöglichkeit zum Lagerteam anzeigen, die
+  auch bei gestörter Verbindung sichtbar bleibt und während des Fests geändert
+  werden kann.
+
+*US-14:* Als Lagerteam möchte ich eine Pause einlegen, damit die Bars wissen,
+dass Bestellungen vorübergehend nicht bearbeitet werden.
+- *FR-23*: Das System muss erlauben, das Lager als vorübergehend nicht besetzt zu
+  markieren, was den Bars angezeigt wird.
+
+==== Rücknahme und Abrechnung
+
+*US-15:* Als Bar-Team möchte ich nicht verkaufte Ware zurückgeben, damit sie mir
+nicht verrechnet wird.
+- *FR-24*: Das System muss erlauben, eine Rückgabe analog zu einer Bestellung zu
+  erfassen, begrenzt auf die von der Bar bezogenen Artikel und Mengen.
+- *FR-25*: Das System muss verlangen, dass der RF-OK eine Rückgabe bestätigt,
+  bevor sie dem Lagerbestand gutgeschrieben wird, und dabei erlauben, die
+  erfassten Mengen zu korrigieren.
+
+*US-16:* Als RF-OK möchte ich nach dem Fest pro Bar abrechnen, ohne Belege von
+Hand zusammenzusuchen.
+- *FR-26*: Das System muss pro Bar eine Aufstellung aller bezogenen und
+  zurückgegebenen Artikel mit Betrag erzeugen.
+- *FR-27*: Das System muss Bedarfsschätzung, Abrechnung und Rohdaten der Bezüge
+  als Datei exportieren.
+
+*US-17:* Als RF-OK möchte ich den Verbrauch mehrerer Festausgaben vergleichen,
+damit die Schätzung im Folgejahr besser wird.
+- *FR-28*: Das System muss die Daten vergangener Festausgaben erhalten und pro
+  Artikel vergleichbar darstellen.
+
+=== Klassifikation der Functional Requirements
+
+Die Functional Requirements sind nach der MoSCoW-Methode in drei Kategorien
+eingeteilt.
+
+#figure(
+  table(
+    columns: (auto, 1fr),
+    align: (left, left),
+    table.header([*Kategorie*], [*Bedeutung*]),
+    [Muss],
+    [Nicht verhandelbar. Ohne diese Anforderungen erfüllt das System seinen Zweck
+      nicht.],
+
+    [Soll],
+    [Wichtig für Bedienbarkeit, Effizienz oder Zuverlässigkeit. Das System
+      funktioniert ohne sie, aber mit geringerer Qualität.],
+
+    [Kann], [Wünschenswerte Ergänzung, die entfällt, wenn die Zeit nicht reicht.],
+  ),
+  caption: [Kategorien der MoSCoW-Klassifikation],
+)
+
+#figure(
+  table(
+    columns: (auto, 1fr, auto),
+    align: (left, left, center),
+    table.header([*ID*], [*Kurzbezeichnung*], [*Priorität*]),
+    [FR-01], [Festausgabe anlegen und aktiv setzen], [Muss],
+    [FR-02], [Stammdaten aus Vorjahr übernehmen], [Soll],
+    [FR-03], [Bars verwalten], [Muss],
+    [FR-04], [Bar-Zugang erzeugen und erneuern], [Muss],
+    [FR-05], [Sortiment verwalten], [Muss],
+    [FR-06], [Sortiment importieren], [Kann],
+    [FR-07], [Bedarfsschätzung erfassen], [Muss],
+    [FR-08], [Schätzungen aggregieren und korrigieren], [Muss],
+    [FR-09], [Anfangsbestand erfassen], [Muss],
+    [FR-10], [Bestellung absenden], [Muss],
+    [FR-11], [Schrittwerte für Mengeneingabe], [Soll],
+    [FR-12], [Bestand als Obergrenze], [Muss],
+    [FR-13], [Hinweis bei auffälliger Bestellung], [Kann],
+    [FR-14], [Bestellung stornieren (Bar)], [Muss],
+    [FR-15], [Historie anzeigen und wiederverwenden], [Soll],
+    [FR-16], [Aktualisierung ohne Neuladen], [Muss],
+    [FR-17], [Offene Bestellungen nach Eingang], [Muss],
+    [FR-18], [Als abholbereit markieren], [Muss],
+    [FR-19], [Abholung bestätigen], [Muss],
+    [FR-20], [Benachrichtigung ausserhalb der App], [Kann],
+    [FR-21], [Bestellung kennzeichnen (Lager)], [Soll],
+    [FR-22], [Kontaktmöglichkeit], [Soll],
+    [FR-23], [Lager als nicht besetzt markieren], [Kann],
+    [FR-24], [Rückgabe erfassen], [Soll],
+    [FR-25], [Rückgabe bestätigen], [Soll],
+    [FR-26], [Abrechnung pro Bar], [Muss],
+    [FR-27], [Datenexport], [FR-28],
+    [Vergleich über Festausgaben], [Kann],
+  ),
+  caption: [Klassifikation der Functional Requirements],
+)
+=== Anforderungen (To be removed)
 
 
 Es wird eine Lösung gesucht, die einfach nutzbar ist (keine versteckten Buttons, suchen von Funktionen..) und während dem Rattenfest muss es fehlerfrei laufen.
