@@ -26,7 +26,7 @@ Beschreibung: {Link zu Kapitel in Typst?}
 
 - Recherche erstellt, damit die Anforderungen bestmöglichst priorisiert
 - User Tests durchgeführt mit einem Prototyp??
-    - neues UI/UX Design oder vorhandenen Prototyp nutzen?
+  - neues UI/UX Design oder vorhandenen Prototyp nutzen?
 - User Befragung mit Bar-Arbeitern und RF Lager Verwaltern
 - Konzept inklusive Application Architektur und Software Architektur anhand der Anforderungen erstellt
 
@@ -49,9 +49,9 @@ Beschreibung:
 
 
 #figure(
-    scale(80%, reflow: true, gantt(yaml("resources/project-time-plan.yaml"))),
-    kind: image,
-    caption: [Langfristiger Zeitplan],
+  scale(80%, reflow: true, gantt(yaml("resources/project-time-plan.yaml"))),
+  kind: image,
+  caption: [Langfristiger Zeitplan],
 )
 
 #pagebreak()
@@ -90,65 +90,47 @@ Woche 2:
 
 
 #kanban(
-    font-size: 0.80em,
-    font: "Liberation Sans",
-    kanban-column(
-        "Backlog",
-        color: red,
-        kanban-item(
-            stroke: normal,
-        )[doc][A][Dokumentationsstruktur anpassen/ergänzen + Requirements genauer definieren], // Start: 16.9.2026, Ende: ..
+  font-size: 0.80em,
+  font: "Liberation Sans",
+  kanban-column(
+    "Backlog",
+    color: red,
+    kanban-item(
+      stroke: normal,
+    )[doc][A][Dokumentationsstruktur anpassen/ergänzen + Requirements genauer definieren], // Start: 16.9.2026, Ende: ..
 
-        kanban-item(
-            stroke: normal,
-        )[doc][J][Anforderungen priorisieren: wie? und was weglassen?, These verbessern > benötige Feedback ?, Struktur verbessern > benötige Feedback, ob richtig verstanden, Anwendungsszenarien für User anpassen? und weitere definieren mit Prioritätsstatus], // Start: 18.9.2026, Ende: xx.9.2026,
-    ),
-    kanban-column(
-        "In Arbeit",
-        color: yellow,
-    ),
-    kanban-column(
-        "In Review / Done",
-        color: green,
+    kanban-item(
+      stroke: normal,
+    )[doc][J][Anforderungen priorisieren: wie? und was weglassen?, These verbessern > benötige Feedback ?, Struktur verbessern > benötige Feedback, ob richtig verstanden, Anwendungsszenarien für User anpassen? und weitere definieren mit Prioritätsstatus], // Start: 18.9.2026, Ende: xx.9.2026,
+  ),
+  kanban-column(
+    "In Arbeit",
+    color: yellow,
+  ),
+  kanban-column(
+    "In Review / Done",
+    color: green,
 
-        kanban-item(
-            stroke: normal,
-        )[doc][J][Typst aufsetzen, Dokumentationsstruktur erstellen und erstes Brainstorming], // Start: 16.9.2026, Ende: 16.9.2026,
+    kanban-item(
+      stroke: normal,
+    )[doc][J][Typst aufsetzen, Dokumentationsstruktur erstellen und erstes Brainstorming], // Start: 16.9.2026, Ende: 16.9.2026,
 
-        kanban-item(
-            stroke: normal,
-        )[doc][J][Anpassungen von Andrin übernehmen, erste Erfolgszenario/Anwendungsszenarien], // Start: 18.9.2026, Ende: 18.9.2026,
-    ),
-    /*
-    kanban-column(
-        "Done last week",
-        color: green,
-        // fertige Tasks nach einer Woche hierhin verschieben (auskommentieren) und ungefähre Zeitschätzung ergänzen
-        // ---
+    kanban-item(
+      stroke: normal,
+    )[doc][J][Anpassungen von Andrin übernehmen, erste Erfolgszenario/Anwendungsszenarien], // Start: 18.9.2026, Ende: 18.9.2026,
+  ),
+  /*
+  kanban-column(
+      "Done last week",
+      color: green,
+      // fertige Tasks nach einer Woche hierhin verschieben (auskommentieren) und ungefähre Zeitschätzung ergänzen
+      // ---
 
-        // ---
-    ),
-    */
+      // ---
+  ),
+  */
 )
 
 
 
-== Meeting Notizen
-Meetingnotizen werden separat erstellt, hier werden nur wichtige Entscheidungen notiert.
-
-- Wöchentliches Meeting am Dienstag mit Betreuer
-// wöchentlich im Team + wöchtentlich mit Betreuer, kann sich ändern, wenn nicht mehr nötig
-// keine so strikten Guidelines wie bei SEP: Stil von wissenschaftlicher Arbeit
-// Code+Git Guidelines machen wir ähnlich wie bei SeProject
-
-
-
-
-
-// == Erklärung zum Einsatz von KI-Hilfsmitteln <ai-usage>
-
-// Gemäss der *Leitlinie zum Umgang mit KI-basierten Hilfsmitteln in Lehre und Weiterbildung der OST* vom September XXXX legen wir hiermit die Nutzung von Künstlicher Intelligenz (KI) in diesem Projekt offen. Wir haben KI-Tools verantwortungsvoll und zielgerichtet als unterstützende Werkzeuge eingesetzt. Die inhaltliche Verantwortung für alle Arbeitsergebnisse verbleibt vollumfänglich beim Projektteam. Sämtliche generierten Codefragmente, Texte und Erkenntnisse wurden kritisch geprüft, verifiziert und in den wissenschaftlichen sowie technischen Kontext des Projekts eingeordnet.
-
-// #pagebreak()
-// = Personal Reports
 
