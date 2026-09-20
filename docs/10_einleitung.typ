@@ -76,8 +76,7 @@ ich daraus die Bestellung beim Getränkehändler ableiten kann.
 
 *US-06:* Als RF-OK möchte ich die gelieferte Ware einlagern, damit der
 Lagerbestand von Beginn an stimmt.
-- *FR-09*: Das System soll den Anfangsbestand anhand der Bestellung uebernehmen und erlauben, diesen zu korrigieren.
-
+*FR-09*: Das System muss den Anfangsbestand aus der Bestellung beim Händler übernehmen.
 ==== Bestellung während des Fests
 
 *US-07:* Als Bar-Team möchte ich online Getränke bestellen.
@@ -86,7 +85,7 @@ Lagerbestand von Beginn an stimmt.
 - *FR-11*: Das System darf nur Mengeneingaben erlauben die den Gebindegrössen entsprechen.
 - *FR-12*: Das System muss verhindern, dass mehr bestellt wird, als im Lager
   verfügbar ist.
-- *FR-13*: Das System muss vor dem Absenden einen Hinweis anzeigen, wenn eine
+- *FR-13*: Das System muss einen Hinweis anzeigen, wenn eine
   Bestellung einen Artikel enthält, der sich von der Reservation der Bar unterscheidet.
 
 *US-08:* Als Bar-Team möchte ich eine abgesendete Bestellung stornieren können.
@@ -102,19 +101,16 @@ Lagerbestand von Beginn an stimmt.
 
 *US-10:* Als Lagerteam möchte ich eingehende Bestellungen sofort sehen, damit ich
 ohne Verzögerung mit dem Bereitstellen beginnen kann.
-- *FR-16*: Das System muss Bestellungen und deren Statusänderungen bei Bar-Team
+- *FR-16*: Das System muss Bestellungen und deren Statusänderungen bei Bar
   und Lagerteam ohne manuelles Neuladen aktualisieren.
 - *FR-17*: Das System muss offene Bestellungen in der Reihenfolge ihres Eingangs
   darstellen.
 
-*US-11:* Als Bar-Team möchte ich wissen, wann meine Bestellung bereitsteht, damit
-ich den Weg zum Lager nur einmal gehe.
+*US-11:* Als Bar-Team möchte ich wissen, wann meine Bestellung bereitsteht.
 - *FR-18*: Das System muss erlauben, eine Bestellung als abholbereit zu markieren.
 - *FR-19*: Das System muss erlauben, die Abholung zu bestätigen, womit die
-  Bestellung abgeschlossen und der Lagerbestand reduziert wird.
-- *FR-20*: Das System muss Bar-Team und Lagerteam über für sie relevante
-  Statusänderungen benachrichtigen, auch wenn die Applikation nicht im
-  Vordergrund ist.
+  Bestellung abgeschlossen wird.
+- *FR-20*: Das System muss eine Benachrichtigung an das Bar-Team senden, wenn die Bestellung abholbereit ist.
 
 *US-12:* Als Lagerteam möchte ich Abweichungen festhalten, damit sie bei der
 Abrechnung nachvollziehbar sind.
@@ -122,10 +118,8 @@ Abrechnung nachvollziehbar sind.
   oder als nicht abgeholt zu kennzeichnen.
 
 *US-13:* Als Bar-Team möchte ich bei technischen Problemen oder Zwischenfällen
-jemanden erreichen, damit das Fest nicht an der Applikation scheitert.
-- *FR-22*: Das System muss eine Kontaktmöglichkeit zum Lagerteam anzeigen, die
-  auch bei gestörter Verbindung sichtbar bleibt und während des Fests geändert
-  werden kann.
+jemanden erreichen.
+- *FR-22*: Das System muss eine Kontaktmöglichkeit zum Lagerteam und Sicherheitsverantwortlichen anzeigen.
 
 *US-14:* Als Lagerteam möchte ich eine Pause einlegen, damit die Bars wissen,
 dass Bestellungen vorübergehend nicht bearbeitet werden.
@@ -138,23 +132,20 @@ dass Bestellungen vorübergehend nicht bearbeitet werden.
 nicht verrechnet wird.
 - *FR-24*: Das System muss erlauben, eine Rückgabe analog zu einer Bestellung zu
   erfassen, begrenzt auf die von der Bar bezogenen Artikel und Mengen.
-- *FR-25*: Das System muss verlangen, dass der RF-OK eine Rückgabe bestätigt,
-  bevor sie dem Lagerbestand gutgeschrieben wird, und dabei erlauben, die
-  erfassten Mengen zu korrigieren.
+- *FR-25*: Das System muss verlangen, dass das RF-OK eine Rückgabe bestätigt,
+  bevor sie dem Lagerbestand gutgeschrieben wird.
 
-*US-16:* Als RF-OK möchte ich nach dem Fest pro Bar abrechnen, ohne Belege von
-Hand zusammenzusuchen.
+*US-16:* Als RF-OK möchte ich nach dem Fest einfach und schnell pro Bar abrechnen.
 - *FR-26*: Das System muss pro Bar eine Aufstellung aller bezogenen und
   zurückgegebenen Artikel mit Betrag erzeugen.
-- *FR-27*: Das System muss Bedarfsschätzung, Abrechnung und Rohdaten der Bezüge
-  als Datei exportieren.
+- *FR-27*: Das System muss Abrechnung und Rohdaten der Bezüge als Datei exportieren.
 
-*US-17:* Als RF-OK möchte ich den Verbrauch mehrerer Festausgaben vergleichen,
+*US-17:* Als RF-OK möchte ich den Verbrauch mehrerer Feste vergleichen,
 damit die Schätzung im Folgejahr besser wird.
-- *FR-28*: Das System muss die Daten vergangener Festausgaben erhalten und pro
+- *FR-28*: Das System muss die Daten vergangener Feste erhalten und pro
   Artikel vergleichbar darstellen.
 
-=== Klassifikation der Functional Requirements
+==== Klassifikation der Functional Requirements
 
 Die Functional Requirements sind nach der MoSCoW-Methode in drei Kategorien
 eingeteilt.
@@ -164,9 +155,7 @@ eingeteilt.
     columns: (auto, 1fr),
     align: (left, left),
     table.header([*Kategorie*], [*Bedeutung*]),
-    [Muss],
-    [Nicht verhandelbar. Ohne diese Anforderungen erfüllt das System seinen Zweck
-      nicht.],
+    [Muss], [Ohne diese Anforderungen erfüllt das System seinen Zweck nicht.],
 
     [Soll],
     [Wichtig für Bedienbarkeit, Effizienz oder Zuverlässigkeit. Das System
@@ -208,11 +197,147 @@ eingeteilt.
     [FR-24], [Rückgabe erfassen], [Soll],
     [FR-25], [Rückgabe bestätigen], [Soll],
     [FR-26], [Abrechnung pro Bar], [Muss],
-    [FR-27], [Datenexport], [FR-28],
-    [Vergleich über Festausgaben], [Kann],
+    [FR-27], [Datenexport], [Soll],
+    [FR-28], [Vergleich über Festausgaben], [Kann],
   ),
   caption: [Klassifikation der Functional Requirements],
 )
+
+#let nfr(id, titel, bezug: none, anforderung: [], messung: []) = [
+  #block(above: 1.2em, below: 0.5em)[
+    *#id (#titel)*
+    #if bezug != none [
+      #h(0.4em)
+      #text(size: 0.85em, fill: gray.darken(40%))[betrifft #bezug]
+    ]
+  ]
+  #anforderung
+  #block(above: 1em)[_Messung:_ #messung]
+]
+#pagebreak()
+
+
+=== Non-Functional Requirements
+
+Die folgenden Anforderungen gelten für das System als Ganzes. Zu jeder ist
+angegeben, auf welche Functional Requirements sie sich bezieht und woran ihre
+Erfüllung gemessen wird. Da das Rattenfest nach Abgabe dieser Arbeit
+stattfindet, sind alle Anforderungen ohne das Fest überprüfbar. Im Vordergrund
+stehen die Zuverlässigkeit während des Fests und die Betreibbarkeit über mehrere
+Jahre. Skalierbarkeit, Redundanz und Barrierefreiheit sind bewusst niedrig
+angesetzt, da das System nicht öffentlich zugänglich ist und von weniger als 20
+gleichzeitig verbundenen Personen genutzt wird.
+
+#nfr(
+  "NFR-01",
+  "Konsistenz der Bestandsführung",
+  bezug: "FR-10, FR-12, FR-24",
+  anforderung: [
+    Eine Bestellung wird vollständig oder gar nicht verbucht, und auch bei
+    wiederholtem Absenden genau einmal. Bei gleichzeitigen Bestellungen mehrerer
+    Bars auf denselben Artikel darf die Summe der bestätigten Bezüge den
+    verfügbaren Bestand nicht überschreiten und der Bestand nicht negativ
+    werden.
+  ],
+  messung: [
+    Manueller Test, der zwei Bestellungen auf einen Artikel mit Bestand 1
+    gleichzeitig absetzt: genau eine wird bestätigt, die andere abgelehnt, keine
+    verbleibt in einem Zwischenzustand. Zusätzlich wird dieselbe Bestellung
+    mehrfach abgesendet und darf nur einmal im Bestand erscheinen.
+  ],
+)
+
+
+#nfr(
+  "NFR-02",
+  "Latenz der Statusaktualisierung",
+  bezug: "FR-16, FR-18",
+  anforderung: [
+    Eine Statusänderung ist beim jeweils anderen Akteur innerhalb von zwei
+    Sekunden sichtbar (95. Perzentil), bei 20 gleichzeitig verbundenen
+    Bar-Geräten.
+  ],
+  messung: [
+    Lasttest mit simulierten Clients, gemessen wird die Zeit zwischen dem
+    Auslösen der Statusänderung und ihrem Eintreffen beim Empfänger.
+  ],
+)
+
+#nfr(
+  "NFR-03",
+  "Bedienbarkeit unter Festbedingungen",
+  bezug: "FR-10, FR-15",
+  anforderung: [
+    [Ausstehende Recherche]
+  ],
+  messung: [
+
+  ],
+)
+
+#nfr(
+  "NFR-04",
+  "Geräte- und Bildschirmunterstützung",
+  anforderung: [
+    Alle Funktionen sind auf aktuellem Chrome (Android), Safari (iOS) und einem
+    Desktop-Browser bei Bildschirmbreiten von 320 bis 1920 Pixeln vollständig
+    nutzbar.
+  ],
+  messung: [
+    Manuelle Testmatrix über die definierten Kombinationen aus Browser,
+    Betriebssystem und Bildschirmbreite.
+  ],
+)
+
+#nfr(
+  "NFR-05",
+  "Nachvollziehbarkeit der Abrechnung",
+  bezug: "FR-21, FR-26, FR-27",
+  anforderung: [
+    Jede Bestandsänderung, also Bezug, Rückgabe und Korrektur, ist dauerhaft mit
+    Zeitpunkt, Bar und auslösendem Benutzer gespeichert, sodass jeder Betrag der
+    Abrechnung auf einzelne Vorgänge zurückführbar ist.
+  ],
+  messung: [
+    Die Abrechnung einer Testbar wird stichprobenweise auf die zugrunde
+    liegenden Einzelvorgänge zurückgerechnet.
+  ],
+)
+
+#nfr(
+  "NFR-06",
+  "Betreibbarkeit durch das OK",
+  bezug: "FR-01 bis FR-05, FR-09",
+  anforderung: [
+    Alle wiederkehrenden Betriebsaufgaben, also das Anlegen einer Festausgabe,
+    die Verwaltung von Bars und Sortiment, Bestandskorrekturen und die
+    Abrechnung, sind über die Oberfläche ausführbar und erfordern keinen
+    direkten Datenbankzugriff. Eine nicht am Projekt beteiligte Person richtet
+    anhand der Anleitung eine neue Festausgabe in unter 30 Minuten ein.
+  ],
+  messung: [
+    Nachweis der Oberflächenabdeckung anhand der Liste der Betriebsaufgaben,
+    Durchführung der Einrichtung durch eine projektfremde Person.
+  ],
+)
+
+#nfr(
+  "NFR-07",
+  "Zugriffsschutz der Bar-Zugänge",
+  bezug: "FR-04",
+  anforderung: [
+    Ein Bar-Zugang ist nicht erratbar (mindestens 122 Bit Entropie) und gewährt
+    ausschliesslich Zugriff auf die Daten der eigenen Bar. Administrative
+    Funktionen sind über diesen Zugang nicht erreichbar.
+  ],
+  messung: [
+    Negativtests gegen fremde Bar- und Administrationsendpunkte mit einem
+    gültigen Bar-Zugang.
+  ],
+)
+
+#pagebreak()
+
 === Anforderungen (To be removed)
 
 
@@ -293,19 +418,12 @@ weitere Anforderungen (noch priorisieren) :
 
   Immer:
   - Analyse/Statistics: was wäre wichtig? Export als Excel/CSV der Daten (wie? wo speichern?) Vergleiche zwischen verschiedenen Jahren. Bessere Schätzungen
-  // SQL Queries als Admin durchführen ermöglichen, da das heutzutage nicht mehr so schwer ist mit KI? > nur bei Zeitmangel und als Notlösung
-  // Anzahl anzeigen, Sortieren nach Preis oder Anzahl, Filtern nach Getränke und Bar, Filtern nach Jahr und auch alle Jahre zusammen (oder nicht?). Dashboard mit vordefinierten Statistiken wie "Top 4 Produkte"? Einfache Kurvendiagramme.
-  // Statistik für Desktop optimieren
-  // Statistik ist auch nach Rattenfest verfügbar
+// SQL Queries als Admin durchführen ermöglichen, da das heutzutage nicht mehr so schwer ist mit KI? > nur bei Zeitmangel und als Notlösung
+// Anzahl anzeigen, Sortieren nach Preis oder Anzahl, Filtern nach Getränke und Bar, Filtern nach Jahr und auch alle Jahre zusammen (oder nicht?). Dashboard mit vordefinierten Statistiken wie "Top 4 Produkte"? Einfache Kurvendiagramme.
+// Statistik für Desktop optimieren
+// Statistik ist auch nach Rattenfest verfügbar
 
-  // alle Funktionalitäten von Bestellungen müssen nur während Rattenfest verfügbar sein und sonst nur für tests und development
-  - Getränke im Lager erfassen/anpassen
-    - sinnvolle Optionen/Felder
 
-  - Bar User erstellen und teilen
-
-  während Fest:
-  - Bestellung erhalten, als bereit markieren, stornieren (mit Bemerkung? mit Flags (nichtabholung/Falschbestellung)?),
 
 
 ==== Bar
