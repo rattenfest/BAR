@@ -22,8 +22,6 @@
 // Ergebnisse erzielt wurden. Die Sprache soll knapp, klar und stark untergliedert sein. Der Umfang beträgt in
 // der Regel 2-3 (max. 5) Seiten. Bilder sind hier im Gegensatz zum Abstract erwünscht.
 
-//
-== Ausgangslage
 
 == Vorgehen und Technologien
 == Ergebnisse

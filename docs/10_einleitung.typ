@@ -3,10 +3,25 @@
 // Was wollen wir machen, wieso? Sozusagen die Requirements FR/NFR. Mit Zielgruppe und was speziell ist
 // (Problemstellung, Forschungsfrage, Aufbau)
 
-== Hintergrund
+== Ausgangslage
+// @andrin, ich habe es zu Ausgangslage umbenannt, damit es nicht mit dem "theoretischer Hintergrund" Kapitel vom Betreuer in Verwechslung gerät
+
 Das Rattenfest ist ein jährlich stattfindendes Festival, das von Studierenden der OST organisiert wird und rund 3'000 Personen besucht. Die Getränke werden an mehreren Bars ausgeschenkt, die unabhängig vom Rattenfest betrieben werden. Damit nicht jede Bar ihre Versorgung selbst organisieren muss, betreibt das Rattenfest ein zentrales Getränkelager, aus dem die Bars während des Fests laufend beziehen.
 
 Dieser Prozess wurde in den letzten Jahren versucht zunehmend zu digitalisieren, die bisherigen Lösungen blieben jedoch unzureichend.
+
+=== Systemkontext und Domäne
+// Dieser Teil des Berichts beschreibt und analysiert die externen Schnittstellen des zu erstellenden oder zu
+// erweiternden Softwaresystems (Entwicklungszeit und/oder Laufzeit) sowie die bestehende oder zu
+// verwendende Infrastruktur wie z.B. Cloud-Provider. Er skizziert die fachliche Domäne, insbesondere ihre
+// softwaretechnischen Besonderheiten (Bsp. Design Hot Spots, Pattern-Nutzung).
+
+Es gibt eine Website des Rattenfest `rattenfest.ch`, diese wird über Hospoint gehostet.
+Das Ticketsystem und die Bezahlung läuft extern über einen Anbieter.
+Die Kommunikation intern läuft über Microsoft Teams, E-Mails und Chatdienste wie Whatsapp.
+Dateien sind unter Microsoft Teams abgelegt, es gibt keinen Dateiserver.
+Es gibt bereits einen Prototyp für das Barsystem und als Hilfe für den OK im Vorverkauf wurde bereits eine kleine Website getestet.
+So sind die Schnittstellen vom Rattenfest sehr flexibel und die verschiedenen Services können unabhängig voneinander gewechselt werden.
 
 == Ziel
 Ziel dieser Arbeit ist eine Webapplikation, die den gesamten Lebenszyklus der Getränke abbildet, von der ersten Bedarfsschätzung bis zur Abrechnung nach dem Fest:
@@ -20,6 +35,17 @@ Neben der Funktionalität soll die Lösung auf das Rattenfest zugeschnitten und 
 - *Bedienbarkeit* unter den Bedingungen am Fest: dunkel, laut, unter Zeitdruck und mit Personal, dessen Aufmerksamkeit im Verlauf des Abends nachlässt.
 - *Zuverlässigkeit* während des Fests. Sobald die Bars auf den manuellen Weg ausweichen müssen, verliert die Applikation ihren Zweck.
 - *Verwendbarkeit und Wartbarkeit* durch ein jährlich wechselndes OK mit unterschiedlichen technischen Kenntnissen.
+
+
+// detailierter:
+// - sinnvolle Architektur und DB
+// - Vorbestellungen
+// - Statistiken
+// - Preisaufstellungen
+// - importfunktionen (Getränke, Bars, ..)
+
+
+
 
 // == These
 // > wie soll die These aussehen? Wir betrachten sehr viele Dinge in der Arbeit, theoretisch gäbe es mehrere Thesen?
@@ -39,6 +65,23 @@ Neben der Funktionalität soll die Lösung auf das Rattenfest zugeschnitten und 
 - *Lagerteam*: nimmt Bestellungen entgegen, stellt sie bereit und übergibt sie.
 - *Getränkechef (RF-OK)*: verwaltet Festausgabe, Sortiment, Bars, Rücknahmen und
   Abrechnung.
+
+
+
+
+=== Risiken und Unsicherheiten
+// @andrin Ich denke dieses Kapitel macht Sinn vor den Requirements, da die Risiken die NFRs beeinflussen. Ansonsten kann es auch nach den Requirements stehen.
+//
+// Risiko eine Funktion zu vergessen: das könnte zu Tricks und Umwegen führen, deshalb User Tests machen, Zielgruppe befragen
+
+Risiko, dass es auf einer Plattform/Betriebssystem/Bildschirmgrösse nicht funktioniert wie gedacht
+Risiko, dass es nicht alle Personen einrichten können
+
+Spezielle Umgebung: während Rattenfest
+- ausserhalb von der Website: Tipps für Bars, wie sie das Gerät mit der Website einrichten können, damit es möglichst integriert und nicht lästig ist (Gerät, Halterung, Rolle zuweisen ?)
+- Bedienung von Website (User Experience)  eng, dunkel, laut, Bedienung eingeschränkt
+// ähnliche Recherchen (finde auf die schnelle Ideen für Apps, die prüfen, ob jemand betrunken ist. Auch Recherchen, dass Prototypen von Betrunkenen getestet werden können, wenn es dann bedienbar ist, ist es gutes UX. Analyse von ähnlichen Arbeiten
+
 
 === User Stories und Functional Requirements
 
@@ -437,21 +480,6 @@ weitere Anforderungen (noch priorisieren) :
 - Kontaktfunktion (allgemeine Probleme/Fragen melden, Notfallmeldungen während Fest, wer von RF behandelt Meldungen?)
 
 === Non-Functional Requirements
-
-
-=== Risiken und Unsicherheiten
-// @jasmin Dieses Kapitel evtlt zu Projektonformation verschieben, da es nicht direkt zu den Anforderungen gehört.
-
-//
-// Risiko eine Funktion zu vergessen: das könnte zu Tricks und Umwegen führen, deshalb User Tests machen, Zielgruppe befragen
-
-Risiko, dass es auf einer Plattform/Betriebssystem/Bildschirmgrösse nicht funktioniert wie gedacht
-Risiko, dass es nicht alle Personen einrichten können
-
-Spezielle Umgebung: während Rattenfest
-- ausserhalb von der Website: Tipps für Bars, wie sie das Gerät mit der Website einrichten können, damit es möglichst integriert und nicht lästig ist (Gerät, Halterung, Rolle zuweisen ?)
-- Bedienung von Website (User Experience)  eng, dunkel, laut, Bedienung eingeschränkt
-// ähnliche Recherchen (finde auf die schnelle Ideen für Apps, die prüfen, ob jemand betrunken ist. Auch Recherchen, dass Prototypen von Betrunkenen getestet werden können, wenn es dann bedienbar ist, ist es gutes UX. Analyse von ähnlichen Arbeiten
 
 
 == Anwendungsszenarien (detailierter)
