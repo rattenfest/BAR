@@ -10,38 +10,38 @@
 #show heading.where(level: 5): set text(size: 11pt)
 
 #set page(
-    margin: 1in,
+  margin: 1in,
 )
 
 #set text(
-    lang: "de",
-    region: "CH",
+  lang: "de",
+  region: "CH",
 )
 
 #set par(justify: true)
 
 #show heading.where(level: 2): it => {
-    it
-    line(length: 100%)
-    v(0.4em)
+  it
+  line(length: 100%)
+  v(0.4em)
 }
 
 #set page(footer: context [
-    *SA Dokumentation*
-    #h(1fr)
-    #counter(page).display(
-        "1/1",
-        both: true,
-    )
+  *SA Dokumentation*
+  #h(1fr)
+  #counter(page).display(
+    "1/1",
+    both: true,
+  )
 ])
 
 // Remove numbering for headings after level 5, headings too long for example at "User Testings" but "Testing Concept" needs numbers up to level 4 for references
 #show heading: it => {
-    if (it.numbering == none or it.level >= 5) {
-        block(it.body)
-    } else {
-        block(counter(heading).display() + " " + it.body)
-    }
+  if (it.numbering == none or it.level >= 5) {
+    block(it.body)
+  } else {
+    block(counter(heading).display() + " " + it.body)
+  }
 }
 
 
@@ -74,40 +74,42 @@ Die folgende Übersicht dokumentiert die im Projekt verwendeten Hilfsmittel nach
 Die konkreten Tools werden im Verlauf des Projekts ergänzt.
 
 #figure(
-    table(
-        columns: (1fr, 2fr),
-        stroke: 0.5pt + gray,
-        inset: 6pt,
-        align: (left, left),
-        table.header(
-            table.cell(text(weight: "bold")[Aufgabenbereich]),
-            table.cell(text(weight: "bold")[Tools]),
-        ),
-        [Literatur-Recherche und Verwaltung], [Google],
-        [Datenanalyse und Visualisierung], [],
-        [Ideengenerierung], [Claude, Gemini],
-        [Übersetzung], [],
-        [Prototyping], [Figma],
-        [Coding], [Claude Code],
-        [Texterstellung, Textoptimierung, Rechtschreibe- und Grammatikprüfung], [Claude],
-        [Zusammenarbeit und Projektmanagement], [Teams, GitHub, Outlook, Google Meet],
-        [DevOps], [GitHub],
+  table(
+    columns: (1fr, 2fr),
+    stroke: 0.5pt + gray,
+    inset: 6pt,
+    align: (left, left),
+    table.header(
+      table.cell(text(weight: "bold")[Aufgabenbereich]),
+      table.cell(text(weight: "bold")[Tools]),
     ),
-    kind: table,
-    caption: [Hilfsmittelverzeichnis],
+    [Literatur-Recherche und Verwaltung], [Google, DuckDuckGo, scholar.google.com],
+    [Datenanalyse und Visualisierung], [],
+    [Ideengenerierung], [Claude, Gemini, Typst],
+    [Übersetzung], [],
+    [Prototyping], [Figma],
+    [Coding], [Claude Code],
+    [Texterstellung, Textoptimierung, Rechtschreibe- und Grammatikprüfung], [Claude, Hunspell],
+    // siehe README.md für die Anleitung
+    [Zusammenarbeit und Projektmanagement], [Teams, GitHub, Outlook, Google Meet, Typst, WhatsApp],
+    [DevOps], [GitHub],
+    [Notizen], [Obsidian, Papier],
+  ),
+  kind: table,
+  caption: [Hilfsmittelverzeichnis],
 )
 
 
 = Bilderverzeichnis
 #outline(
-    title: none,
-    target: figure.where(kind: image),
+  title: none,
+  target: figure.where(kind: image),
 )
 
 = Tabellenverzeichnis
 #outline(
-    title: none,
-    target: figure.where(kind: table),
+  title: none,
+  target: figure.where(kind: table),
 )
 
 = Bibliografie
