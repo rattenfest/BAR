@@ -35,6 +35,11 @@ milestones:
   - name: "M2: Umsetzung fertig"
     date: 2026-11-23
     show-date: true
+
+  - name: "Zwischenpräsentation"
+    date: 2026-11-01
+    show-date: true
+
   - name: "M3: Dokumentation fertig"
     date: 2026-12-07
     show-date: true
