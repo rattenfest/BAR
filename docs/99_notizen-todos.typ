@@ -1,10 +1,32 @@
 
+= These
 
 
-=== Anforderungen, Problemanalyse, ..?
+// > wie soll die These aussehen? Wir betrachten sehr viele Dinge in der Arbeit, theoretisch gäbe es mehrere Thesen?
+
+// ===== 1. Erfolgszenario vom gesamten Projekt // das gleiche wie Ziel?
+// // Die Arbeit war erfolgreich, wenn ...
+// Die Getränkeverwaltung ist ein Erfolg, wenn es alle Anforderungen sinnvoll erfüllt und die Bedienung für RF Arbeiter und Bar Arbeiter angenehm ist. Es soll möglich sein, die Getränkeverwaltung mit mehr Features zu ergänzen, aber es soll nicht nötig sein, programmierte Teile abzuändern.
+// Das wird erreicht durch gutes Planen und Fokus auf das Wichtigste, wobei eventuell nicht jedes nützliche Feature eingebaut wird.
+
+// ===== 2. These wie an einer Arbeit?
+// Es ist möglich ein Getränkeverwaltungssystem für das Rattenfest zu konzeptieren und umzusetzen, welches benutzerfreundlich, erweiterbar und einfach wartbar ist.
+// (sind wahrscheinlich die wichtigsten 3 Anforderungen)
+
+
+
+== Anforderungen, Problemanalyse, ..?
 
 // Es wird eine Lösung gesucht, die einfach nutzbar ist (keine versteckten Buttons, suchen von Funktionen..) und während dem Rattenfest muss es fehlerfrei laufen.
 
+
+
+prüfe in FR/NFR:
+- sinnvolle Architektur und DB
+- Vorbestellungen
+- Statistiken
+- Preisaufstellungen
+- importfunktionen (Getränke, Bars, ..)
 
 ==== Architecture
 Kompromisse

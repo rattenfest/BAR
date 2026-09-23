@@ -49,7 +49,11 @@
 #include "00_title_page.typ"
 #pagebreak()
 #include "01_summary.typ"
+
 #include "10_einleitung.typ"
+#include "11_konkurrenzanalyse.typ"
+#include "11_risikoanalyse.typ"
+#include "12_requirements.typ"
 
 #include "20_hintergrund.typ"
 
