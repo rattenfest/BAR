@@ -14,8 +14,8 @@ Die Festausgabe bezeichnet die Speicherung der Daten von je einer Rattenfest-Dur
 \
 - Das Sortiment bezeichnet das ursprüngliche Lagersortiment, gemäss der Vorbestellung vom Rattenfest. Es beinhaltet die Getränke mit Anzahl. \
 - Die Getränke beinhalten Informationen: Name, Stückzahl (manche Getränke können nur in 6er Päcken bestellt werden) und Preis. // ob Alkohol? Kategorie?
-- RF-OK = Rattenfest Organisations Kommittee Mitglied
-
+- RF-OK = Rattenfest Organisationskomitee Mitglied
+- Schrumpfpackungen = ..
 
 === User Stories und Functional Requirements
 
@@ -377,7 +377,7 @@ gleichzeitig verbundenen Personen genutzt wird.
   Analytics, Umsatz pro Bar, pro Getränk etc.
   Export von Bezugslisten, Bestellhistorie, Rechnung etc.
   Initiale Bestellung, Getränkewünsche ebenfalls über die App
-  > Analyse, ob ein Getränk viel zu wenig gekauft wurde und durch ein trendigeres Getränk ersetzen vor Schritt 1?
+// > Analyse, ob ein Getränk viel zu wenig gekauft wurde und durch ein trendigeres Getränk ersetzen vor Schritt 1?
 
 
 Weitere Features, z.B. "3.1 Bestellung" "die Bestellung für später vorbereiten und noch nicht senden, RF kann diese bereits sehen und sich besser vorbereiten"

@@ -9,6 +9,8 @@
 - Lösungen ohne Website?
 - der Vorteil gegenüber einem Chat wo man Bestellungen schreibt ist offensichtlich, aber freie Textnachrichten haben auch Vorteile > Bemerkungen-Möglichkeit bei Bestellung einbauen?
 
+=== Sum-Up
+
 === Webshops
 
 https://www.rewe.de/shop/c/getraenke-genussmittel/
