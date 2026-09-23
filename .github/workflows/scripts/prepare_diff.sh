@@ -20,12 +20,12 @@ fi
 
 if [ -n "$PREVIOUS_REF" ]; then
   # Add all files into one big file
-  python3 /tmp/flatten.py docs/main.typ docs/current_flat.typ
+  python3 /tmp/flatten.py docs/Dokumentation-SA-BAR.typ docs/current_flat.typ
 
   # Checkout to old version and add all files into one big file
   git checkout "$PREVIOUS_REF"
 
-  python3 /tmp/flatten.py docs/main.typ docs/old_flat.typ
+  python3 /tmp/flatten.py docs/Dokumentation-SA-BAR.typ docs/old_flat.typ
 
   # Back to the current version
   git checkout "$CURRENT_SHA"
