@@ -51,11 +51,11 @@
 #include "01_summary.typ"
 
 #include "10_einleitung.typ"
-#include "11_konkurrenzanalyse.typ"
-#include "11_risikoanalyse.typ"
-#include "12_requirements.typ"
 
 #include "20_hintergrund.typ"
+#include "21_konkurrenzanalyse.typ"
+#include "21_risikoanalyse.typ"
+#include "22_requirements.typ"
 
 #include "30_methode.typ"
 

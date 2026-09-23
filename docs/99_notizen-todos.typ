@@ -1,5 +1,5 @@
 
-= These
+= These > ist in Einleitung die Ausgangslage
 
 
 // > wie soll die These aussehen? Wir betrachten sehr viele Dinge in der Arbeit, theoretisch gäbe es mehrere Thesen?

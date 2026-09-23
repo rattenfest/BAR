@@ -1,8 +1,5 @@
 = Analyse
-// > Unterschied zur Einleitung?? ist das der Kontext?
-// - Vielleicht einfach Analyse nennen?
-== Marktanalyse
-// Analyse der bestehenden Lösungen, welche bereits auf dem Markt sind. Gibt es bereits Loesungen?
+// == Marktanalyse
 
 === Sum-Up
 

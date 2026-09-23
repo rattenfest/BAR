@@ -4,7 +4,7 @@
 // (Problemstellung, Forschungsfrage, Aufbau)
 
 == Ausgangslage
-// @andrin, ich habe es zu Ausgangslage umbenannt, damit es nicht mit dem "theoretischer Hintergrund" Kapitel vom Betreuer in Verwechslung gerät
+// = These
 
 Das Rattenfest ist ein jährlich stattfindendes Festival, das von Studierenden der OST organisiert wird und rund 3'000 Personen besucht. Die Getränke werden an mehreren Bars ausgeschenkt, die unabhängig vom Rattenfest betrieben werden. Damit nicht jede Bar ihre Versorgung selbst organisieren muss, betreibt das Rattenfest ein zentrales Getränkelager, aus dem die Bars während des Fests laufend beziehen.
 
@@ -15,6 +15,8 @@ Dieser Prozess wurde in den letzten Jahren versucht zunehmend zu digitalisieren,
 // erweiternden Softwaresystems (Entwicklungszeit und/oder Laufzeit) sowie die bestehende oder zu
 // verwendende Infrastruktur wie z.B. Cloud-Provider. Er skizziert die fachliche Domäne, insbesondere ihre
 // softwaretechnischen Besonderheiten (Bsp. Design Hot Spots, Pattern-Nutzung).
+
+// nicht verwechseln mit "Problem Domain", welches fachlich nicht technisch ist
 
 Es gibt eine Website des Rattenfest `rattenfest.ch`, diese wird über Hostpoint gehostet.
 Das Ticketsystem und die Bezahlung läuft extern über einen Anbieter.
