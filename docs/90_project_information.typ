@@ -1,5 +1,4 @@
 #import "@preview/gantty:0.5.1": gantt
-#import "@preview/kantan:0.1.0": *
 #import "@preview/cheq:0.4.0": checklist
 
 = Projektinformationen

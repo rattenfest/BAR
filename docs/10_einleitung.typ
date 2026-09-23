@@ -16,7 +16,7 @@ Dieser Prozess wurde in den letzten Jahren versucht zunehmend zu digitalisieren,
 // verwendende Infrastruktur wie z.B. Cloud-Provider. Er skizziert die fachliche Domäne, insbesondere ihre
 // softwaretechnischen Besonderheiten (Bsp. Design Hot Spots, Pattern-Nutzung).
 
-Es gibt eine Website des Rattenfest `rattenfest.ch`, diese wird über Hospoint gehostet.
+Es gibt eine Website des Rattenfest `rattenfest.ch`, diese wird über Hostpoint gehostet.
 Das Ticketsystem und die Bezahlung läuft extern über einen Anbieter.
 Die Kommunikation intern läuft über Microsoft Teams, E-Mails und Chatdienste wie Whatsapp.
 Dateien sind unter Microsoft Teams abgelegt, es gibt keinen Dateiserver.
@@ -59,36 +59,58 @@ Neben der Funktionalität soll die Lösung auf das Rattenfest zugeschnitten und 
 // Es ist möglich ein Getränkeverwaltungssystem für das Rattenfest zu konzeptieren und umzusetzen, welches benutzerfreundlich, erweiterbar und einfach wartbar ist.
 // (sind wahrscheinlich die wichtigsten 3 Anforderungen)
 
-=== Akteure
-
-- *Bar-Team*: bestellt Getränke für seine Bar und holt sie ab.
-- *Lagerteam*: nimmt Bestellungen entgegen, stellt sie bereit und übergibt sie.
-- *Getränkechef (RF-OK)*: verwaltet Festausgabe, Sortiment, Bars, Rücknahmen und
-  Abrechnung.
-
-
 
 
 === Risiken und Unsicherheiten
 // @andrin Ich denke dieses Kapitel macht Sinn vor den Requirements, da die Risiken die NFRs beeinflussen. Ansonsten kann es auch nach den Requirements stehen.
 //
-// Risiko eine Funktion zu vergessen: das könnte zu Tricks und Umwegen führen, deshalb User Tests machen, Zielgruppe befragen
+
+=== Technische, allgemeine Risikos
+Sicherheit
+Code ..
+Ausfall
+
+=== Spezielle Risikos
+
+Risiko eine Funktion zu vergessen: das könnte zu Tricks und Umwegen führen, deshalb User Tests machen, Zielgruppe befragen
+Massnahme:
 
 Risiko, dass es auf einer Plattform/Betriebssystem/Bildschirmgrösse nicht funktioniert wie gedacht
-Risiko, dass es nicht alle Personen einrichten können
+Massnahme:
 
+Risiko, dass es nicht alle Personen einrichten können
+Massnahme:
+
+Risiko, dass sich die Benutzung durch die spezielle Umgebung verschlechtert.
 Spezielle Umgebung: während Rattenfest
 - ausserhalb von der Website: Tipps für Bars, wie sie das Gerät mit der Website einrichten können, damit es möglichst integriert und nicht lästig ist (Gerät, Halterung, Rolle zuweisen ?)
 - Bedienung von Website (User Experience)  eng, dunkel, laut, Bedienung eingeschränkt
 // ähnliche Recherchen (finde auf die schnelle Ideen für Apps, die prüfen, ob jemand betrunken ist. Auch Recherchen, dass Prototypen von Betrunkenen getestet werden können, wenn es dann bedienbar ist, ist es gutes UX. Analyse von ähnlichen Arbeiten
+Massnahme:
 
+
+
+=== Akteure
+
+// @andrin siehe Kommentare:
+- *Bar-Team*: bestellt Getränke für seine Bar und holt sie ab. // und eine Vorbestellung?
+- *Lagerteam*: nimmt Bestellungen entgegen, stellt sie bereit und übergibt sie. // "Nur während der Rattenfest-Durchführung" ergänzen?
+- *Getränkechef (RF-OK)*: verwaltet Festausgabe, Sortiment, Bars, Rücknahmen und
+  Abrechnung. // erwähnen, was während dem Fest und was auch nach/vor dem Fest?
+
+==== Begriffe
+Die Festausgabe bezeichnet die Speicherung der Daten von je einer Rattenfest-Durchführung.
+// vielleicht zu technisch: Getränke Daten und Anzahl separat? Da Preis und Getränkeauswahl sich ändern kann pro Festausgabe
+\
+Das Sortiment bezeichnet das ursprüngliche Lagersortiment, gemäss der Vorbestellung vom Rattenfest. Es beinhaltet die Getränke mit Anzahl. \
+Die Getränke beinhalten Informationen: Name, Stückzahl (manche Getränke können nur in 6er Päcken bestellt werden) und Preis. // ob Alkohol? Kategorie?
 
 === User Stories und Functional Requirements
 
 ==== Vorbereitung
-
+// @andrin, Ist deine Formulierung besser geeignet für wissenschaftliche Arbeiten? ich fand es bisschen schwer zu lesen, aber ich kann auch so schreiben, wenn das besser ist.
 *US-01:* Als RF-OK möchte ich eine neue Festausgabe anlegen, damit die Daten
-jedes Jahrgangs getrennt bleiben und vergleichbar werden.
+jedes Jahrgangs getrennt bleiben und vergleicht werden können. // vergleichbar werden / vergleicht werden können / vergleichbar sind ?
 - *FR-01*: Das System muss erlauben, eine Festausgabe anzulegen und als aktiv zu
   setzen. Sortiment, Bestände, Bestellungen und Rückgaben sind
   jeweils einer Festausgabe zugeordnet.
