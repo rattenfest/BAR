@@ -20,7 +20,7 @@ Dieser Prozess wurde in den letzten Jahren versucht zunehmend zu digitalisieren,
 
 Es gibt eine Website des Rattenfest `rattenfest.ch`, diese wird über Hostpoint gehostet.
 Das Ticketsystem und die Bezahlung läuft extern über einen Anbieter.
-Die Kommunikation intern läuft über Microsoft Teams, E-Mails und Chatdienste wie Whatsapp.
+Die Kommunikation intern läuft über Microsoft Teams, E-Mails und Chatdienste wie WhatsApp.
 Dateien sind unter Microsoft Teams abgelegt, es gibt keinen Dateiserver.
 Es gibt bereits einen Prototyp für das Barsystem und als Hilfe für den OK im Vorverkauf wurde bereits eine kleine Website getestet.
 So sind die Schnittstellen vom Rattenfest sehr flexibel und die verschiedenen Services können unabhängig voneinander gewechselt werden.
@@ -39,3 +39,4 @@ Neben der Funktionalität soll die Lösung auf das Rattenfest zugeschnitten und 
 - *Verwendbarkeit und Wartbarkeit* durch ein jährlich wechselndes OK mit unterschiedlichen technischen Kenntnissen.
 
 
+// weitere Dokumente zum Thema "einleitung" siehe Nummerierung 1x_....typ und in "Dokumentation-SA-BAR.typ" importiert

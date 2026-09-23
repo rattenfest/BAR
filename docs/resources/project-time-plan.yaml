@@ -14,7 +14,7 @@ tasks:
     end: 2026-10-12
   - name: Umsetzung
     subtasks:
-      - name: MVP fertig
+      - name: \"Muss\" Requirements fertig
         start: 2026-10-01
         end: 2026-10-10
     start: 2026-10-05
