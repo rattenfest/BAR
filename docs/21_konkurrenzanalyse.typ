@@ -2,7 +2,7 @@
 == Vorhandene Lösungswege
 // (Konkurrenzanalyse/Wettbewerbsanalyse)
 
-> konkrete gut dokumentierte Lösungen finden
+// > konkrete gut dokumentierte Lösungen finden
 
 - event organisations softwares > meiste haben nicht fokus Getränkbestellung sondern tickets, zeitmanagement..
 - Getränkelieferanten/Webshop Lösungen (Ziel: wenig Performance, es läuft das ganze Jahr durch)
@@ -11,8 +11,11 @@
 
 === Sum-Up
 
-=== Webshops
+=== Webshop für Getränke
 
 https://www.rewe.de/shop/c/getraenke-genussmittel/
 - Angenehme Navigation durch farbige Bilder und Icons
   - einzelne Getränke und 6er Packs werden jeweils so auf dem Bild abgebildet
+
+
+=== Fazit

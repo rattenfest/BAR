@@ -93,3 +93,22 @@ weitere Anforderungen (noch priorisieren) :
 
 - Redundanz und Skalierbarkeit ist weniger wichtig, da die Anzahl User sich im < 100 Personen Bereich befinden.
 
+
+= Tasks / Issues
+
+Hier erklärt und Backlog: https://github.com/rattenfest/BAR/issues/4
+
+
+=== Definition of Ready (wann darf es als Issue erstellt werden)
+
+1. Akzeptanzkriterien gut erklärt und genügend genau
+2. Zusammen besprochen
+3. Einem Meilenstein zuordnen
+4. Deadline setzen
+
+=== Definition of Done (wann darf das Issue geschlossen worden)
+
+1. alle Punkte erledigt
+2. alles dokumentiert
+3. Beide sind einverstanden (approved)
+4. bei Code: Guidelines eingehalten, test vorhanden, pull request gemerged
