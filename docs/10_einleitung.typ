@@ -27,12 +27,21 @@ So sind die Schnittstellen vom Rattenfest sehr flexibel und die verschiedenen Se
 
 == Problem
 
-Das ist die "Problem Domain", um das Problem aufzuzeigen und Missverständnisse durch die Sprache zu verhindern.
+Die "Problem Domain" hilft das Problem ohne Missverständnisse durch die Sprache zu verstehen.
+
+// TODO: Bild zuschneiden, sobald es keine Inhaltsänderungen mehr gibt
+// TODO: Begrifflichkeiten einheitlich festhalten und so über gesamte Doku verwenden
 
 #figure(
   image("resources/problem-domain/getraenkebestellungen.png", width: 400pt),
   kind: image,
   caption: [Problem Domain der Getränkebestellung],
+)
+
+#figure(
+  image("resources/problem-domain/rueckgabe.png", width: 400pt),
+  kind: image,
+  caption: [Problem Domain der Getränkerückgabe am Ende des Festes],
 )
 
 == Ziel

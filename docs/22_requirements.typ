@@ -80,13 +80,13 @@ Lagerbestand von Beginn an stimmt.
 ==== Bearbeitung und Abholung
 
 *US-10:* Als Lagerteam möchte ich eingehende Bestellungen sofort sehen, damit ich
-ohne Verzögerung mit dem Bereitstellen beginnen kann.
+ohne Verzögerung mit dem Bereitstellen beginnen kann. // definieren wie schnell "sofort" ist?
 - *FR-16*: Das System muss Bestellungen und deren Statusänderungen bei Bar
   und Lagerteam ohne manuelles Neuladen aktualisieren.
 - *FR-17*: Das System muss offene Bestellungen in der Reihenfolge ihres Eingangs
   darstellen.
 
-*US-11:* Als Bar-Team möchte ich wissen, wann meine Bestellung bereitsteht.
+*US-11:* Als Bar-Team möchte ich zeitnah Bescheid erhalten, sobald meine Bestellung bereitsteht.
 - *FR-18*: Das System muss erlauben, eine Bestellung als abholbereit zu markieren.
 - *FR-19*: Das System muss erlauben, die Abholung zu bestätigen, womit die
   Bestellung abgeschlossen wird.
@@ -105,6 +105,8 @@ jemanden erreichen.
 dass Bestellungen vorübergehend nicht bearbeitet werden.
 - *FR-23*: Das System muss erlauben, das Lager als vorübergehend nicht besetzt zu
   markieren, was den Bars angezeigt wird.
+// siehe Status bei Problem Domain der Getränkerückgabe.
+// Erweiterung: Status zeigen wie besetzt das Lager ist: z.B. einfach die Anzahl offener und bereiten Bestellungen und Rückgaben anzeigen an alle.
 
 ==== Rücknahme und Abrechnung
 
