@@ -31,6 +31,7 @@ Die "Problem Domain" hilft das Problem ohne Missverständnisse durch die Sprache
 
 // TODO: Bild zuschneiden, sobald es keine Inhaltsänderungen mehr gibt
 // TODO: Begrifflichkeiten einheitlich festhalten und so über gesamte Doku verwenden
+// wir können jetzt mit der Problem Domain bestimmen, wo die Engpässe und wichtigsten Stellen sind, die wir verbessern wollen und worauf wir besonderen Fokus setzen
 
 #figure(
   image("resources/problem-domain/getraenkebestellungen.png", width: 400pt),

@@ -1,14 +1,14 @@
 
 == Recherche User Experience während Rattenfest
 
-=== User Befragung Zusammenfassung
+===User Befragung Zusammenfassung
 
-== Literaturrecherche
+=== Literaturrecherche
 // literaturrecherche (zu ux + interatkion im umfeld bei betrunkenen,dunkel und eng: Randbedingungen in dieser Umgebung > danach ein Konzept dazu)
 
 
 
-=== UX für an Musik Veranstaltungen
+==== UX für an Musik Veranstaltungen
 
 https://www.researchgate.net/profile/Janet-Dickinson/publication/275414710_The_Role_of_Mobile_Applications_in_the_Consumer_Experience_at_Music_Festivals/links/55e6a3ca08aebdc0f58bb9d8/The-Role-of-Mobile-Applications-in-the-Consumer-Experience-at-Music-Festivals.pdf
 
@@ -16,7 +16,7 @@ https://www.emerald.com/ijefm/article-abstract/7/3/201/118003/Mobile-device-use-
 
 https://www.ingentaconnect.com/content/cog/em/2015/00000019/00000001/art00003
 
-=== Restaurant und Bars Umgebung
+==== Restaurant und Bars Umgebung
 
 Die Umgebung am Rattenfest ist ähnlich zu der in einer Küche von einem Restaurant oder einer vollen Bar.
 
@@ -35,14 +35,9 @@ Wir suchen ein gutes Mass zwischen "Content Overload", zuviele Informationen die
 Die weiteren Punkte .. können durch User Experience Tests des fertigen Produktes gelöst werden. @NFR... Usability
 
 
-=== Restaurant digitales Bestellsystem
-
-z.B. das von McDonalds
-
-=== Interaktion
+==== Interaktion
 
 Gestensteuerung (swipe)?
 qr-code siehe Konkurrenzanalyse
 
-
-=== Zusammenfassung und Konzept
+=== Zusammenfassung
