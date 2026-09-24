@@ -37,9 +37,11 @@ Bei Ausnahmefällen nutze `// lint:ignore [reason]` vor `#table`.
 
 ### Quellenangabe
 
+Tipp: in Google Scholars "zitieren" und dann "BibTeX" auswählen.
+
 Erstellung
 ```typ
-@online{referenz-biespiel,
+@online{hyperlink-name,
   author = {{Autor}},
   title = {Ein Titel},
   year = {2026},
@@ -50,7 +52,7 @@ Erstellung
 
 Nutzung
 ```typ
-@referenz-beispiel
+@hyperlink-name
 ```
 
 ### Bild

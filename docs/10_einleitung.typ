@@ -25,6 +25,16 @@ Dateien sind unter Microsoft Teams abgelegt, es gibt keinen Dateiserver.
 Es gibt bereits einen Prototyp für das Barsystem und als Hilfe für den OK im Vorverkauf wurde bereits eine kleine Website getestet.
 So sind die Schnittstellen vom Rattenfest sehr flexibel und die verschiedenen Services können unabhängig voneinander gewechselt werden.
 
+== Problem
+
+Das ist die "Problem Domain", um das Problem aufzuzeigen und Missverständnisse durch die Sprache zu verhindern.
+
+#figure(
+  image("resources/problem-domain/getraenkebestellungen.png", width: 400pt),
+  kind: image,
+  caption: [Problem Domain der Getränkebestellung],
+)
+
 == Ziel
 Ziel dieser Arbeit ist eine Webapplikation, die den gesamten Lebenszyklus der Getränke abbildet, von der ersten Bedarfsschätzung bis zur Abrechnung nach dem Fest:
 

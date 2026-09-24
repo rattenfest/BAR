@@ -16,6 +16,7 @@ Die Festausgabe bezeichnet die Speicherung der Daten von je einer Rattenfest-Dur
 - Die Getränke beinhalten Informationen: Name, Stückzahl (manche Getränke können nur in 6er Päcken bestellt werden) und Preis. // ob Alkohol? Kategorie?
 - RF-OK = Rattenfest Organisationskomitee Mitglied
 - Schrumpfpackungen = ..
+- Getränk / Artikel (vereinheitlichen?)
 
 === User Stories und Functional Requirements
 
@@ -37,9 +38,9 @@ Bestellungen eindeutig zugeordnet sind.
   erlauben, diesen neu zu erzeugen, womit der bisherige ungültig wird.
 
 *US-03:* Als RF-OK möchte ich das Getränkesortiment unseres Lieferanten den Bars zur Verfügung stellen.
-- *FR-05*: Das System muss erlauben, Getränke mit Bezeichnung, Gebindegrösse und
-  Preis zu erfassen.
+- *FR-05*: Das System muss erlauben, Getränke mit Bezeichnung, Gebindegrösse und Preis zu erfassen.
 // @glossar/problem domain: Gebindegrösse erklären da Zielgruppe das möglicherweise nicht kennt
+// hier keine Anzahl?
 - *FR-06*: Das System muss erlauben, ein Sortiment aus einer Datei zu
   importieren.
 // @glossar: Sortiment definieren, ist das Sortiment eine Sammlung von Getränken? Mit oder ohne Anzahl? Siehe Definition "Getränk"
@@ -55,7 +56,7 @@ ich daraus die Bestellung beim Getränkehändler ableiten kann.
 
 *US-06:* Als RF-OK möchte ich die gelieferte Ware einlagern, damit der
 Lagerbestand von Beginn an stimmt.
-*FR-09*: Das System muss den Anfangsbestand aus der Bestellung beim Händler übernehmen.
+- *FR-09*: Das System muss den Anfangsbestand aus der Bestellung beim Händler übernehmen.
 ==== Bestellung während des Fests
 
 *US-07:* Als Bar-Team möchte ich online Getränke bestellen.

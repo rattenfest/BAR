@@ -52,6 +52,7 @@
 
 #include "10_einleitung.typ"
 
+#pagebreak()
 #include "20_hintergrund.typ"
 #include "21_konkurrenzanalyse.typ"
 #include "21_risikoanalyse.typ"
