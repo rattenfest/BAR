@@ -4,13 +4,13 @@
 
 // > konkrete gut dokumentierte Lösungen finden
 
-- event organisations softwares > meiste haben nicht fokus Getränkbestellung sondern tickets, zeitmanagement..
-- Getränkelieferanten/Webshop Lösungen (Ziel: wenig Performance, es läuft das ganze Jahr durch)
-- Lösungen ohne Website?
-- der Vorteil gegenüber einem Chat wo man Bestellungen schreibt ist offensichtlich, aber freie Textnachrichten haben auch Vorteile > Bemerkungen-Möglichkeit bei Bestellung einbauen?
+// - event organisations softwares > meiste haben nicht fokus Getränkbestellung sondern tickets, zeitmanagement..
+// - Getränkelieferanten/Webshop Lösungen (Ziel: wenig Performance, es läuft das ganze Jahr durch)
+// - Lösungen ohne Website?
+// - der Vorteil gegenüber einem Chat wo man Bestellungen schreibt ist offensichtlich, aber freie Textnachrichten haben auch Vorteile > Bemerkungen-Möglichkeit bei Bestellung einbauen?
 
 
-== Website mit weiteren Technologien ergänzen?
+== Weiteren Technologien
 // TODO: inhalt so ok? Struktur ändern, so dass das RF Fazit zusammen am Schluss steht? Reihenfolge so okay? Einleitung und Schluss ausführlicher?
 Wir haben Lösungen von verschiedenen Softwares stichprobenweise angeschaut, um herauszufinden, ob diese in unserem Fall einen Vorteil bringen würden.
 
@@ -30,7 +30,7 @@ Da wir bereits eine Verbindung aufgebaut haben und so einfach Daten senden könn
 // User Test Kriterium bei fertiger Umsetzung: wo muss zuviel gescrollt werden, um etwas zu finden? > Suche oder Filter nutzen
 Benachrichtigungen mit "Beep" und gut sichtbaren Farben zu zeigen kann das erfassen der Informationen für die Nutzer verbessern <notification-beep>. // NFR verlinken?
 
-Um das Getränkelager am Ende vom Rattenfest einfacher zu erfassen, wurde bereits getestet die Getränke mit Kamera und AI zu zählen. Jedoch ist das Ergebnis nicht genügend ausgereift und auch Starbuck hatte diese Technologie nach 9 Monaten wieder abgeschafft. @Rogelberg2026May
+Um das Getränkelager am Ende vom Rattenfest einfacher zu erfassen, wurde bereits getestet die Getränke mit Bilderkennung zu zählen. Jedoch ist das Ergebnis nicht genügend ausgereift und auch Starbucks hatte diese Technologie nach 9 Monaten wieder abgeschafft. @Rogelberg2026May // @andrin vielleicht ergänzen/korrigieren?
 //Synonym abgeschafft?
 
 // Fazit:
@@ -41,9 +41,15 @@ Um das Getränkelager am Ende vom Rattenfest einfacher zu erfassen, wurde bereit
 
 === Webshop für Getränke
 
-https://www.rewe.de/shop/c/getraenke-genussmittel/
-- Angenehme Navigation durch farbige Bilder und Icons
-  - einzelne Getränke und 6er Packs werden jeweils so auf dem Bild abgebildet
+Ein Webshop der Getränke verkauft ermöglicht eine gute Benutzerfreundlichkeit durch farbige und auffallende Bilder. Ausserdem gibt es einen Filter für die Getränke, ebenfalls mit einem Bild. Einzelne Getränke und 6er Packs werden in dieser Anzahl auf dem Bild abgebildet.  @webshop
+
+
+#figure(
+  image("resources/research/Screen Shot 2026-09-25 at 13.46.06.png", width: 40%),
+  kind: image,
+  caption: [Beschreibung],
+)
+
 
 === Display mit Bestellinfos
 Restaurant digitales Bestellsystem

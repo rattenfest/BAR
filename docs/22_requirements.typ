@@ -251,7 +251,7 @@ gleichzeitig verbundenen Personen genutzt wird.
   bezug: "FR-10, FR-15",
   anforderung: [
     [
-    - Benachrichtigungen mit "Beep" und Farben nutzen @notification-beep.
+    - Benachrichtigungen mit "Beep" und Farben nutzen // @notification-beep.
     ]
   ],
   messung: [

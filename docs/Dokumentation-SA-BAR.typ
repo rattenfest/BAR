@@ -55,6 +55,7 @@
 #pagebreak()
 #include "20_hintergrund.typ"
 #include "21_konkurrenzanalyse.typ"
+#include "21_technologierecherche.typ"
 #include "21_risikoanalyse.typ"
 #include "22_requirements.typ"
 
