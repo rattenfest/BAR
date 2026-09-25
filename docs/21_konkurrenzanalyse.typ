@@ -10,30 +10,32 @@
 - der Vorteil gegenüber einem Chat wo man Bestellungen schreibt ist offensichtlich, aber freie Textnachrichten haben auch Vorteile > Bemerkungen-Möglichkeit bei Bestellung einbauen?
 
 
-== Getränke-Erkennungssystem
-=== Event Inventar Software
-https://rapidstock.com/event-inventory-application/
+== Website mit weiteren Technologien ergänzen?
+// TODO: inhalt so ok? Struktur ändern, so dass das RF Fazit zusammen am Schluss steht? Reihenfolge so okay? Einleitung und Schluss ausführlicher?
+Wir haben Lösungen von verschiedenen Softwares stichprobenweise angeschaut, um herauszufinden, ob diese in unserem Fall einen Vorteil bringen würden.
 
-Was diese Software spezielles anbietet, ist eine Waage die das Gewicht per Bluetooth übermittelt. So müsste in unserem Fall nur der Getränketyp angegeben werden und mit dem Gewicht kann die Anzahl berechnet werden. Um den Getränketyp zu ermitteln wird mit Barcodes gearbeitet.
-Diese Event-Software hat auch die Anzahl Gäste eingeplant, um so das Inventar besser zu planen.
+Die "real-time event inventory application" von "rapidstock" bietet eine Waage die das Gewicht einer offenen Flasche per Bluetooth sendet an @rapidstock. In unserem Fall müsste mit dieser Idee nur der Getränketyp angegeben werden und mit dem Gewicht kann die Anzahl berechnet werden.
+// Um den Getränketyp zu ermitteln könnte zusätzlich mit Barcodes gearbeitet werden.
+Diese Event-Software hat ausserdem die Anzahl Gäste eingeplant, um so das Inventar besser zu planen.
 
+// Fazit, kann auch an Schluss verschoben werden?
+Beim Rattenfest ist das zählen der Artikel aktuell kein Problem und viele Gäste kaufen ihr Ticket erst vor Ort. // @andrin haben wir konkrete Zahlen oder % zu Ticketkauf vor Ort und Ticketkauf vorher?
 
-Sum-Up hat den grossen Vorteil, dass es über NFC läuft
+Sum-Up akzeptiert Bezahlungen mit NFC, damit können Bezahlungen in der Nähe von bis zu 10 cm kontaktlos getätig werden. Ausserdem wird die Zahlung mit einem "Beep" und vier LEDs bestätigt. @SumUpNFC
+Das spart "Klicks" auf dem Smartphone und das lesen der Bestätigungsnachricht durch einfache Kommunikation.
 
-Wie einfach wäre die Nutzung von NFC für eine (PWA) Website? > Abholung bestätigen per Scan von Bar und RF Smartphone? Oder QR Code?
-+ Keine Suche der Bestellung/Bar
-+ weniger als ein Klick
-- Edge Cases: mehrere Bestellungen offen > pro Bestellung öffnet Bar QR Code/startet NFC
-- Sicherheit/Korrektheit?
-- QR-Code Kamera muss in App integriert sein damit es einfach ist, mehr Komplexität und Aufwand und mögliche Fehlerquelle
-? Wie gross ist die gesparte Zeit und Mühe?
+Twint hingegen ist bekannt durch die Bezahlung per QR-Code, dadurch können viele Daten die mühsam einzutippen wären, schnell an ein fremdes Gerät übermittelt werden. @twintQR
 
-Wir haben bereits getestet, ob wir per Kamera mit AI die Getränke erfassen können, aber perfekt wäre es nicht. Starbucks hatte so ein Tool und hat dieses bereits nach 9 Monaten wieder abgeschafft. //Synonym abgeschafft?
-https://fortune.com/2026/05/28/starbucks-quietly-retired-ai-inventory-agent-barista-complaints-hallucinations/
+Da wir bereits eine Verbindung aufgebaut haben und so einfach Daten senden können, benötigen wir NFC oder einen QR-Code nicht. Es würde die Website unnötig komplex und mehr fehleranfällig machen. Ob eine Bestellung oder ein Getränk mühsam zu finden ist, können wir mit User Tests herausfinden. Das Problem könnte dann auch mithilfe von einer Suche oder einem Filter minimiert werden. // isch mir gad als Idee cho @andrin?
+// User Test Kriterium bei fertiger Umsetzung: wo muss zuviel gescrollt werden, um etwas zu finden? > Suche oder Filter nutzen
+Benachrichtigungen mit "Beep" und gut sichtbaren Farben zu zeigen kann das erfassen der Informationen für die Nutzer verbessern <notification-beep>. // NFR verlinken?
 
-Fazit:
-- lohnt sich nicht, da es den Bars nichts erleichtert und Touchscreen system nicht so aufwändig ist. zu wenig nutzen für den aufwand
-Würde sich lohnen, wenn die Bars selber Getränke aus dem Kühlwagen holen könnten und beim rausgehen würde es schnell erfasst werden. Dann könnte die Arbeit der RF-Mitarbeiter gespart werden. // TODO: bei Ausblick einbauen
+Um das Getränkelager am Ende vom Rattenfest einfacher zu erfassen, wurde bereits getestet die Getränke mit Kamera und AI zu zählen. Jedoch ist das Ergebnis nicht genügend ausgereift und auch Starbuck hatte diese Technologie nach 9 Monaten wieder abgeschafft. @Rogelberg2026May
+//Synonym abgeschafft?
+
+// Fazit:
+// - lohnt sich nicht, da es den Bars nichts erleichtert und Touchscreen system nicht so aufwändig ist. zu wenig nutzen für den aufwand
+// Würde sich lohnen, wenn die Bars selber Getränke aus dem Kühlwagen holen könnten und beim rausgehen würde es schnell erfasst werden. Dann könnte die Arbeit der RF-Mitarbeiter gespart werden. // TODO: bei Ausblick einbauen??
 
 == Ähnliche Lösungen
 

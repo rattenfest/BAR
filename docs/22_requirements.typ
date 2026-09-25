@@ -250,10 +250,11 @@ gleichzeitig verbundenen Personen genutzt wird.
   "Bedienbarkeit unter Festbedingungen",
   bezug: "FR-10, FR-15",
   anforderung: [
-    [Ausstehende Recherche]
+    [
+    - Benachrichtigungen mit "Beep" und Farben nutzen @notification-beep.
+    ]
   ],
   messung: [
-
   ],
 )
 
