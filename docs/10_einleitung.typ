@@ -39,11 +39,26 @@ Die "Problem Domain" hilft das Problem ohne Missverständnisse durch die Sprache
   caption: [Problem Domain der Getränkebestellung],
 )
 
+// TODO: nochmals nachrechnen und die Einheit genauer definieren, Schätzungen
+Umfang:
+- Eine Getränke-Bestellung kann von ein paar Artikeln bis zu 600 betragen
+- Eine Abholung (3) dauert ca. 200ms für 5 Einheiten (5-120? Artikel)
+- Also bis zu ca. 15 Minuten
+- Gemäss den Daten vom Prototyp, gab es letztes Jahr XX Bestellungen die gleichzeitig offen waren
+- Die Abholung (6) kann bis zu ca. 5 Minuten hin und zurück betragen, da es sehr eng ist an den Hauptzeiten
+
+Höchste Priorität der Bestellung: Die Bars sollten nie von einem Getränk keines verkaufen können.
+Das wird verhindert durch die schnelle Kommunikation.
+// und wenn im Zeitrahmen der SA: Prognose pro Bar, Empfehlung auf Website: "es sind .. minuten vorbei seit der letzten Bestellung, möchtet du diese Artikel wieder bestellen ..."
+
 #figure(
   image("resources/problem-domain/rueckgabe.png", width: 400pt),
   kind: image,
   caption: [Problem Domain der Getränkerückgabe am Ende des Festes],
 )
+
+Bei der Rückgabe ist das Fest vorbei und es darf deshalb auch länger dauern.
+
 
 == Ziel
 Ziel dieser Arbeit ist eine Webapplikation, die den gesamten Lebenszyklus der Getränke abbildet, von der ersten Bedarfsschätzung bis zur Abrechnung nach dem Fest:
