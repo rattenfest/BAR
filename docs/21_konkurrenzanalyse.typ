@@ -30,6 +30,8 @@ Da wir bereits eine Verbindung aufgebaut haben und so einfach Daten senden könn
 // User Test Kriterium bei fertiger Umsetzung: wo muss zuviel gescrollt werden, um etwas zu finden? > Suche oder Filter nutzen
 Benachrichtigungen mit "Beep" und gut sichtbaren Farben zu zeigen kann das erfassen der Informationen für die Nutzer verbessern <notification-beep>. // NFR verlinken?
 
+// mehr Recherche zu Push-Benachrichtigungen? https://ieeexplore.ieee.org/abstract/document/7414815
+
 Um das Getränkelager am Ende vom Rattenfest einfacher zu erfassen, wurde bereits getestet die Getränke mit Bilderkennung zu zählen. Jedoch ist das Ergebnis nicht genügend ausgereift und auch Starbucks hatte diese Technologie nach 9 Monaten wieder abgeschafft. @Rogelberg2026May // @andrin vielleicht ergänzen/korrigieren?
 //Synonym abgeschafft?
 
@@ -51,10 +53,12 @@ Ein Webshop der Getränke verkauft ermöglicht eine gute Benutzerfreundlichkeit 
 )
 
 
-=== Display mit Bestellinfos
-Restaurant digitales Bestellsystem
-z.B. das von McDonalds
 
+// === Display mit Bestellinfos
+// Restaurant digitales Bestellsystem
+// z.B. das von McDonalds
+// > zu langweilig und dort benötigen wir keine Verbesserung
+// https://nento.com/mcdonalds-digital-menu-board/?keyword=mcdonalds_digital_menu_board
 
 
 == Fazit

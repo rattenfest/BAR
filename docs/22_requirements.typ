@@ -390,4 +390,4 @@ Weitere Features, z.B. "3.1 Bestellung" "die Bestellung für später vorbereiten
 - Abwägen wie gross der Aufwand für den Nutzen ist
 
 
-
+// eine Seiter mit Infos für Bars? z.B. eine Karte oder Lager kann "news"/statusmeldungen veröffentlichen von Hand?
