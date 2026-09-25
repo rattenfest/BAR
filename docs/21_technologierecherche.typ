@@ -5,16 +5,16 @@
 // TODO: Kriterien priorisieren, was ist am wichtigsten. @andrin?
 // bessere Begriffe finden, einordnen mit Grafik oder Tabelle?
 
-1. einfache Infrastruktur und Hosting möglich
-  1a? zentrale Möglichkeit zum Testen und Updaten für Nicht-Informatiker möglich // - einfach zu testen und updaten // (auch für Nicht-Informatiker mit KI) > wir bauen ein Dashboard dafür oder ein CLI Script für Vercel oder so > @andrin wo wird das dokumentiert und wieviel Zeit dafür planen?
+1. einfache Infrastruktur // und Hosting möglich
+  \ 1a? zentrale Möglichkeit zum Testen und Updaten für Nicht-Informatiker möglich // - einfach zu testen und updaten // (auch für Nicht-Informatiker mit KI) > wir bauen ein Dashboard dafür oder ein CLI Script für Vercel oder so > @andrin wo wird das dokumentiert und wieviel Zeit dafür planen?
   //    - wie einfach das updaten von major releases ist, wird dann ersichtlich wenn in Nutzung..
-  1b? langlebig/bewährt,
-  1c? Unabhängigkeit vom Framework, erleichtert das Wechseln auf ein anderes Framework (Zusammenhang zu "einfach zu updaten")
+  \ 1b? langlebig/bewährt,
+  \ 1c? Unabhängigkeit vom Framework, erleichtert das Wechseln auf ein anderes Framework (Zusammenhang zu "einfach zu updaten")
 
 2. PWA mit Benachrichtigungen möglich
-4. Geeignet für kleine/mittelgrosse Website
+3. Geeignet für kleine/mittelgrosse Website
 
-5. Einfacher Einstieg, einfach zu lernen
+4. Einfacher Einstieg, einfach zu lernen
 
 // - Einfache Einrichtung // nicht wie .NET > nicht so gut benanntes Kriterium
 // - Unterstützung für Typensystem und ein typsicheres Datenmodell // > kann immer TS einbinden
@@ -37,7 +37,7 @@ Es wurden die 4 momentan grössten Frontend Web Frameworks analysiert und nach d
 #figure(
   image(
     "resources/research/stackoverflow-dev-survey-2025-technology-most-popular-technologies-webframe-webframe-prof-social.png",
-    width: 60%,
+    width: 70%,
   ),
   kind: image,
   caption: [Stack Overflow Umfrage 2025],
@@ -52,7 +52,7 @@ https://2025.stateofjs.com/en-US/libraries/
 #figure(
   image("resources/research/experience-sentinent.png", width: 60%),
   kind: image,
-  caption: [Beschreibung],
+  caption: [Beschreibung], // vielleicht dieses Bild nciht, verwirrend?
 )
 #figure(
   image("resources/research/changes-over-time.png", width: 60%),
@@ -62,11 +62,15 @@ https://2025.stateofjs.com/en-US/libraries/
 
 === Informationen
 
-== React
+== React / Next.js mit Typescript
 
-1. Aufwändigere erste Einrichtung, Testing und Builder muss manuell eingerichtet werden. Zur Hilfe gibt es Vorlagen und Standards.
-- PWA möglich mit create-react-app (deprecated), Next.JS (übertriebenn)  https://www.overcode.tech/blog/react-pwa oder mit Vite + PWA von Vite (Schwierigkeit?)
-5. Da wir bereits React kennen ist für uns der Einstieg einfach.
+1. Aufwändigere erste Einrichtung, Testing und Builder muss manuell eingerichtet werden.
+Wir können eine Vorlage wie den T3Stack verwenden, durch die vielen Abhängigkeiten steigt aber die Komplexität und Aufwand beim Updaten. Ausserdem wird dann Next.JS verwendet, obwohl wir kein Server-Side Rendering benötigen. @t3stack
+2. PWA ist möglich mit create-react-app (deprecated), Next.JS (übertriebenn)  https://www.overcode.tech/blog/react-pwa oder mit Vite + PWA von Vite (dokumentiert)  https://vite-pwa-org.netlify.app/guide/ // TODO
+3. React eignet sich gut für diese Projektgrösse. @BibEntry2026JanFramework
+4. Da wir bereits React kennen ist für uns der Einstieg einfach. Für React muss man JSX verstehen. // Wird an der OST in den Web Engineering Modulen unterrichtet.
+
+
 
 === Updates
 
@@ -83,32 +87,35 @@ React wurde 2013 veröffentlicht. @reactHistory. Es gibt keine Information in de
 
 
 == Angular
-Vorteile
-- Ahnlich zu React, was wir können, aber Einarbeitung ist nötig
-- PWA integriert und gut dokumentiert von Angular @angularPWA
-- Der LTS (Long-Term Support) beträgt 12 Monate, dass bedeutet Angular veröffentlicht jedes Jahr einen neuen Major Release. @angularVersion
 
-- unpassende Projektgrösse? zuviel für unsere "kleine" Website?
+1. Einfache und schnelle Einrichtung ohne die Datenbankanbindung. @angularInstallation // habe ich getestet mit nodejs bereits aktiv, in 2 Minuten ist das Projekt bereit. Supabase: https://www.rapidevelopers.com/supabase-tutorial/how-to-use-supabase-with-angular und Supabase Lokal: https://supabase.com/docs/guides/local-development
+  - Der LTS (Long-Term Support) beträgt 12 Monate, dass bedeutet Angular veröffentlicht jedes Jahr einen neuen Major Release. @angularVersion
+2. PWA integriert und gut dokumentiert von Angular @angularPWA
+3. Angular gemacht für grosse Unternehmens-Systeme. @BibEntry2026JanFramework
 
-- Einfache Einrichtung, da alles bereits vorgegeben
+4. Angular hat eine hohe Lernkurve durch die starke und Meinungsstarke (opinionated) Architektur. @studyFrontendFrameworks Das Vorwissen von React und Typescript macht den Einstieg leichter.
 
--
-
-== VueJS
+== Vue / Vue.js
 @vuejs
 
-Inspiriert von Angular
-- besser für kleine Projekte
-- PWA möglich https://cli.vuejs.org/core-plugins/pwa.html#configuration https://www.vuemastery.com/blog/getting-started-with-pwas-and-vue3/#starting-a-pwa-from-scratch
-- Einfach zu lernen, da alles im Framework integriert ist und der Syntax einfacher ist als React. @Sourabh2025Aug
+1. Einfache Einrichtung und die Tools (JSX Support, Vitest, Router..) können direkt ausgewählt werden. // https://vuejs.org/guide/quick-start.html
+2. PWA möglich https://cli.vuejs.org/core-plugins/pwa.html#configuration https://www.vuemastery.com/blog/getting-started-with-pwas-and-vue3/#starting-a-pwa-from-scratch
+3. Gemacht für kleine Projekte aber lässt sich auch gut skalieren.
 
-// == Blazor von .NET
+4. Einfach zu lernen, da alles im Framework integriert ist und der Syntax einfacher ist als React. @browserstack
 
-// // Ist mehr ausgerichtet auf grosse Webseiten und benötigt ein .NET Setup. > vielleicht auch nicht?=
-// Ein grosser Vorteil ist, dass eine Blazor Webapp auch als Mobile App laufen kann. Blazor lässt C\# Code im Browser in einer WebAssembly .NET Laufzeitumgebung (Runtime) laufen @guardrex2026Aug. Dazu muss es zuerst die WebAssembly Laufzeitumgebung herunterladen, was die Ladezeit im Vergleich zu JS-basierten Webapps verlangsamt @reactVsBlazor.
-// // TODO?? Runtime erklären?
-// //
-// //
+== ASP.NET
+// Ein Vorteil ist, dass eine Blazor Webapp auch als Mobile App laufen kann.
+Blazor lässt C\# Code im Browser in einer WebAssembly .NET Laufzeitumgebung (Runtime) laufen @guardrex2026Aug.
+Jedoch muss es zuerst die WebAssembly Laufzeitumgebung herunterladen, was die Ladezeit im Vergleich zu JS-basierten Webapps verlangsamt @reactVsBlazor.
+// TODO?? Runtime erklären? Beschreibung entfernen?
+
+1. Das Setup ist sehr ausführlich erklärt, es wird keine Shell benötigt wie in den anderen Frameworks. @blazorSetup
+// Ist mehr ausgerichtet auf grosse Webseiten und benötigt ein .NET Setup. > vielleicht auch nicht?=
+2. Die PWA Einrichtung ist ausführlich dokumentiert. Für die Push-Benachrichtigungen wird ein Backend Server benötigt. @blazorPWA
+3. Geeignet für grosse Websites und Unternehmen die bereits .NET nutzen.
+4. Es wird in C\# programmiert und es werden Komponente genutzt ähnlich zu React. @blazorSetup Für das HTML wird im Gegensatz zu React, welches JSX nutzt,Razor verwendet @danroth272020Mar. So muss ein zusätzlicher Syntax gelernt werden.
+
 
 
 
