@@ -61,7 +61,7 @@ jobs:
         uses: typst-community/setup-typst@v5
 
       - name: Build PDF
-        run: typst compile --root . --input version="${{ needs.determine-version.outputs.doc_version }}" docs/main.typ docs/Dokumentation.pdf
+        run: typst compile --root . --input version="${{ needs.determine-version.outputs.doc_version }}" docs/Dokumentation-SA-BAR.typ docs/Dokumentation.pdf
 
       - name: Upload PDF as Artifact
         uses: actions/upload-artifact@v6
@@ -77,8 +77,7 @@ jobs:
           files: docs/Dokumentation.pdf
 
   build-diff-document:
-    needs:
-      [build-document, lint-typst-files, determine-version]
+    needs: [build-document, lint-typst-files, determine-version]
     if: |
       always() &&
       (github.event_name == 'workflow_dispatch' || 

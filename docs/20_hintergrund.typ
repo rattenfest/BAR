@@ -1,17 +1,9 @@
 = Analyse
-> Unterschied zur Einleitung?? ist das der Kontext?
-- Vielleicht einfach Analyse nennen?
-== Marktanalyse
-// Analyse der bestehenden Lösungen, welche bereits auf dem Markt sind. Gibt es bereits Loesungen?
-=== Sum-Up
-== Recherche User Experience während Rattenfest
-// literaturrecherche (zu ux + interatkion im umfeld bei betrunkenen,dunkel und eng: Randbedingungen in dieser Umgebung > danach ein Konzept dazu)
 
-=== Definition
+// @andrin braucht es diese Kapitel?
+// === Definition
+// === Erkenntnisse
+// = Vorarbeiten
 
-=== Erkenntnisse
 
-=== wichtige Probleme
-// "Pitfalls"
-
-= Vorarbeiten
+// weitere Dokumente zum Thema "hintergrund" siehe Nummerierung 2x_....typ und in "Dokumentation-SA-BAR.typ" importiert

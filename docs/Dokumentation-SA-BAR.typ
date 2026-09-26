@@ -1,6 +1,4 @@
 
-#set text(font: "Arial", size: 11pt)
-
 
 #set heading(numbering: "1.1")
 #show heading.where(level: 1): set text(size: 24pt)
@@ -51,9 +49,15 @@
 #include "00_title_page.typ"
 #pagebreak()
 #include "01_summary.typ"
+
 #include "10_einleitung.typ"
 
+#pagebreak()
 #include "20_hintergrund.typ"
+#include "21_konkurrenzanalyse.typ"
+#include "21_technologierecherche.typ"
+#include "21_risikoanalyse.typ"
+#include "22_requirements.typ"
 
 #include "30_methode.typ"
 
@@ -83,15 +87,17 @@ Die konkreten Tools werden im Verlauf des Projekts ergänzt.
       table.cell(text(weight: "bold")[Aufgabenbereich]),
       table.cell(text(weight: "bold")[Tools]),
     ),
-    [Literatur-Recherche und Verwaltung], [Google],
+    [Literatur-Recherche und Verwaltung], [Google, DuckDuckGo, scholar.google.com],
     [Datenanalyse und Visualisierung], [],
-    [Ideengenerierung], [Claude, Gemini],
+    [Ideengenerierung], [Claude, Gemini, Typst],
     [Übersetzung], [],
     [Prototyping], [Figma],
     [Coding], [Claude Code],
-    [Texterstellung, Textoptimierung, Rechtschreibe- und Grammatikprüfung], [Claude],
-    [Zusammenarbeit und Projektmanagement], [Teams, GitHub, Outlook, Google Meet],
+    [Texterstellung, Textoptimierung, Rechtschreibe- und Grammatikprüfung], [Claude, Hunspell],
+    // siehe README.md für die Anleitung
+    [Zusammenarbeit und Projektmanagement], [Teams, GitHub, Outlook, Google Meet, Typst, WhatsApp],
     [DevOps], [GitHub],
+    [Notizen], [Obsidian, Papier],
   ),
   kind: table,
   caption: [Hilfsmittelverzeichnis],
