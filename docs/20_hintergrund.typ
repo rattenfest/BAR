@@ -34,21 +34,9 @@ Für die Benutzeroberfläche wurde die Komponentenbibliothek #link("https://ui.s
     columns: (1fr, 1fr, 1fr),
     align: center,
     gutter: 8pt,
-    [
-      #image("/assets/image-1.png", width: 100%)
-      #v(4pt)
-      Bestellung durch eine Bar
-    ],
-    [
-      #image("/assets/image.png", width: 100%)
-      #v(4pt)
-      Übersicht im Lager
-    ],
-    [
-      #image("/assets/image-3.png", width: 100%)
-      #v(4pt)
-      Ansicht der Bar
-    ],
+    [#figure(image("/assets/prototype/order.png", width: 100%), caption: [Bestellung durch eine Bar])],
+    [#figure(image("/assets/prototype/dashboard.png", width: 100%), caption: [Übersicht im Lager])],
+    [#figure(image("/assets/prototype/bar-view.png", width: 100%), caption: [Ansicht der Bar])],
   ),
   caption: [Ansichten des Prototyps],
 )

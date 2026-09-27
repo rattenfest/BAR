@@ -240,4 +240,4 @@ jobs:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -o pipefail # Make result fail if something fails
-          python .github/workflows/scripts/check_figures.py | reviewdog -name="Typst-Linter" -reporter=github-pr-review -filter-mode=nofilter -efm="%f:%l:%c: %m" -level=error -fail-on-error=true
+          python .github/workflows/scripts/check_figures.py | reviewdog -name="Typst-Linter" -reporter=github-pr-review -filter-mode=nofilter -efm="%f:%l:%c: %m" -level=error -fail-level=any
