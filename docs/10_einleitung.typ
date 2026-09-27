@@ -1,4 +1,4 @@
-= Problemstellung
+= Einleitung
 // Analyse was es schon gibt. Analyse was nötig ist, was für Einschränkungen im UX. Bereits überlegt: responsive, hoch und querformat
 // Was wollen wir machen, wieso? Sozusagen die Requirements FR/NFR. Mit Zielgruppe und was speziell ist
 // (Problemstellung, Forschungsfrage, Aufbau)
@@ -8,9 +8,21 @@
 
 Das Rattenfest ist ein jährlich stattfindendes Festival, das von Studierenden der OST organisiert wird und rund 3'000 Personen besucht. Die Getränke werden an mehreren Bars ausgeschenkt, die unabhängig vom Rattenfest betrieben werden. Damit nicht jede Bar ihre Versorgung selbst organisieren muss, betreibt das Rattenfest ein zentrales Getränkelager, aus dem die Bars während des Fests laufend beziehen.
 
+// TODO: Abrechnungsmodell der Bars beschreiben (Einnahmen fliessen ans Rattenfest, Getränkebezug wird abgezogen, Differenz ausbezahlt)
+
 Dieser Prozess wurde in den letzten Jahren versucht zunehmend zu digitalisieren, die bisherigen Lösungen blieben jedoch unzureichend.
 
-=== Systemkontext und Domäne
+=== Bisherige Lösung mit SumUp
+Bis zum Rattenfest 2026 wurde die Getränkeausgabe mit dem Kassensystem von SumUp erfasst. Dazu war auf der SumUp-Kasse pro Bar ein Tisch eingerichtet. Bar-Mitarbeitende kamen zum Lager und gaben ihre Bestellung mündlich auf, das Lagerteam erfasste sie in der Kasse und holte die Getränke aus dem Kühlwagen. Nach dem Fest wurden die Daten pro Tisch exportiert und für die Abrechnung verwendet.
+
+Das System erfüllte seinen Zweck nur teilweise, da es für den Verkauf und nicht für die Lagerverwaltung gedacht ist:
+
+- *Wege und Wartezeiten:* Bar-Mitarbeitende mussten für jede Bestellung zum Lager gehen und dort warten, bis sie bereitstand. In dieser Zeit fehlten sie hinter der Bar.
+- *Mehraufwand im Lager:* Das Lagerteam musste neben dem Bereitstellen jede Bestellung zusätzlich erfassen.
+- *Kein Lagerbestand:* Der aktuelle Bestand war im System nicht ersichtlich.
+- *Gebinde und Rückgaben:* Ausserdem kam es zu Unklarheiten bei Gebindegrössen, Rückgaben liessen sich nur umständlich erfassen. Fehler konnten nicht korrigiert werden und mussten in der Abrechnung berücksichtigt werden.
+
+== Systemkontext und Domäne
 // Dieser Teil des Berichts beschreibt und analysiert die externen Schnittstellen des zu erstellenden oder zu
 // erweiternden Softwaresystems (Entwicklungszeit und/oder Laufzeit) sowie die bestehende oder zu
 // verwendende Infrastruktur wie z.B. Cloud-Provider. Er skizziert die fachliche Domäne, insbesondere ihre
@@ -25,7 +37,7 @@ Dateien sind unter Microsoft Teams abgelegt, es gibt keinen Dateiserver.
 Es gibt bereits einen Prototyp für das Barsystem und als Hilfe für den OK im Vorverkauf wurde bereits eine kleine Website getestet.
 So sind die Schnittstellen vom Rattenfest sehr flexibel und die verschiedenen Services können unabhängig voneinander gewechselt werden.
 
-== Problem Domain
+=== Problem Domain
 
 // brauchen wir hier noch problem domain fuer die vorbestellungen?
 
@@ -61,7 +73,7 @@ Das wird durch schnelle Kommunikation und Live-Updates sichergestellt.
 Bei der Rückgabe ist das Fest vorbei und es darf deshalb auch länger dauern.
 
 
-== Ziel
+== Ziel der Arbeit
 Ziel dieser Arbeit ist eine Webapplikation, die den gesamten Lebenszyklus der Getränke abbildet, von der ersten Bedarfsschätzung bis zur Abrechnung nach dem Fest:
 
 - *Vor dem Fest* erfassen die Bars ihre Bedarfsschätzung in der Applikation. Das OK prüft und korrigiert diese und leitet daraus die Bestellung beim Getränkehändler ab. Die gelieferte Ware bildet den Anfangsbestand des Lagers.
@@ -74,5 +86,8 @@ Neben der Funktionalität soll die Lösung auf das Rattenfest zugeschnitten und 
 - *Zuverlässigkeit* während des Fests. Sobald die Bars auf den manuellen Weg ausweichen müssen, verliert die Applikation ihren Zweck.
 - *Verwendbarkeit und Wartbarkeit* durch ein jährlich wechselndes OK mit unterschiedlichen technischen Kenntnissen.
 
+== Rahmenbedingungen
+Die Arbeit wird als Studienarbeit (SA) im Umfang von 8 ECTS durchgeführt, was einem Aufwand von rund 240 Stunden entspricht.
+// TODO: pro Person? Team, Betreuung, Zeitraum ergänzen
 
 // weitere Dokumente zum Thema "einleitung" siehe Nummerierung 1x_....typ und in "Dokumentation-SA-BAR.typ" importiert

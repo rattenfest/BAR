@@ -1,10 +1,6 @@
+= Projektmanagement
 
-
-#set page(flipped: true)
-
-= Projektinformationen
-
-== Projektplan
+== Vorgehen und Projektplan
 
 Der Aufwand beträgt 2 Arbeitstage pro Woche für ca. 17h/W , insgesamt 240 Stunden Aufwand.
 
@@ -33,6 +29,7 @@ Die Dokumentation beinhaltet alle nötigen Informationen gemäss dem Leitfaden u
 \
 \
 
+#set page(flipped: true)
 === Zeitplan
 
 #import "@preview/gantty:0.5.1": gantt
@@ -44,4 +41,9 @@ Die Dokumentation beinhaltet alle nötigen Informationen gemäss dem Leitfaden u
 )
 
 #set page(flipped: false)
-// #pagebreak()
+
+#include "91_risikoanalyse.typ"
+
+== Qualitätssicherung
+// z.B. Tests, Code Reviews, Definition of Done (siehe Notizen)
+

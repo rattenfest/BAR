@@ -1,13 +1,9 @@
 
-== Recherche User Experience während Rattenfest
-
-===User Befragung Zusammenfassung
-
-=== Literaturrecherche
+== Nutzungskontext am Fest <analyse-ux>
 // literaturrecherche (zu ux + interatkion im umfeld bei betrunkenen,dunkel und eng: Randbedingungen in dieser Umgebung > danach ein Konzept dazu)
 
 
-==== Restaurant und Bars Umgebung
+=== Restaurant und Bars Umgebung
 
 Die Umgebung am Rattenfest ist ähnlich zu der in einer Küche von einem Restaurant oder einer vollen Bar.
 
@@ -25,7 +21,7 @@ Gemäss ^ sind die wichtigsten Stressfaktoren "Content Overload, Service Instabi
 Wir suchen ein gutes Mass zwischen "Content Overload", zuviele Informationen die den Nutzer überfordern und zu wenige Informationen. Ein Bar-Mitarbeiter soll, nach einer kurzen Ablenkung, dort weitermachen können wo er aufgehört hat.
 Die weiteren Punkte .. können durch User Experience Tests des fertigen Produktes gelöst werden. NFR... Usability
 
-==== Beeinträchtigungen
+=== Beeinträchtigungen
 
 Ein schlechtes Beispiel: der Bar Mitarbeiter erhält den Auftrag, das Getränk XY nachzubestellen, dann öffnet dieser den Link zur Website und sucht den Button "neue Bestellung" und klickt darauf. Sofort kommt jemand und sagt ob er schnell ein Becher von XY abfüllen kann. Danach soll er fortsetzen aber jetzt sieht er eine Liste von ganz vielen Getränkeartikeln und weiss nicht mehr, wie er dahin gekomment ist und was er machen wollte. Er muss nochmals den Link öffnen und kann dieses Mal die Bestellung erstellen. Er klickt aber auf das falsche Getränk und da es schnell gehen muss hat er die Bestellung bereits abgeschickt.
 
@@ -53,7 +49,7 @@ Beim entwickeln kann die Quick Reference @wcagreference genutzt werden.
 
 User Tests machen in ähnlicher Umgebung (z.B. bei der nächsten Bar)
 
-==== Dark Mode
+=== Dark Mode
 Bei schwachem Licht macht Dark-Mode im Gegensatz zum Light-Mode das Auge eher müde @pathari2024dark. Es wird aber auch erwähnt, dass andere Studien zu einem anderen Ergebnis geführt haben, was an der Bildschirmgrösse liegen könnte @laine2025impact.
 
 // ==== Interaktion
@@ -61,5 +57,11 @@ Bei schwachem Licht macht Dark-Mode im Gegensatz zum Light-Mode das Auge eher m�
 // Gestensteuerung (swipe)?
 // qr-code siehe Konkurrenzanalyse
 
-=== Zusammenfassung
+== Befragung der Nutzenden
+// Zusammenfassung der Umfrage
+
+== Erkenntnisse
+// Beschlüsse aus Recherche und Befragung → FR/NFR (Meilenstein M1)
+// Es wurden Möglichkeiten gefunden, die Getränke schneller zu erfassen
+// wichtige Probleme, "Pitfalls"
 

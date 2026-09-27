@@ -53,17 +53,22 @@
 #include "10_einleitung.typ"
 
 #pagebreak()
-#include "20_hintergrund.typ"
-#include "21_konkurrenzanalyse.typ"
-#include "21_technologierecherche.typ"
-#include "21_risikoanalyse.typ"
+#include "11_vorarbeiten.typ"
+
+#pagebreak()
+#include "20_analyse.typ"
 #include "21_ux_analyse.typ"
+
+#pagebreak()
 #include "22_requirements.typ"
 
+#pagebreak()
 #include "30_methode.typ"
 
+#pagebreak()
 #include "40_ergebnisse.typ"
 
+#pagebreak()
 #include "60_fazit.typ"
 
 
@@ -72,6 +77,11 @@
 
 
 #include "90_project_information.typ"
+
+#pagebreak()
+#include "95_glossar.typ"
+
+#pagebreak()
 
 = Hilfsmittelverzeichnis
 

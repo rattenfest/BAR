@@ -1,25 +1,9 @@
-= Analyse
-
-== Marktanalyse
-// Analyse der bestehenden Lösungen, welche bereits auf dem Markt sind. Gibt es bereits Loesungen?
-=== Sum-Up
-== Recherche User Experience während Rattenfest <analyse-ux>
-// literaturrecherche (zu ux + interatkion im umfeld bei betrunkenen,dunkel und eng: Randbedingungen in dieser Umgebung > danach ein Konzept dazu)
-
-// @andrin braucht es diese Kapitel?
-// === Definition
-// === Erkenntnisse
-// = Vorarbeiten
-
-
-=== wichtige Probleme
-// "Pitfalls"
-
-#pagebreak()
 = Vorarbeiten <vorarbeiten>
 In den vergangenen Jahren wurde versucht, das Getränkemanagement am Rattenfest zunehmend zu digitalisieren. Für das Rattenfest 2026 wurde, unabhängig von dieser Arbeit und vor deren Beginn, erstmals ein Prototyp für die Getränkebestellungen während des Fests entwickelt und eingesetzt. Dieser Prototyp wird im Folgenden beschrieben und von den Ergebnissen dieser Arbeit abgegrenzt.
 
-== Funktionsumfang des Prototyps
+== Prototyp 2026
+
+=== Funktionsumfang
 Der Prototyp deckt ausschliesslich den Bestellprozess während des Fests ab:
 
 - Die Bars bestellen über eine Webseite Getränke aus dem Lager.
@@ -35,14 +19,13 @@ Für die Benutzeroberfläche wurde die Komponentenbibliothek #link("https://ui.s
   table(
     columns: (1fr, 1fr, 1fr),
     align: center,
-    gutter: 8pt,
+    stroke: none,
     [#figure(image("/assets/prototype/order.png", width: 100%), caption: [Bestellung durch eine Bar])],
     [#figure(image("/assets/prototype/dashboard.png", width: 100%), caption: [Übersicht im Lager])],
     [#figure(image("/assets/prototype/bar-view.png", width: 100%), caption: [Ansicht der Bar])],
   ),
-  caption: [Ansichten des Prototyps],
 )
-== Erfahrungen aus dem Einsatz
+=== Erfahrungen aus dem Einsatz
 Der Prototyp war während des gesamten Fests ohne nennenswerte Ausfälle im Einsatz. Die Rückmeldungen von Bar- und Lagerteam fielen überwiegend positiv aus. Der Einsatz unter realen Bedingungen lieferte zudem konkrete Hinweise auf fehlende Funktionen, die ohne Prototyp kaum erkannt worden wären, beispielsweise:
 
 - die Berücksichtigung von Pausen und Schichtwechseln,
@@ -51,7 +34,7 @@ Der Prototyp war während des gesamten Fests ohne nennenswerte Ausfälle im Eins
 
 Diese Erkenntnisse fliessen als Anforderungen in diese Arbeit ein.
 
-== Grenzen des Prototyps
+=== Grenzen
 Trotz des erfolgreichen Einsatzes genügt der Prototyp den Zielen dieser Arbeit nicht:
 
 - *Architektur und Qualität*: Der Prototyp wurde aufgrund mangelnder Planung als Einweglösung entwickelt. Es besteht keine Testabdeckung und keine saubere Architektur, was eine Weiterentwicklung und Wartung durch ein wechselndes OK erschwert.

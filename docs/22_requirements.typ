@@ -1,23 +1,13 @@
+= Anforderungen
 
-
-=== Akteure
+== Akteure
 - *Bar-Team*: Gibt eine Vorbestellung ab und bestellt während dem Fest Getränke für seine Bar und holt sie ab.
 - *Lagerteam*: nimmt während dem Fest Bestellungen entgegen, stellt sie bereit und übergibt sie.
 - *Getränkechef (RF-OK)*: verwaltet Festausgabe, Benutzer, Sortiment, Bars und Abrechnung.
 
-==== Glossar // Problem Domain
-Die Festausgabe bezeichnet die Speicherung der Daten von je einer Rattenfest-Durchführung.
-// vielleicht zu technisch: Getränke Daten und Anzahl separat? Da Preis und Getränkeauswahl sich ändern kann pro Festausgabe
-\
-- Das Sortiment bezeichnet das ursprüngliche Lagersortiment, gemäss der Vorbestellung vom Rattenfest. Es beinhaltet die Getränke mit Anzahl.
-- Die Artikel beinhalten Informationen: Name, Typ der Verkaufseinheit (manche Getränke können nur in 6er Päcken bestellt werden) und Preis.
-- RF-OK = Rattenfest Organisationskomitee
-- Schrumpfpackungen = Packungen, die mehrere Getränke beinhalten aber nur Einheit verkauft werden.
-- Getränk und Artikel wird als Synonym verwendet, In der Applikation wird der Begriff Artikel verwendet, da er die Eigenschaften besser beschreibt.
+== User Stories und Functional Requirements
 
-=== User Stories und Functional Requirements
-
-==== Vorbereitung
+=== Vorbereitung
 // @andrin, Ist deine Formulierung besser geeignet für wissenschaftliche Arbeiten? ich fand es bisschen schwer zu lesen, aber ich kann auch so schreiben, wenn das besser ist.
 *US-01:* Als RF-OK möchte ich eine neue Festausgabe anlegen, damit die Daten
 jedes Jahrgangs getrennt aber vergleichbar sind.
@@ -52,7 +42,7 @@ ich daraus die Bestellung beim Getränkehändler ableiten kann.
 *US-06:* Als RF-OK möchte ich die gelieferte Ware einlagern, damit der
 Lagerbestand von Beginn an stimmt.
 - *FR-09*: Das System muss den Anfangsbestand aus der Bestellung beim Händler übernehmen.
-==== Bestellung während des Fests
+=== Bestellung während des Fests
 
 *US-07:* Als Bar-Team möchte ich online Getränke bestellen.
 - *FR-10*: Das System muss erlauben, eine Bestellung über mehrere Artikel mit
@@ -72,7 +62,7 @@ Lagerbestand von Beginn an stimmt.
   erlauben, einen früheren Eintrag als Vorlage zu übernehmen und vor dem
   Absenden anzupassen.
 
-==== Bearbeitung und Abholung
+=== Bearbeitung und Abholung
 
 *US-10:* Als Lagerteam möchte ich eingehende Bestellungen umgehend sehen, damit ich ohne Verzögerung mit dem Bereitstellen beginnen kann.
 - *FR-16*: Das System muss Bestellungen und deren Statusänderungen bei Bar
@@ -101,7 +91,7 @@ dass Bestellungen vorübergehend nicht bearbeitet werden.
 // siehe Status bei Problem Domain der Getränkerückgabe.
 // Erweiterung: Status zeigen wie besetzt das Lager ist: z.B. einfach die Anzahl offener und bereiten Bestellungen und Rückgaben anzeigen an alle.
 
-==== Rücknahme und Abrechnung
+=== Rücknahme und Abrechnung
 
 *US-15:* Als Bar-Team möchte ich nicht verkaufte Ware zurückgeben, damit sie mir
 nicht verrechnet wird.
@@ -120,7 +110,7 @@ damit die Schätzung im Folgejahr besser wird.
 - *FR-28*: Das System muss die Daten vergangener Feste erhalten und pro
   Artikel vergleichbar darstellen.
 
-==== Klassifikation der Functional Requirements
+== Priorisierung
 
 Die Functional Requirements sind nach der MoSCoW-Methode in drei Kategorien
 eingeteilt.
@@ -192,7 +182,7 @@ eingeteilt.
 #pagebreak()
 
 
-=== Non-Functional Requirements
+== Non-Functional Requirements
 
 Die folgenden Anforderungen gelten für das System als Ganzes. Zu jeder ist
 angegeben, auf welche Functional Requirements sie sich bezieht und woran ihre
@@ -312,7 +302,6 @@ gleichzeitig verbundenen Personen genutzt wird.
   ],
 )
 
-#pagebreak()
 
 
 

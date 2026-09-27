@@ -1,9 +1,5 @@
-
-
-=== Risiken und Unsicherheiten
-// @andrin Ich denke dieses Kapitel macht Sinn vor den Requirements, da die Risiken die NFRs beeinflussen. Ansonsten kann es auch nach den Requirements stehen.
-// === wichtige Probleme
-// "Pitfalls"
+== Risikoanalyse
+// Risiken und Unsicherheiten
 
 === Technische, allgemeine Risikos
 Sicherheit

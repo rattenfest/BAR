@@ -1,5 +1,5 @@
 
-== Technologie Entscheidung
+== Technologieentscheid
 
 === Kriterien des Frameworks
 // TODO: Kriterien priorisieren, was ist am wichtigsten. @andrin?
@@ -62,7 +62,7 @@ https://2025.stateofjs.com/en-US/libraries/
 
 === Informationen
 
-== React / Next.js mit Typescript
+=== React / Next.js mit Typescript
 
 1. Aufwändigere erste Einrichtung, Testing und Builder muss manuell eingerichtet werden.
 Wir können eine Vorlage wie den T3Stack verwenden, durch die vielen Abhängigkeiten steigt aber die Komplexität und Aufwand beim Updaten. Ausserdem wird dann Next.JS verwendet. @t3stack
@@ -74,7 +74,7 @@ Wir können eine Vorlage wie den T3Stack verwenden, durch die vielen Abhängigke
 
 
 
-=== Updates
+==== Updates
 
 Info: Major Release enthält neue Features und möglicherweise das entfernen von veralteten Funktionen. Es ist möglicherweise nötig, den Code upzudaten, neue Tests zu schreiben und neue APIs zu lernen.
 Bugfixes und Sicherheitsupdates sind auch im LTS (Long-Term Support) nötig, aber der Code muss nicht verändert werden.
@@ -88,7 +88,7 @@ React wurde 2013 veröffentlicht. @reactHistory. Es gibt keine Information in de
 // v15 ab apr. 2016
 
 
-== Angular
+=== Angular
 
 1. Einfache und schnelle Einrichtung ohne die Datenbankanbindung. @angularInstallation // habe ich getestet mit nodejs bereits aktiv, in 2 Minuten ist das Projekt bereit. Supabase: https://www.rapidevelopers.com/supabase-tutorial/how-to-use-supabase-with-angular und Supabase Lokal: https://supabase.com/docs/guides/local-development
   - Der LTS (Long-Term Support) beträgt 12 Monate, dass bedeutet Angular veröffentlicht jedes Jahr einen neuen Major Release. @angularVersion
@@ -97,7 +97,7 @@ React wurde 2013 veröffentlicht. @reactHistory. Es gibt keine Information in de
 
 4. Angular hat eine hohe Lernkurve durch die starke und Meinungsstarke (opinionated) Architektur. @studyFrontendFrameworks Das Vorwissen von React und Typescript macht den Einstieg leichter.
 
-== Vue / Vue.js
+=== Vue / Vue.js
 @vuejs
 
 1. Einfache Einrichtung und die Tools (JSX Support, Vitest, Router..) können direkt ausgewählt werden. // https://vuejs.org/guide/quick-start.html
@@ -106,7 +106,7 @@ React wurde 2013 veröffentlicht. @reactHistory. Es gibt keine Information in de
 
 4. Einfach zu lernen, da alles im Framework integriert ist und der Syntax einfacher ist als React. @browserstack
 
-== ASP.NET
+=== ASP.NET
 // Ein Vorteil ist, dass eine Blazor Webapp auch als Mobile App laufen kann.
 Blazor lässt C\# Code im Browser in einer WebAssembly .NET Laufzeitumgebung (Runtime) laufen @guardrex2026Aug.
 Jedoch muss es zuerst die WebAssembly Laufzeitumgebung herunterladen, was die Ladezeit im Vergleich zu JS-basierten Webapps verlangsamt @reactVsBlazor.
@@ -121,7 +121,7 @@ Jedoch muss es zuerst die WebAssembly Laufzeitumgebung herunterladen, was die La
 
 
 
-== Fazit
+=== Fazit
 // zuerst die anderen Punkte notieren
 // Blazor ist zuviel?
 // Angular für grössere Teams und Projekte gedacht aber PWA integriert, gute Dokumentation

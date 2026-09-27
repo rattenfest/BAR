@@ -1,4 +1,4 @@
-= Fazit und Ausblick
+= Schlussfolgerungen und Ausblick
 // //Ergebnisdiskussion: In der Schlussfolgerung werden die Ergebnisse reflektiert und von Ihnen bewertet.
 // Somit wird die Zielerreichung gemessen (Abgleich mit «Aufgabenstellung» und «Ziel der Arbeit») und ein
 // Vergleich mit anderen/vorherigen Lösungen hergestellt. Die Schlussfolgerungen bilden einen wichtigen
@@ -20,5 +20,6 @@
 //
 // Fazit zum Ergebnis und wie es weitergeführt wird/werden kann, ohne persönliches Fazit zum Projekt (gehört zum Anhang)
 
-== Retrospektive
-== Zukünftige Weiterentwicklung <ausblick>
+== Diskussion
+
+== Ausblick <ausblick>
