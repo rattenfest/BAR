@@ -6,9 +6,11 @@
 == Recherche User Experience während Rattenfest <analyse-ux>
 // literaturrecherche (zu ux + interatkion im umfeld bei betrunkenen,dunkel und eng: Randbedingungen in dieser Umgebung > danach ein Konzept dazu)
 
-=== Definition
+// @andrin braucht es diese Kapitel?
+// === Definition
+// === Erkenntnisse
+// = Vorarbeiten
 
-=== Erkenntnisse
 
 === wichtige Probleme
 // "Pitfalls"

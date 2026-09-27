@@ -5,6 +5,7 @@
 !Dokumentation.pdf
 !Dokumentation_Changes.pdf
 *.txt
+!spellcheck-ignore.txt
 
 # dependencies
 /node_modules
