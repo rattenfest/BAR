@@ -14,7 +14,7 @@
 // "Pitfalls"
 
 #pagebreak()
-= Vorarbeiten
+= Vorarbeiten <vorarbeiten>
 In den vergangenen Jahren wurde versucht, das Getränkemanagement am Rattenfest zunehmend zu digitalisieren. Für das Rattenfest 2026 wurde, unabhängig von dieser Arbeit und vor deren Beginn, erstmals ein Prototyp für die Getränkebestellungen während des Fests entwickelt und eingesetzt. Dieser Prototyp wird im Folgenden beschrieben und von den Ergebnissen dieser Arbeit abgegrenzt.
 
 == Funktionsumfang des Prototyps
@@ -43,7 +43,6 @@ Für die Benutzeroberfläche wurde die Komponentenbibliothek #link("https://ui.s
 == Erfahrungen aus dem Einsatz
 Der Prototyp war während des gesamten Fests ohne nennenswerte Ausfälle im Einsatz. Die Rückmeldungen von Bar- und Lagerteam fielen überwiegend positiv aus. Der Einsatz unter realen Bedingungen lieferte zudem konkrete Hinweise auf fehlende Funktionen, die ohne Prototyp kaum erkannt worden wären, beispielsweise:
 
-- eine abhakbare Liste für das Lagerteam,
 - die Berücksichtigung von Pausen und Schichtwechseln,
 - Angabe von Preisen und Übersicht der Ausgaben,
 - Einfache Kontaktmöglichkeit zur Security.
@@ -64,7 +63,6 @@ Der Prototyp dient dieser Arbeit als validierte Ausgangslage, nicht als Codebasi
 - der Technologie-Stack, da er sich im Einsatz bewährt hat und für ein wechselndes OK einfach zu warten ist. (Vercel & Supabase)
 - der grundlegende Ablauf des Bestellprozesses & Retouren
 - das Zugangskonzept: Bars greifen über einen persönlichen Link ohne Passwort zu, Lagerteam und Administratoren melden sich mit Benutzername und Passwort an.
-// TODO: präzisieren, ob einzelne Komponenten/Code übernommen werden und welche
 
 Neu im Rahmen dieser Arbeit entstehen insbesondere ein mehrjahresfähiges Datenmodell, eine testbare Architektur, die Administration über die Applikation selbst sowie die Prozesse vor und nach dem Fest. Zudem wird die Bedienbarkeit unter Festbedingungen, auf Basis der Recherche in und der Rückmeldungen aus dem Einsatz, untersucht und weiterentwickelt.
 
