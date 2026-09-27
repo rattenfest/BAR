@@ -21,23 +21,23 @@
       "name": "zeigt immer",
       "id": "connection_0152",
       "pickedColor": "black",
-      "number": 4,
+      "number": 1,
       "waypoints": [
         {
           "original": {
-            "x": 196,
-            "y": 612
+            "x": 448,
+            "y": 517
           },
-          "x": 158,
-          "y": 612
+          "x": 410,
+          "y": 517
         },
         {
           "original": {
-            "x": -59,
-            "y": 612
+            "x": 193,
+            "y": 517
           },
-          "x": -16,
-          "y": 612
+          "x": 236,
+          "y": 517
         }
       ],
       "source": "shape_5723",
@@ -53,19 +53,19 @@
       "waypoints": [
         {
           "original": {
-            "x": 82,
-            "y": 454
+            "x": 334,
+            "y": 359
           },
-          "x": 104,
-          "y": 484
+          "x": 356,
+          "y": 407.75
         },
         {
           "original": {
-            "x": 196,
-            "y": 612
+            "x": 448,
+            "y": 517
           },
-          "x": 169,
-          "y": 574
+          "x": 421,
+          "y": 479
         }
       ],
       "source": "shape_4906",
@@ -77,23 +77,23 @@
       "name": "bringt Getränke an",
       "id": "connection_2149",
       "pickedColor": "black",
-      "number": 3,
+      "number": 4,
       "waypoints": [
         {
           "original": {
-            "x": -59,
-            "y": 229
+            "x": 193,
+            "y": 134
           },
-          "x": -21,
-          "y": 243
+          "x": 231,
+          "y": 148
         },
         {
           "original": {
-            "x": 315,
-            "y": 362
+            "x": 567,
+            "y": 267
           },
-          "x": 277,
-          "y": 348
+          "x": 529,
+          "y": 253
         }
       ],
       "source": "shape_8177",
@@ -109,19 +109,19 @@
       "waypoints": [
         {
           "original": {
-            "x": -59,
-            "y": 612
+            "x": 193,
+            "y": 517
           },
-          "x": -58,
-          "y": 574
+          "x": 194,
+          "y": 479
         },
         {
           "original": {
-            "x": -52,
-            "y": 227
+            "x": 200,
+            "y": 132
           },
-          "x": -53,
-          "y": 274
+          "x": 199,
+          "y": 179
         }
       ],
       "source": "shape_9676",
@@ -133,23 +133,23 @@
       "name": "möchte",
       "id": "connection_2739",
       "pickedColor": "black",
-      "number": 1,
+      "number": 2,
       "waypoints": [
         {
           "original": {
-            "x": -59,
-            "y": 229
+            "x": 193,
+            "y": 134
           },
-          "x": -18,
-          "y": 227
+          "x": 234,
+          "y": 132
         },
         {
           "original": {
-            "x": 335,
-            "y": 213
+            "x": 587,
+            "y": 118
           },
-          "x": 297,
-          "y": 215
+          "x": 549,
+          "y": 120
         }
       ],
       "source": "shape_8177",
@@ -165,19 +165,19 @@
       "waypoints": [
         {
           "original": {
-            "x": 315,
-            "y": 362
+            "x": 567,
+            "y": 267
           },
-          "x": 329,
-          "y": 400
+          "x": 581,
+          "y": 309.75
         },
         {
           "original": {
-            "x": 392,
-            "y": 577
+            "x": 644,
+            "y": 482
           },
-          "x": 378,
-          "y": 539
+          "x": 630,
+          "y": 444
         }
       ],
       "source": "shape_9387",
@@ -193,19 +193,19 @@
       "waypoints": [
         {
           "original": {
-            "x": 392,
-            "y": 577
+            "x": 644,
+            "y": 482
           },
-          "x": 411,
-          "y": 554
+          "x": 663,
+          "y": 459
         },
         {
           "original": {
-            "x": 609,
-            "y": 317
+            "x": 861,
+            "y": 222
           },
-          "x": 571,
-          "y": 363
+          "x": 823,
+          "y": 268
         }
       ],
       "source": "shape_2406",
@@ -221,19 +221,19 @@
       "waypoints": [
         {
           "original": {
-            "x": 392,
-            "y": 577
+            "x": 644,
+            "y": 482
           },
-          "x": 354,
-          "y": 562
+          "x": 606,
+          "y": 467
         },
         {
           "original": {
-            "x": 82,
-            "y": 454
+            "x": 334,
+            "y": 359
           },
-          "x": 119,
-          "y": 469
+          "x": 371,
+          "y": 374
         }
       ],
       "source": "shape_2406",
@@ -245,23 +245,23 @@
       "name": "erstellt",
       "id": "connection_4706",
       "pickedColor": "black",
-      "number": 2,
+      "number": 3,
       "waypoints": [
         {
           "original": {
-            "x": -59,
-            "y": 229
+            "x": 193,
+            "y": 134
           },
-          "x": -39,
-          "y": 261
+          "x": 213,
+          "y": 171
         },
         {
           "original": {
-            "x": 82,
-            "y": 454
+            "x": 334,
+            "y": 359
           },
-          "x": 58,
-          "y": 416
+          "x": 310,
+          "y": 321
         }
       ],
       "source": "shape_8177",
@@ -277,19 +277,19 @@
       "waypoints": [
         {
           "original": {
-            "x": 392,
-            "y": 577
+            "x": 644,
+            "y": 482
           },
-          "x": 435,
-          "y": 577
+          "x": 687,
+          "y": 482
         },
         {
           "original": {
-            "x": 641,
-            "y": 577
+            "x": 893,
+            "y": 482
           },
-          "x": 603,
-          "y": 577
+          "x": 855,
+          "y": 482
         }
       ],
       "source": "shape_2406",
@@ -305,19 +305,19 @@
       "waypoints": [
         {
           "original": {
-            "x": 335,
-            "y": 213
+            "x": 587,
+            "y": 118
           },
-          "x": 372,
-          "y": 227
+          "x": 624,
+          "y": 132
         },
         {
           "original": {
-            "x": 609,
-            "y": 317
+            "x": 861,
+            "y": 222
           },
-          "x": 571,
-          "y": 303
+          "x": 823,
+          "y": 208
         }
       ],
       "source": "shape_1219",
@@ -328,64 +328,64 @@
       "type": "domainStory:workObjectFolder",
       "name": "übrige Getränke",
       "id": "shape_1219",
-      "x": 297,
-      "y": 175
+      "x": 549,
+      "y": 80
     },
     {
       "type": "domainStory:workObjectConversation",
       "name": "ob Getränke zur Rückgabe passen",
       "id": "shape_2057",
-      "x": 603,
-      "y": 539
+      "x": 855,
+      "y": 444
     },
     {
       "type": "domainStory:actorPerson",
       "name": "RF MA",
       "id": "shape_2406",
-      "x": 354,
-      "y": 539
+      "x": 606,
+      "y": 444
     },
     {
       "type": "domainStory:workObjectFolder",
       "name": "Getränkelager",
       "id": "shape_2587",
-      "x": 571,
-      "y": 279
+      "x": 823,
+      "y": 184
     },
     {
       "type": "domainStory:workObjectDocument",
       "name": "Getränke-\nRückgabe",
       "id": "shape_4906",
-      "x": 44,
-      "y": 416
+      "x": 296,
+      "y": 321
     },
     {
       "type": "domainStory:actorSystem",
       "name": "Website",
       "id": "shape_5723",
-      "x": 158,
-      "y": 574
+      "x": 410,
+      "y": 479
     },
     {
       "type": "domainStory:actorPerson",
       "name": "Bar MA",
       "id": "shape_8177",
-      "x": -97,
-      "y": 191
+      "x": 155,
+      "y": 96
     },
     {
       "type": "domainStory:workObjectFolder",
       "name": "Abholort",
       "id": "shape_9387",
-      "x": 277,
-      "y": 324
+      "x": 529,
+      "y": 229
     },
     {
       "type": "domainStory:workObjectInfo",
       "name": "Status vom Abholort",
       "id": "shape_9676",
-      "x": -97,
-      "y": 574
+      "x": 155,
+      "y": 479
     },
     {
       "info": ""
