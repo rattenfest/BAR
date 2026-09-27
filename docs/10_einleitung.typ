@@ -34,7 +34,7 @@ Die "Problem Domain" hilft das Problem ohne Missverständnisse durch die Sprache
 // wir können jetzt mit der Problem Domain bestimmen, wo die Engpässe und wichtigsten Stellen sind, die wir verbessern wollen und worauf wir besonderen Fokus setzen
 
 #figure(
-  image("resources/problem-domain/getraenkebestellungen.png", width: 400pt),
+  image("resources/problem-domain/bestellung.png", width: 400pt),
   kind: image,
   caption: [Problem Domain der Getränkebestellung],
 )
