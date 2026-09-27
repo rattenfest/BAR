@@ -17,6 +17,14 @@
 
 === UI und Backend Konzept (Software-Architektur)
 
+=== Zugangskonzept
+// Aus Prototyp übernommen (@vorarbeiten), hier ausführlich beschreiben:
+// - Bars: persönlicher Link mit UUID, ohne Passwort (FR-04, NFR-07)
+//   Begründung: wechselnde Besetzung, geteilte Geräte
+//   Konsequenzen: Link = Zugangsdaten, neu erzeugbar; Aktionen nur der Bar zuordenbar (vgl. NFR-05)
+// - Lagerteam & Admins: Benutzername und Passwort, Rollen & Berechtigungen
+// - Verworfene Alternativen (Passwort pro Bar, persönliche Konten, SMS-/E-Mail-Code)
+
 == Implementation
 // Beschreibt ausgewählte und interessante Implementationsaspekte sowie die verwendeten oder entwickelten
 // Technologien (Algorithmen, Datenstrukturen usw.) und Abhängigkeiten (Frameworks, Libraries usw.).
