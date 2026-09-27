@@ -14,7 +14,7 @@
 2. PWA mit Benachrichtigungen möglich
 3. Geeignet für kleine/mittelgrosse Website
 
-4. Einfacher Einstieg, einfach zu lernen
+4. Einfacher Einstieg, keine komplexen Konfigurationen nötig, einfach zu lernen
 
 // - Einfache Einrichtung // nicht wie .NET > nicht so gut benanntes Kriterium
 // - Unterstützung für Typensystem und ein typsicheres Datenmodell // > kann immer TS einbinden
@@ -65,8 +65,10 @@ https://2025.stateofjs.com/en-US/libraries/
 == React / Next.js mit Typescript
 
 1. Aufwändigere erste Einrichtung, Testing und Builder muss manuell eingerichtet werden.
-Wir können eine Vorlage wie den T3Stack verwenden, durch die vielen Abhängigkeiten steigt aber die Komplexität und Aufwand beim Updaten. Ausserdem wird dann Next.JS verwendet, obwohl wir kein Server-Side Rendering benötigen. @t3stack
-2. PWA ist möglich mit create-react-app (deprecated), Next.JS (übertriebenn)  https://www.overcode.tech/blog/react-pwa oder mit Vite + PWA von Vite (dokumentiert)  https://vite-pwa-org.netlify.app/guide/ // TODO
+Wir können eine Vorlage wie den T3Stack verwenden, durch die vielen Abhängigkeiten steigt aber die Komplexität und Aufwand beim Updaten. Ausserdem wird dann Next.JS verwendet. @t3stack
+// , obwohl wir kein Server-Side Rendering benötigen
+// Wuerde ich pauschal nicht sagen, SSR kann hilfreich sein gerade bei schlechtem Internet und dem Initial Load.
+2. PWA ist möglich mit create-react-app (deprecated), Next.JS (übertrieben)  https://www.overcode.tech/blog/react-pwa oder mit Vite + PWA von Vite (dokumentiert)  https://vite-pwa-org.netlify.app/guide/ // TODO
 3. React eignet sich gut für diese Projektgrösse. @BibEntry2026JanFramework
 4. Da wir bereits React kennen ist für uns der Einstieg einfach. Für React muss man JSX verstehen. // Wird an der OST in den Web Engineering Modulen unterrichtet.
 

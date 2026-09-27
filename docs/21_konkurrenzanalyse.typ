@@ -1,9 +1,13 @@
 
-== Vorhandene Lösungswege "Case Study"
-// (Konkurrenzanalyse/Wettbewerbsanalyse)
+== Vorhandene Lösungswege
+Vor dem Prototyp wurde die Getränkeausgabe mit dem Kassensystem von SumUp erfasst. Dazu war auf der SumUp-Kasse pro Bar ein Tisch eingerichtet. Bar-Mitarbeitende kamen zum Lager und gaben ihre Bestellung mündlich auf, das Lagerteam erfasste sie in der Kasse und holte die Getränke aus dem Kühlwagen. Nach dem Fest wurden die Daten pro Tisch exportiert und für die Abrechnung verwendet.
 
-Sum-up
+Das System erfüllte seinen Zweck nur teilweise, da es für den Verkauf und nicht für die Lagerverwaltung gedacht ist:
 
+- *Wege und Wartezeiten:* Bar-Mitarbeitende mussten für jede Bestellung zum Lager gehen und dort warten, bis sie bereitstand. In dieser Zeit fehlten sie hinter der Bar.
+- *Mehraufwand im Lager:* Das Lagerteam musste neben dem Bereitstellen jede Bestellung zusätzlich erfassen.
+- *Kein Lagerbestand:* Der aktuelle Bestand war im System nicht ersichtlich.
+- *Gebinde und Rückgaben:* Ausserdem kam es kam zu Unklarheiten bei Gebindegrössen, Rückgaben liessen sich nur umständlich erfassen. Fehler konnten nicht korrigiert werden und mussten in der Abrechnung berücksichtigt werden.
 // > konkrete gut dokumentierte Lösungen finden
 
 // - event organisations softwares > meiste haben nicht fokus Getränkbestellung sondern tickets, zeitmanagement..
@@ -13,35 +17,16 @@ Sum-up
 
 
 == Weitere Technologien
-// TODO: inhalt so ok? Struktur ändern, so dass das RF Fazit zusammen am Schluss steht? Reihenfolge so okay? Einleitung und Schluss ausführlicher?
-Wir haben stichprobenweise Lösungen verschiedener Softwareanbieter angeschaut, um herauszufinden, ob sie in unserem Fall einen Vorteil bringen würden.
+Neben Bestellsystemen haben wir stichprobenweise Technologien aus verwandten Bereichen betrachtet. Leitfrage war jeweils, ob sie einen Arbeitsschritt am Rattenfest (Bestellen, Bereitstellen, Abholen, Rückgabe) vereinfachen würden.
 
-Die "real-time event inventory application" von "rapidstock" bietet eine Waage, die das Gewicht einer offenen Flasche per Bluetooth an die Applikation sendet @rapidstock. Übertragen auf unseren Fall müsste nur noch der Getränketyp angegeben werden, die Anzahl liesse sich dann über das Gewicht berechnen.
-// Um den Getränketyp zu ermitteln könnte zusätzlich mit Barcodes gearbeitet werden.
-Die Software bezieht ausserdem die erwartete Anzahl Gäste mit ein, um das Inventar besser planen zu können.
+*Automatische Bestandserfassung.* Die «real-time event inventory application» von rapidstock ermittelt den Inhalt offener Flaschen über eine Bluetooth-Waage und plant das Inventar anhand der erwarteten Gästezahl @rapidstock. Ein verwandter Ansatz ist das Zählen per Bilderkennung. Dies wurde für die Schlussinventur des Rattenfests bereits getestet, lieferte aber zu ungenaue Ergebnisse. Auch Starbucks stellte ein vergleichbares System nach wenigen Monaten wieder ein @Rogelberg2026May.
+Für das Rattenfest bringen beide Ansätze wenig: Das Lager gibt ganze Gebinde aus, deren Zählung heute kein Problem ist. Die Gästezahl ist kaum planbar, da rund 60-70 % der Tickets erst am Festtag verkauft werden.
 
-// Fazit, kann auch an Schluss verschoben werden?
-Beim Rattenfest ist das Zählen der Artikel aktuell kein Problem. Auch die Anzahl Gäste lässt sich im Voraus kaum abschätzen, da rund 60-70 % der Tickets erst am Festtag verkauft werden.
+*Bezahlung bei der Bestellung.* Zahlungslösungen wie SumUp mit kontaktloser Zahlung per NFC @SumUpNFC oder TWINT mit QR-Code @twintQR würden es erlauben, Getränke direkt bei der Bestellung zu bezahlen. Für das Rattenfest ist das nicht sinnvoll, da die Bars ihren Getränkebezug nicht vorfinanzieren sollen. Die Einnahmen der Bars fliessen zuerst an das Rattenfest, das nach dem Fest den Getränkebezug abzieht und die Differenz auszahlt. Die Bezahlung ist damit Teil der Abrechnung (FR-26) und nicht des Bestellprozesses, eine Zahlungsintegration wird nicht umgesetzt.
 
-Sum-Up akzeptiert Bezahlungen mit NFC, damit können Bezahlungen in der Nähe von bis zu 10 cm kontaktlos getätig werden. Ausserdem wird die Zahlung mit einem "Beep" und vier LEDs bestätigt. @SumUpNFC
-Das spart "Klicks" auf dem Smartphone und das lesen der Bestätigungsnachricht durch einfache Kommunikation.
+*Rückmeldung an die Nutzenden.* SumUp bestätigt eine Zahlung mit einem Signalton und vier LEDs @SumUpNFC. Die Bestätigung wird wahrgenommen, ohne dass eine Nachricht gelesen werden muss. Unter Festbedingungen (dunkel, laut, Zeitdruck) ist das besonders wertvoll/* @notification-beep*/. Da ein Ton im Lärm untergehen kann, sollte er mit gut sichtbaren Farben kombiniert werden.
 
-Twint hingegen ist bekannt durch die Bezahlung per QR-Code, dadurch können viele Daten die mühsam einzutippen wären, schnell an ein fremdes Gerät übermittelt werden. @twintQR
-
-Da wir bereits eine Verbindung aufgebaut haben und so einfach Daten senden können, benötigen wir NFC oder einen QR-Code nicht. Es würde die Website unnötig komplex und mehr fehleranfällig machen. Ob eine Bestellung oder ein Getränk mühsam zu finden ist, können wir mit User Tests herausfinden. Das Problem könnte dann auch mithilfe von einer Suche oder einem Filter minimiert werden. // isch mir gad als Idee cho @andrin?
-// Guter punkt, dieses jahr war konnte mann zum Beispiel "Wasser" nicht finden da es "Mineral mit" hiess. Kategorisieren und Filtern ware gut.
-                                                                                                                                                                                                                                                                                                                                                                                                
-// User Test Kriterium bei fertiger Umsetzung: wo muss zuviel gescrollt werden, um etwas zu finden? > Suche oder Filter nutzen
-Benachrichtigungen mit "Beep" und gut sichtbaren Farben zu zeigen kann das erfassen der Informationen für die Nutzer verbessern <notification-beep>. // NFR verlinken?
-
-// mehr Recherche zu Push-Benachrichtigungen? https://ieeexplore.ieee.org/abstract/document/7414815
-
-Um das Getränkelager am Ende vom Rattenfest einfacher zu erfassen, wurde bereits getestet die Getränke mit Bilderkennung zu zählen. Jedoch ist das Ergebnis nicht genügend ausgereift und auch Starbucks hatte diese Technologie nach 9 Monaten wieder abgeschafft. @Rogelberg2026May // @andrin vielleicht ergänzen/korrigieren?
-//Synonym abgeschafft?
-
-// Fazit:
-// - lohnt sich nicht, da es den Bars nichts erleichtert und Touchscreen system nicht so aufwändig ist. zu wenig nutzen für den aufwand
-// Würde sich lohnen, wenn die Bars selber Getränke aus dem Kühlwagen holen könnten und beim rausgehen würde es schnell erfasst werden. Dann könnte die Arbeit der RF-Mitarbeiter gespart werden. // TODO: bei Ausblick einbauen??
+*Fazit.* Die automatische Bestandserfassung löst ein Problem, das am Rattenfest nicht besteht, und rechtfertigt den Aufwand nicht. Auf eine Zahlungsintegration wird bewusst verzichtet, da die Bezahlung über die Abrechnung nach dem Fest erfolgt. Übernommen wird das Prinzip der Rückmeldung über mehrere Kanäle (Ton und Farbe), das in NFR-03 einfliesst. Eine automatische Erfassung könnte sich lohnen, falls Bars ihre Getränke künftig selbst aus dem Kühlwagen holen (siehe @ausblick).
 
 == Ähnliche Lösungen
 
@@ -51,9 +36,9 @@ Ein Webshop der Getränke verkauft ermöglicht eine gute Benutzerfreundlichkeit 
 
 
 #figure(
-  image("resources/research/Screen Shot 2026-09-25 at 13.46.06.png", width: 40%),
+  image("resources/research/rewe.png", width: 40%),
   kind: image,
-  caption: [Beschreibung],
+  caption: [Screenshot von REWE Webshop],
 )
 
 
@@ -67,7 +52,7 @@ Ein Webshop der Getränke verkauft ermöglicht eine gute Benutzerfreundlichkeit 
 
 == Fazit
 
-Es wurden Möglichkeiten gefunden, die Getränke schneller zu erfassen
+// Es wurden Möglichkeiten gefunden, die Getränke schneller zu erfassen
 
 
 

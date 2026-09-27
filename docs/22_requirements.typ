@@ -1,29 +1,26 @@
 
 
 === Akteure
-
-// @andrin siehe Kommentare:
-- *Bar-Team*: bestellt Getränke für seine Bar und holt sie ab. // und eine Vorbestellung?
-- *Lagerteam*: nimmt Bestellungen entgegen, stellt sie bereit und übergibt sie. // "Nur während der Rattenfest-Durchführung" ergänzen?
-- *Getränkechef (RF-OK)*: verwaltet Festausgabe, Sortiment, Bars, Rücknahmen und
-  Abrechnung. // erwähnen, was während dem Fest und was auch nach/vor dem Fest?
+- *Bar-Team*: Gibt eine Vorbestellung ab und bestellt während dem Fest Getränke für seine Bar und holt sie ab.
+- *Lagerteam*: nimmt während dem Fest Bestellungen entgegen, stellt sie bereit und übergibt sie.
+- *Getränkechef (RF-OK)*: verwaltet Festausgabe, Benutzer, Sortiment, Bars und Abrechnung.
 
 ==== Glossar // Problem Domain
 Die Festausgabe bezeichnet die Speicherung der Daten von je einer Rattenfest-Durchführung.
 // vielleicht zu technisch: Getränke Daten und Anzahl separat? Da Preis und Getränkeauswahl sich ändern kann pro Festausgabe
 \
-- Das Sortiment bezeichnet das ursprüngliche Lagersortiment, gemäss der Vorbestellung vom Rattenfest. Es beinhaltet die Getränke mit Anzahl. \
-- Die Getränke beinhalten Informationen: Name, Stückzahl (manche Getränke können nur in 6er Päcken bestellt werden) und Preis. // ob Alkohol? Kategorie?
-- RF-OK = Rattenfest Organisationskomitee Mitglied
-- Schrumpfpackungen = ..
-- Getränk / Artikel (vereinheitlichen?)
+- Das Sortiment bezeichnet das ursprüngliche Lagersortiment, gemäss der Vorbestellung vom Rattenfest. Es beinhaltet die Getränke mit Anzahl.
+- Die Artikel beinhalten Informationen: Name, Typ der Verkaufseinheit (manche Getränke können nur in 6er Päcken bestellt werden) und Preis.
+- RF-OK = Rattenfest Organisationskomitee
+- Schrumpfpackungen = Packungen, die mehrere Getränke beinhalten aber nur Einheit verkauft werden.
+- Getränk und Artikel wird als Synonym verwendet, In der Applikation wird der Begriff Artikel verwendet, da er die Eigenschaften besser beschreibt.
 
 === User Stories und Functional Requirements
 
 ==== Vorbereitung
 // @andrin, Ist deine Formulierung besser geeignet für wissenschaftliche Arbeiten? ich fand es bisschen schwer zu lesen, aber ich kann auch so schreiben, wenn das besser ist.
 *US-01:* Als RF-OK möchte ich eine neue Festausgabe anlegen, damit die Daten
-jedes Jahrgangs getrennt bleiben und vergleicht werden können. // vergleichbar werden / vergleicht werden können / vergleichbar sind ?
+jedes Jahrgangs getrennt aber vergleichbar sind.
 - *FR-01*: Das System muss erlauben, eine Festausgabe anzulegen und als aktiv zu
   setzen. Sortiment, Bestände, Bestellungen und Rückgaben sind
   jeweils einer Festausgabe zugeordnet.
@@ -39,11 +36,9 @@ Bestellungen eindeutig zugeordnet sind.
 
 *US-03:* Als RF-OK möchte ich das Getränkesortiment unseres Lieferanten den Bars zur Verfügung stellen.
 - *FR-05*: Das System muss erlauben, Getränke mit Bezeichnung, Gebindegrösse und Preis zu erfassen.
-// @glossar/problem domain: Gebindegrösse erklären da Zielgruppe das möglicherweise nicht kennt
-// hier keine Anzahl?
-- *FR-06*: Das System muss erlauben, ein Sortiment aus einer Datei zu
+// hier keine Anzahl? - nein weil da gehts es lediglich um was an getraenken es gibt. (welche vom lieferanten ueberhaupt geliefert werden koennen) und die Anzahl wird dann in der Vorbestellung erfasst.
+- *FR-06*: Das System muss erlauben, das Getränkesortiment aus einer Datei zu
   importieren.
-// @glossar: Sortiment definieren, ist das Sortiment eine Sammlung von Getränken? Mit oder ohne Anzahl? Siehe Definition "Getränk"
 
 *US-04:* Als Bar-Team möchte ich meinen Bedarf vor dem Fest schätzen, damit die
 benötigte Ware eingekauft wird.
@@ -79,12 +74,10 @@ Lagerbestand von Beginn an stimmt.
 
 ==== Bearbeitung und Abholung
 
-*US-10:* Als Lagerteam möchte ich eingehende Bestellungen sofort sehen, damit ich
-ohne Verzögerung mit dem Bereitstellen beginnen kann. // definieren wie schnell "sofort" ist?
+*US-10:* Als Lagerteam möchte ich eingehende Bestellungen umgehend sehen, damit ich ohne Verzögerung mit dem Bereitstellen beginnen kann.
 - *FR-16*: Das System muss Bestellungen und deren Statusänderungen bei Bar
   und Lagerteam ohne manuelles Neuladen aktualisieren.
-- *FR-17*: Das System muss offene Bestellungen in der Reihenfolge ihres Eingangs
-  darstellen.
+- *FR-17*: Das System muss offene Bestellungen in der Reihenfolge ihres Eingangs darstellen.
 
 *US-11:* Als Bar-Team möchte ich zeitnah Bescheid erhalten, sobald meine Bestellung bereitsteht.
 - *FR-18*: Das System muss erlauben, eine Bestellung als abholbereit zu markieren.
@@ -323,71 +316,71 @@ gleichzeitig verbundenen Personen genutzt wird.
 
 
 
-=== Functional Requirements
+// === Functional Requirements
 
-==== RF Admin
+// ==== RF Admin
 
-- Admin Dashboard
+// - Admin Dashboard
 
-  Immer:
-  - Analyse/Statistics: was wäre wichtig? Export als Excel/CSV der Daten (wie? wo speichern?) Vergleiche zwischen verschiedenen Jahren. Bessere Schätzungen
-// SQL Queries als Admin durchführen ermöglichen, da das heutzutage nicht mehr so schwer ist mit KI? > nur bei Zeitmangel und als Notlösung
-// Anzahl anzeigen, Sortieren nach Preis oder Anzahl, Filtern nach Getränke und Bar, Filtern nach Jahr und auch alle Jahre zusammen (oder nicht?). Dashboard mit vordefinierten Statistiken wie "Top 4 Produkte"? Einfache Kurvendiagramme.
-// Statistik für Desktop optimieren
-// Statistik ist auch nach Rattenfest verfügbar
-
-
-
-==== Bar
-
-- Login mit erhaltenen Daten
-
-- Getränke bestellen (Bar)
-- Undo/Redo (siehe oben)
-- History > alte Bestellungen betrachten, prüfen, wiederholen
-- Abholung > Identität verifizieren nötig? Abholung bestätigen
-- Kontaktfunktion (allgemeine Probleme/Fragen melden, Notfallmeldungen während Fest, wer von RF behandelt Meldungen?)
-
-=== Non-Functional Requirements
+//   Immer:
+//   - Analyse/Statistics: was wäre wichtig? Export als Excel/CSV der Daten (wie? wo speichern?) Vergleiche zwischen verschiedenen Jahren. Bessere Schätzungen
+// // SQL Queries als Admin durchführen ermöglichen, da das heutzutage nicht mehr so schwer ist mit KI? > nur bei Zeitmangel und als Notlösung
+// // Anzahl anzeigen, Sortieren nach Preis oder Anzahl, Filtern nach Getränke und Bar, Filtern nach Jahr und auch alle Jahre zusammen (oder nicht?). Dashboard mit vordefinierten Statistiken wie "Top 4 Produkte"? Einfache Kurvendiagramme.
+// // Statistik für Desktop optimieren
+// // Statistik ist auch nach Rattenfest verfügbar
 
 
-== Anwendungsszenarien (detaillierter)
-// Finde da das Beispiel von der  RATTE Arbeit sehr gut, Heisst grob in Userstories unterteilen und weiter in FR aufbrechen
 
-1. Vorbereitung & Inventar
-  - Ersteinlagerung: Die gesamte eingekaufte Ware wird digital erfasst und bildet das zentrale Live-Inventar.
-2. Bestellprozess für Bars
-  - Zugang: Jede Bar erhält einen eigenen Zugangslink (z.B. app.com/UUID).
-  - Bestelllogik:
-    - Bars bestellen flexibel nach Bedarf.
-    - Nachbestellungen über die ursprüngliche Schätzung hinaus sind möglich, solange der Artikel im zentralen Inventar verfügbar ist.
-    - Optional: Ein automatisches Warnsystem meldet den Organisatoren kritisch tiefe Lagerbestände, erlaubt nur noch eine bestimmte Anzahl pro Bestellung (Falls eigenes Limit bereits erreicht ist).
-3. Abwicklung & Abholung
-  1. Bestellung: Die Bar sendet eine Bestellung über die App ab.
-    - Bestellung für wenige verschiedene Getränke
-    - Bestellung für ein Getränk in grossen Mengen
-    - eine Bestellung von vorher anpassen und nochmals bestellen
-    a. Bar kann die Bestellung stornieren, anpassen und neu senden.
-  2. Benachrichtigung: Das RF-Team wird sofort digital informiert.
-  3. Bereitstellung: Das Team stellt die Ware zusammen und markiert die Bestellung in der App als "Abholbereit".
-    a. RF-Team sieht Problem und kann Bestellung stornieren/markieren.
-  4. Abholung: Die Bar sieht das Status-Update in Echtzeit und holt die Ware ab, was unnötige Wege vermeidet.
-    a. RF-Team kann Bestellung stornieren/markieren wenn zu lange nicht abgeholt.
-  0. Bar/RF kann bei technischen Problemen eine Person vom RF mit einer Notfallmeldung erreichen.
-4. Prozess für Getränkerücknahmen
-  1. Bars können wie bei einer Bestellung eine Rückgabe erfassen und bringen die Ware zum Lager.
-  2. Admin-Funktion: Nur ein Admin kann Rücknahmen bearbeiten… (Wichtig bei Rückgabe von Schrumpfpackungen, da diese nur als Einheit angenommen werden)
-5. Erweitert
-  Analytics, Umsatz pro Bar, pro Getränk etc.
-  Export von Bezugslisten, Bestellhistorie, Rechnung etc.
-  Initiale Bestellung, Getränkewünsche ebenfalls über die App
-// > Analyse, ob ein Getränk viel zu wenig gekauft wurde und durch ein trendigeres Getränk ersetzen vor Schritt 1?
+// ==== Bar
+
+// - Login mit erhaltenen Daten
+
+// - Getränke bestellen (Bar)
+// - Undo/Redo (siehe oben)
+// - History > alte Bestellungen betrachten, prüfen, wiederholen
+// - Abholung > Identität verifizieren nötig? Abholung bestätigen
+// - Kontaktfunktion (allgemeine Probleme/Fragen melden, Notfallmeldungen während Fest, wer von RF behandelt Meldungen?)
+
+// === Non-Functional Requirements
 
 
-Weitere Features, z.B. "3.1 Bestellung" "die Bestellung für später vorbereiten und noch nicht senden, RF kann diese bereits sehen und sich besser vorbereiten"
-- Konkurrenzanalyse durchführen, schauen was die gut machen und wir übernehmen können, ergänzen.
-- User Befragung, wäre es sinnvoll oder unnötig
-- Abwägen wie gross der Aufwand für den Nutzen ist
+// == Anwendungsszenarien (detaillierter)
+// // Finde da das Beispiel von der  RATTE Arbeit sehr gut, Heisst grob in Userstories unterteilen und weiter in FR aufbrechen
+
+// 1. Vorbereitung & Inventar
+//   - Ersteinlagerung: Die gesamte eingekaufte Ware wird digital erfasst und bildet das zentrale Live-Inventar.
+// 2. Bestellprozess für Bars
+//   - Zugang: Jede Bar erhält einen eigenen Zugangslink (z.B. app.com/UUID).
+//   - Bestelllogik:
+//     - Bars bestellen flexibel nach Bedarf.
+//     - Nachbestellungen über die ursprüngliche Schätzung hinaus sind möglich, solange der Artikel im zentralen Inventar verfügbar ist.
+//     - Optional: Ein automatisches Warnsystem meldet den Organisatoren kritisch tiefe Lagerbestände, erlaubt nur noch eine bestimmte Anzahl pro Bestellung (Falls eigenes Limit bereits erreicht ist).
+// 3. Abwicklung & Abholung
+//   1. Bestellung: Die Bar sendet eine Bestellung über die App ab.
+//     - Bestellung für wenige verschiedene Getränke
+//     - Bestellung für ein Getränk in grossen Mengen
+//     - eine Bestellung von vorher anpassen und nochmals bestellen
+//     a. Bar kann die Bestellung stornieren, anpassen und neu senden.
+//   2. Benachrichtigung: Das RF-Team wird sofort digital informiert.
+//   3. Bereitstellung: Das Team stellt die Ware zusammen und markiert die Bestellung in der App als "Abholbereit".
+//     a. RF-Team sieht Problem und kann Bestellung stornieren/markieren.
+//   4. Abholung: Die Bar sieht das Status-Update in Echtzeit und holt die Ware ab, was unnötige Wege vermeidet.
+//     a. RF-Team kann Bestellung stornieren/markieren wenn zu lange nicht abgeholt.
+//   0. Bar/RF kann bei technischen Problemen eine Person vom RF mit einer Notfallmeldung erreichen.
+// 4. Prozess für Getränkerücknahmen
+//   1. Bars können wie bei einer Bestellung eine Rückgabe erfassen und bringen die Ware zum Lager.
+//   2. Admin-Funktion: Nur ein Admin kann Rücknahmen bearbeiten… (Wichtig bei Rückgabe von Schrumpfpackungen, da diese nur als Einheit angenommen werden)
+// 5. Erweitert
+//   Analytics, Umsatz pro Bar, pro Getränk etc.
+//   Export von Bezugslisten, Bestellhistorie, Rechnung etc.
+//   Initiale Bestellung, Getränkewünsche ebenfalls über die App
+// // > Analyse, ob ein Getränk viel zu wenig gekauft wurde und durch ein trendigeres Getränk ersetzen vor Schritt 1?
 
 
-// eine Seiter mit Infos für Bars? z.B. eine Karte oder Lager kann "news"/statusmeldungen veröffentlichen von Hand?
+// Weitere Features, z.B. "3.1 Bestellung" "die Bestellung für später vorbereiten und noch nicht senden, RF kann diese bereits sehen und sich besser vorbereiten"
+// - Konkurrenzanalyse durchführen, schauen was die gut machen und wir übernehmen können, ergänzen.
+// - User Befragung, wäre es sinnvoll oder unnötig
+// - Abwägen wie gross der Aufwand für den Nutzen ist
+
+
+// // eine Seiter mit Infos für Bars? z.B. eine Karte oder Lager kann "news"/statusmeldungen veröffentlichen von Hand?

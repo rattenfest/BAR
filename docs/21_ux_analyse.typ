@@ -23,20 +23,20 @@ Einfluss auf die Umgebung auf die Bar Mitarbeiter, ist besonders die kürzere Au
 Gemäss ^ sind die wichtigsten Stressfaktoren "Content Overload, Service Instability, Low level of Attractiveness, Lack of Control, Low level of Safety, Low Usability, Unpredictability, Uncertainty, Unfamiliarity, Judgment or social evaluation threat and Poor Visual Design".
 
 Wir suchen ein gutes Mass zwischen "Content Overload", zuviele Informationen die den Nutzer überfordern und zu wenige Informationen. Ein Bar-Mitarbeiter soll, nach einer kurzen Ablenkung, dort weitermachen können wo er aufgehört hat.
-Die weiteren Punkte .. können durch User Experience Tests des fertigen Produktes gelöst werden. @NFR... Usability
+Die weiteren Punkte .. können durch User Experience Tests des fertigen Produktes gelöst werden. NFR... Usability
 
 ==== Beeinträchtigungen
 
 Ein schlechtes Beispiel: der Bar Mitarbeiter erhält den Auftrag, das Getränk XY nachzubestellen, dann öffnet dieser den Link zur Website und sucht den Button "neue Bestellung" und klickt darauf. Sofort kommt jemand und sagt ob er schnell ein Becher von XY abfüllen kann. Danach soll er fortsetzen aber jetzt sieht er eine Liste von ganz vielen Getränkeartikeln und weiss nicht mehr, wie er dahin gekomment ist und was er machen wollte. Er muss nochmals den Link öffnen und kann dieses Mal die Bestellung erstellen. Er klickt aber auf das falsche Getränk und da es schnell gehen muss hat er die Bestellung bereits abgeschickt.
 
-Die Nutzer unserer Website, sind aber nicht betrunken, doch kann die spezielle Umgebung das Bewusstsein verschlechtern und einen Nutzer ablenken.
+Die Nutzer unserer Website, sind aber nicht betrunken, /* DOCH!!! :) */ doch kann die spezielle Umgebung das Bewusstsein verschlechtern und einen Nutzer ablenken.
 Es kann das Erinnerungsvermögen verschlechtern beispielsweise durch Ablenkungen. Ausserdem gibt es Zeitdruck an einer Bar, besonders bei vielen Besuchern die etwas kaufen oder schnell ihren Becher zurückgeben wollen, was auch zu Fehlklicks führen kann.
 
 // Das UI sollte sich an den User Context (Benutzerkontext) anpassen gemäss @userIsDrunk. > immer mit worst case rechnen
 
 Diese Einschränkungen lassen sich vergleichen mit älteren und betrunkenen Personen.
 
-Wichtige Faktoren für gute Usability für ältere Personen für eine Web-Lösung sind erstens klarer Entscheidungsprozess mit klaren Schritten die an die Prioritäten vom Nutzer angepasst werden. Zweitens soll der Inhalt einfach gehalten werden, dass heisst einfache Sprache und Piktogramme nutzen. Drittens soll das UI intuitiv und benutzerfreundlich sein, kann Pop-Up Fenster und Informationen/Tipps anzeigen. Drop-down Menüs und Scrolling soll möglichst verhindert werden. @bogza2020user
+Wichtige Faktoren für gute Usability für ältere Personen für eine Web-Lösung sind erstens klarer Entscheidungsprozess mit klaren Schritten die an die Prioritäten vom Nutzer angepasst werden. Zweitens soll der Inhalt einfach gehalten werden, dass heisst einfache Sprache und Piktogramme nutzen. Drittens soll das UI intuitiv und benutzerfreundlich sein, Informationen sollen auf ein minumum reduziert werden (cognitive overload). Es kann Pop-Up Fenster und Informationen/Tipps anzeigen. Drop-down Menüs und Scrolling soll möglichst verhindert werden. @bogza2020user
 
 Den zweiten Punkt mit der einfachen Sprache nennt sich auch "cognitive accessibility" und gehört zu den zusätzlichen Standards von WCAG.
 Die wichtigste Regeln sind einfache Wörter, Präsensform, kurze Sätze und kurze Textblöcke, unmissverständlichen Inhalt, klare Bilder und einfache Videos.
