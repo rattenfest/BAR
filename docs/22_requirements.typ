@@ -233,9 +233,7 @@ gleichzeitig verbundenen Personen genutzt wird.
   "Bedienbarkeit unter Festbedingungen",
   bezug: "FR-10, FR-15",
   anforderung: [
-    [
-    - Benachrichtigungen mit "Beep" und Farben nutzen // @notification-beep.
-    ]
+    - Benachrichtigungen mit "Beep" und Farben nutzen // @notification-beep. TODO formulierung
   ],
   messung: [
   ],
