@@ -1,6 +1,4 @@
 
-#set text(font: "Arial", size: 11pt)
-
 
 #set heading(numbering: "1.1")
 #show heading.where(level: 1): set text(size: 24pt)
@@ -51,14 +49,26 @@
 #include "00_title_page.typ"
 #pagebreak()
 #include "01_summary.typ"
+
 #include "10_einleitung.typ"
 
-#include "20_hintergrund.typ"
+#pagebreak()
+#include "11_vorarbeiten.typ"
 
+#pagebreak()
+#include "20_analyse.typ"
+#include "21_ux_analyse.typ"
+
+#pagebreak()
+#include "22_requirements.typ"
+
+#pagebreak()
 #include "30_methode.typ"
 
+#pagebreak()
 #include "40_ergebnisse.typ"
 
+#pagebreak()
 #include "60_fazit.typ"
 
 
@@ -67,6 +77,11 @@
 
 
 #include "90_project_information.typ"
+
+#pagebreak()
+#include "95_glossar.typ"
+
+#pagebreak()
 
 = Hilfsmittelverzeichnis
 

@@ -10,6 +10,11 @@
 
 // Ergebniss, was wurde entdeckt/herausgefunden, UI mit Bildern
 
-== Evaluation
-=== Functional Requirements
-=== Non-Functional Requirements
+// 1-2 UX Tests gewünscht von Betreuer
+
+== Erfüllung der Functional Requirements
+
+== Erfüllung der Non-Functional Requirements
+
+== Usability-Tests
+

@@ -1,9 +1,4 @@
-= Methode
-// unser Konzept
-// ausgewählte Herangehensweise, wieso, wie, 
-
-// 1-2 UX Tests gewünscht von Betreuer
-== Design und Architektur
+= Design und Architektur
 // Beschreibung der Konzepte Ihrer Lösung sowie deren Architektur. Bleiben Sie möglichst plattformneutral
 // und technologieübergreifend. Begründen Sie Entscheide: Warum ist das gewählte Konzept (z.B. Pattern)
 // geeignet? Auf welche anderen Lösungsoptionen haben Sie bewusst verzichtet und wieso? Was sind die
@@ -13,11 +8,28 @@
 // unterteilt werden.
 // Setzen Sie beispielsweise UML-Diagramme mit Erläuterungen ein und verzichten Sie wenn möglich auf
 // Code-Listings (siehe Implementation).
-=== Prototyp / Skizze der Lösung
 
-=== UI und Backend Konzept (Software-Architektur)
+#include "31_technologieentscheid.typ"
 
-== Implementation
+== Architektur
+// UI und Backend Konzept (Software-Architektur)
+
+== Datenmodell
+// mehrjahresfähig
+
+== UI-Konzept
+// Prototyp / Skizze der Lösung
+
+== Zugangskonzept
+// Aus Prototyp übernommen (@vorarbeiten), hier ausführlich beschreiben:
+// - Bars: persönlicher Link mit UUID, ohne Passwort (FR-04, NFR-07)
+//   Begründung: wechselnde Besetzung, geteilte Geräte
+//   Konsequenzen: Link = Zugangsdaten, neu erzeugbar; Aktionen nur der Bar zuordenbar (vgl. NFR-05)
+// - Lagerteam & Admins: Benutzername und Passwort, Rollen & Berechtigungen
+// - Verworfene Alternativen (Passwort pro Bar, persönliche Konten, SMS-/E-Mail-Code)
+
+#pagebreak()
+= Implementation
 // Beschreibt ausgewählte und interessante Implementationsaspekte sowie die verwendeten oder entwickelten
 // Technologien (Algorithmen, Datenstrukturen usw.) und Abhängigkeiten (Frameworks, Libraries usw.).
 // Ebenfalls wird in diesem Kapitel das Testing beschrieben. Verwenden Sie nur Codebespiele, wenn diese
