@@ -20,9 +20,9 @@ Für die Benutzeroberfläche wurde die Komponentenbibliothek #link("https://ui.s
     columns: (1fr, 1fr, 1fr),
     align: center,
     stroke: none,
-    [#figure(image("/assets/prototype/order.png", width: 100%), caption: [Bestellung durch eine Bar])],
-    [#figure(image("/assets/prototype/dashboard.png", width: 100%), caption: [Übersicht im Lager])],
-    [#figure(image("/assets/prototype/bar-view.png", width: 100%), caption: [Ansicht der Bar])],
+    [#figure(image("resources/prototype/order.png", width: 100%), caption: [Bestellung durch eine Bar])],
+    [#figure(image("resources/prototype/dashboard.png", width: 100%), caption: [Übersicht im Lager])],
+    [#figure(image("resources/prototype/bar-view.png", width: 100%), caption: [Ansicht der Bar])],
   ),
 )
 === Erfahrungen aus dem Einsatz
