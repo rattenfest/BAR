@@ -1,32 +1,93 @@
 == Risikoanalyse
-// Risiken und Unsicherheiten
+Die Risiken sind in zwei Gruppen unterteilt: Projektrisiken gefährden die Durchführung dieser Arbeit, Einsatzrisiken gefährden den zuverlässigen Einsatz der Applikation am Fest. @risikomatrix zeigt die Einordnung beider Gruppen nach Eintrittswahrscheinlichkeit und Auswirkung, wobei sich die Auswirkung jeweils auf das Ziel der entsprechenden Gruppe bezieht.
 
-=== Technische, allgemeine Risikos
-Sicherheit
-Code ..
-Ausfall
+#let risk-color(w, a) = {
+  let s = w + a
+  if s >= 5 { rgb("#f4a6a6") } // rot: kritisch
+  else if s == 4 { rgb("#fde2a7") } // gelb: beobachten
+  else { rgb("#c8e6c9") } // grün: akzeptabel
+}
+#let r(w, a, body) = table.cell(fill: risk-color(w, a), body)
+#let risk(id, title, desc, measure) = block(breakable: false, below: 1.2em)[
+  *#id #title*
+  #v(-0.4em)
+  #grid(
+    columns: (6.5em, 1fr),
+    column-gutter: 0.5em,
+    row-gutter: 0.6em,
+    text(fill: gray.darken(30%))[Ursache], desc,
+    text(fill: gray.darken(30%))[Massnahme], measure,
+  )
+]
+#let nfr-ref(n) = link(label("nfr-" + n))[NFR-#n]
 
-=== Spezielle Risikos
-// TODO: gewichten, ergänzen
+#figure(
+  table(
+    columns: (auto, 1fr, 1fr, 1fr),
+    align: center + horizon,
+    inset: 10pt,
+    stroke: 0.5pt + gray,
+    [], table.cell(colspan: 3)[*Eintrittswahrscheinlichkeit*],
+    [*Auswirkung*], [*tief*], [*mittel*], [*hoch*],
+    [*hoch*], r(1, 3)[R-05], r(2, 3)[R-02, R-04], r(3, 3)[R-03],
+    [*mittel*], r(1, 2)[P-02], r(2, 2)[P-01, R-06], r(3, 2)[R-01],
+    [*tief*], r(1, 1)[], r(2, 1)[], r(3, 1)[],
+  ),
+  caption: [Risikomatrix],
+) <risikomatrix>
 
-Risiko eine Funktion zu vergessen
-Massnahme: Zielgruppe befragen, Im Voraus mit Prototyp und im Nachhinein User Tests machen
+=== Projektrisiken
+Die folgenden Risiken betreffen die Durchführung dieser Arbeit innerhalb des vorgegebenen Zeitbudgets.
 
-Risiko, dass es auf einer Plattform/Betriebssystem/Bildschirmgrösse nicht funktioniert wie gedacht
-Massnahme: tests
+#risk(
+  "P-01",
+  "Umfang zu gross",
+  [28 Functional Requirements in 240 Stunden.],
+  [MoSCoW-Priorisierung, «Muss»-Anforderungen zuerst.],
+)
+#risk(
+  "P-02",
+  "Ausfall eines Teammitglieds",
+  [Krankheit oder andere Verpflichtungen während des Semesters.],
+  [Aufgaben und Stand in GitHub Issues dokumentiert, gegenseitige Code Reviews.],
+)
 
-Risiko, dass sich die Benutzung durch die spezielle Umgebung verschlechtert.
-Spezielle Umgebung: während Rattenfest
-- ausserhalb von der Website: Tipps für Bars, wie sie das Gerät mit der Website einrichten können, damit es möglichst integriert und nicht lästig ist (Gerät, Halterung, Rolle zuweisen ?)
-- Bedienung von Website (User Experience)  eng, dunkel, laut, Bedienung eingeschränkt
-// ähnliche Recherchen (finde auf die schnelle Ideen für Apps, die prüfen, ob jemand betrunken ist. Auch Recherchen, dass Prototypen von Betrunkenen getestet werden können, wenn es dann bedienbar ist, ist es gutes UX. Analyse von ähnlichen Arbeiten
-Massnahme: Recherche, stärkerer Fokus auf Accessibility
+=== Einsatzrisiken
+Die folgenden Risiken betreffen den zuverlässigen Einsatz der Applikation am Fest.
 
-Risiko, die Internetverbindung ist zu langsam, da es sehr viele Menschen hat
-Massnahme: Tests > ist das Problem auch mit anderen Diensten? Protokolle analysieren, was lässt sich verbessern? Nutzwertanalyse für teureres, lokales Hosting oder günstiges Hosting mit weniger Setupaufwand?
-Möglichkeiten für Hosting am Rattenfest mit einfachem Setup? Bluetooth? Etwas wie Walkie Talkie?
-Seiteninhalt klein halten und auf Smartphones cachen.
-Inhalt anzeigen + funktionen, auch wenn es noch nicht alles geladen hat.
-
-Risiko, dass die nachfolgenden RF-OK Personen die Website nicht bedienen können und es nach z. B. zwei OK-Wechsel nicht mehr benutzt wird.
-Massnahme: kurze, einfach verständliche, einfach auffindbare und erreichbare Anleitungen erstellen. Kontakt vermerken für Fragen. Wissen gut weitergeben.
+#risk(
+  "R-01",
+  "Mängel zeigen sich erst im Einsatz",
+  [Das Rattenfest findet erst nach der Abgabe statt, eine Validierung unter realen Bedingungen ist nicht möglich.],
+  [User Tests mit Personen, die das Fest kennen, und Erkenntnisse aus dem Prototyp 2026.],
+)
+#risk(
+  "R-02",
+  "Bedienung unter Festbedingungen",
+  [Dunkelheit, Lärm und Ablenkung erschweren die Bedienung.],
+  [Literaturrecherche zum Nutzungskontext, #nfr-ref("03"). Tipps für die Bars zur Einrichtung des Geräts (z. B. Halterung, feste Zuständigkeit).],
+)
+#risk(
+  "R-03",
+  "Instabile Internetverbindung",
+  [Bei rund 3'000 Besuchenden ist das Mobilnetz überlastet und fällt zeitweise aus.],
+  [Applikation robust gegenüber Unterbrüchen, Seiteninhalt klein halten, #nfr-ref("01"), #nfr-ref("02").],
+)
+#risk(
+  "R-04",
+  "Betrieb durch nachfolgendes OK",
+  [Das OK wechselt jährlich und hat unterschiedliche technische Kenntnisse.],
+  [Administration über die Oberfläche und Anleitung, #nfr-ref("06"). Weiterentwicklung und Bugfixes dank KI vereinfacht.],
+)
+#risk(
+  "R-05",
+  "Ausfall oder Limits der Hosting-Dienste",
+  [Abhängigkeit von Vercel und Supabase.],
+  [Limits der Tarife vorab prüfen, Paid-Usage-Modelle berücksichtigen.],
+)
+#risk(
+  "R-06",
+  "Darstellungsprobleme auf Geräten",
+  [Unterschiedliche Browser und Bildschirmgrössen.],
+  [Testmatrix gemäss #nfr-ref("04").],
+)

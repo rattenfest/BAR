@@ -170,7 +170,8 @@ eingeteilt.
 
 #let nfr(id, titel, bezug: none, anforderung: [], messung: []) = [
   #block(above: 1.2em, below: 0.5em)[
-    *#id (#titel)*
+    #metadata(id)#label(lower(id))
+    #strong[#id #titel]
     #if bezug != none [
       #h(0.4em)
       #text(size: 0.85em, fill: gray.darken(40%))[betrifft #bezug]
