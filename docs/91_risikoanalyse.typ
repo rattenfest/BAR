@@ -70,7 +70,7 @@ Die folgenden Risiken betreffen den zuverlässigen Einsatz der Applikation am Fe
 #risk(
   "R-03",
   "Instabile Internetverbindung",
-  [Bei rund 3'000 Besuchenden ist das Mobilnetz überlastet und fällt zeitweise aus.],
+  [Bei rund 3'000 Besuchenden ist das Mobilnetz überlastet und ist teilweise instabil.],
   [Applikation robust gegenüber Unterbrüchen, Seiteninhalt klein halten, #nfr-ref("01"), #nfr-ref("02").],
 )
 #risk(
