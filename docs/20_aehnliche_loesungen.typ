@@ -57,11 +57,12 @@ Im Februar 2025 wurde dies geschrieben: "Die neue Funktion in der BVB-App soll e
 Heute arbeiten einige Stadions mit Takeaway Apps zusammen, beispielsweise der Kybunpark und "UEFA Women's EURO 2025" mit Just Eat @justEat2023 @justEatUefa. Die Bestellung wird dann an dafür vorgesehenen Orten abgeholt.
 
 #figure(
-  image("resources/research/just-eat-beverages-screenshot.png", width: 80%),
+  image("resources/research/just-eat-beverages-screenshot.png", height: 10cm),
   kind: image,
   caption: [Screenshot von `just-eat.ch`],
 )
-// Kein Beweis, dass das UI dasselbe ist im Stadion wie sonst...
+// Kein Beweis, dass das UI dasselbe ist im Stadion wie sonst... aber ich nehme es an
+// @andrin wenn du schon just eat genutzt hast, kannst du das hier noch ergänzen
 
 Die digitale Bestellplattform "Jamezz" verspricht, dass mithilfe eines QR-Codes die Bestellung geöffnet werden kann und der Sitzblock direkt mit dem QR-Code mitgeliefert wird. @Jamezz2026Sep
 // Viele der Vorteile wie eine erhöhte Bestellhäufigkeit und Blockzuordnung ist für uns jedoch nicht relevant.
