@@ -9,19 +9,34 @@ start: 2026-09-14
 end: 2026-12-18
 
 tasks:
-  - name: Planung, Vorbereitung
-    start: 2026-09-16
-    end: 2026-10-12
+  # - name: Planung, Vorbereitung
+  #   start: 2026-09-16
+  #   end: 2026-10-05
   - name: Umsetzung
     subtasks:
-      - name: \"Muss\" Requirements fertig
+      - name: \"Muss\" Requirements
+        start: 2026-10-05
+        end: 2026-11-01
+      - name: \"Kann\" Requirements
+        start: 2026-11-01
+        end: 2026-11-30
+      - name: User Test (1-2)
+        start: 2026-12-01
+        end: 2026-12-07
+      - name: User Test Anpassungen übernommen
+        start: 2026-12-07
+        end: 2026-12-14
+  - name: Dokumentation
+    subtasks:
+      - name: Recherche (Konkurrenzanalyse, Risiko, Umgebung, Technologie)
+        start: 2026-09-14
+        end: 2026-10-05
+      - name: Methode (Architektur, Diagramme..)
         start: 2026-10-01
         end: 2026-10-10
-    start: 2026-10-05
-    end: 2026-11-23
-  - name: Dokumentation
-    start: 2026-09-14
-    end: 2026-12-17
+      - name: Ergebnisse (auch User Test)
+        start: 2026-12-01
+        end: 2026-12-18
 
 milestones:
   - name: Kickoff-Meeting
@@ -36,7 +51,7 @@ milestones:
     show-date: true
 
   - name: "Zwischenpräsentation"
-    date: 2026-11-01
+    date: 2026-11-03
     show-date: true
 
   - name: "M3: Dokumentation fertig"

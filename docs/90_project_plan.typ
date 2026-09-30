@@ -1,12 +1,33 @@
 = Projektmanagement
 
-== Vorgehen und Projektplan
+== Vorgehen
+
 
 Der Aufwand beträgt 2 Arbeitstage pro Woche für ca. 17h/W , insgesamt 240 Stunden Aufwand.
 
+
 // ich (jasmin) notiere die verwendete Zeit in einer einfachen Notiztabelle, um sicherzugehen, dass ich die Zeit einhalte.
 
-Hier ist der Zeitplan mit den wichtigsten Meilensteinen, alle weiteren Planungen zur Projektarbeit befinden sich in den Github Issues vom Projekt.
+// TODO: arbeit mit issues beschreiben, kanban oder so
+// alle weiteren Planungen zur Projektarbeit befinden sich in den Github Issues vom Projekt.
+
+
+#set page(flipped: true)
+== Zeitplan und Meilensteine
+
+Hier ist der Zeitplan mit den wichtigsten Meilensteinen.
+
+\
+
+
+#import "@preview/gantty:0.5.1": gantt
+
+#figure(
+  scale(80%, reflow: true, gantt(yaml("resources/project-time-plan.yaml"))),
+  kind: image,
+  caption: [Langfristiger Zeitplan],
+)
+
 
 // offene Issues: https://github.com/rattenfest/BAR/issues?q=is%3Aissue+state%3Aopen
 // Meilensteine: https://github.com/rattenfest/BAR/milestones
@@ -26,19 +47,6 @@ Die Umsetzung der FR und NFR ist abgeschlossen und die Website ist im Internet e
 
 Die Dokumentation beinhaltet alle nötigen Informationen gemäss dem Leitfaden und ist bereit zum Korrekturlesen.
 
-\
-\
-
-#set page(flipped: true)
-=== Zeitplan
-
-#import "@preview/gantty:0.5.1": gantt
-
-#figure(
-  scale(80%, reflow: true, gantt(yaml("resources/project-time-plan.yaml"))),
-  kind: image,
-  caption: [Langfristiger Zeitplan],
-)
 
 #set page(flipped: false)
 
