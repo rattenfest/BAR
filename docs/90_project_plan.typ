@@ -42,8 +42,3 @@ Die Dokumentation beinhaltet alle nötigen Informationen gemäss dem Leitfaden u
 
 #set page(flipped: false)
 
-#include "91_risikoanalyse.typ"
-
-== Qualitätssicherung
-// z.B. Tests, Code Reviews, Definition of Done (siehe Notizen)
-

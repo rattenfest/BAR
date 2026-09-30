@@ -53,6 +53,7 @@ Um diese Ziele zu erreichen, machen wir diese Schritte:
     + Technologien
     + Webshops
     + ähnliche Umgebung Fussballstadion
+    + Risikoanalyse
   + Benutzung in spezieller Umgebung verbessern > betrachte ähnliche Beeinträchtigungen, erstelle eigene Guideline wie WCAG mit Elementen auch von WCAG
 + alles gelernte aus der Recherche in Anforderungen übernehmen, deklarieren woher
 + Umsetzung der Website

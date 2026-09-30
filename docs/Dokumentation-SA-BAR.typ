@@ -63,6 +63,9 @@
 #include "20_aehnliche_loesungen.typ"
 #include "21_ux_analyse.typ"
 
+#include "91_risikoanalyse.typ"
+
+
 #pagebreak()
 #include "22_requirements.typ"
 
@@ -80,7 +83,7 @@
 
 
 
-#include "90_project_information.typ"
+#include "90_project_plan.typ"
 
 #pagebreak()
 #include "95_glossar.typ"
