@@ -3,8 +3,9 @@
 // literaturrecherche (zu ux + interatkion im umfeld bei betrunkenen,dunkel und eng: Randbedingungen in dieser Umgebung > danach ein Konzept dazu)
 
 
-=== Restaurant und Bars Umgebung
 // TODO: dieses Kapitel streichen?
+
+=== Restaurant und Bars Umgebung
 
 Die Umgebung am Rattenfest ist ähnlich zu der in einer Küche von einem Restaurant oder einer vollen Bar.
 
@@ -32,7 +33,7 @@ Es kann das Erinnerungsvermögen verschlechtern beispielsweise durch Ablenkungen
 
 // Das UI sollte sich an den User Context (Benutzerkontext) anpassen gemäss @userIsDrunk. > immer mit worst case rechnen
 
-Diese Einschränkungen lassen sich vergleichen mit älteren und betrunkenen Personen.
+Als Hypothese vergleichen wir diese Einschränkungen mit denen von älteren und betrunkenen Personen.
 
 Wichtige Faktoren für gute Usability für ältere Personen für eine Web-Lösung sind erstens klarer Entscheidungsprozess mit klaren Schritten die an die Prioritäten vom Nutzer angepasst werden. Zweitens soll der Inhalt einfach gehalten werden, dass heisst einfache Sprache und Piktogramme nutzen. Drittens soll das UI intuitiv und benutzerfreundlich sein, Informationen sollen auf ein minumum reduziert werden (cognitive overload). Es kann Pop-Up Fenster und Informationen/Tipps anzeigen. Drop-down Menüs und Scrolling soll möglichst verhindert werden. @bogza2020user
 
@@ -44,23 +45,27 @@ Ausserdem soll man sich nicht auf das mathematische Können der Nutzer verlassen
 
 Die "W3C Web Accessibility Initiative (WAI)" entwickelt weiter Standarde und Hilfen um die Accessibility (Zugänglichkeit) sicherzustellen @w3chomepage. Für uns sind die "Web Content Accessibility Guidelines (WCAG)" @wcag wichtig und User Agent Accessibility Guidelines (UAAG), WAI-ARIA und Authoring Tool Accessibility Guidelines (ATAG) weniger.
 
-Beim entwickeln kann die Quick Reference @wcagreference genutzt werden.
+Beim Entwickeln kann die Quick Reference @wcagreference genutzt werden.
 
 // Weshalb die wichtigen Funktionen sehr gut ersichtlich und erreichbar platziert sein müssen und wenig Klicks benötigen sollen.
 // diese sollte dann rückgängig gemacht werden können.
 
-User Tests machen in ähnlicher Umgebung (z.B. bei der nächsten Bar)
+
+
+
+// > User Tests machen in ähnlicher Umgebung (z.B. bei der nächsten Bar)
 
 === Dark Mode
-Bei schwachem Licht macht Dark-Mode im Gegensatz zum Light-Mode das Auge eher müde @pathari2024dark. Es wird aber auch erwähnt, dass andere Studien zu einem anderen Ergebnis geführt haben, was an der Bildschirmgrösse liegen könnte @laine2025impact.
+Da es spezielle Lichtverhältnisse gibt am Rattenfest, wollten wir herausfinden ob sich ein Dark Mode besser eignet.\
+Gemäss @pathari2024dark macht bei schwachem Licht Dark-Mode, im Gegensatz zum Light-Mode, das Auge eher müde. Es wird aber auch erwähnt, dass andere Studien zu einem anderen Ergebnis geführt haben, was an der Bildschirmgrösse liegen könnte @laine2025impact.\
+Ausserdem ist der Prototyp der am letzten Rattenfest getestet wurde Light-Mode und es gab keine spezifischen Wünsche für den Dark-Mode.\
+Deshalb wird die Website im Light Mode entwickelt.
 
 // ==== Interaktion
 
 // Gestensteuerung (swipe)?
 // qr-code siehe Konkurrenzanalyse
 
-== Befragung der Nutzenden
-// Zusammenfassung der Umfrage
 
 == Erkenntnisse
 // Beschlüsse aus Recherche und Befragung → FR/NFR (Meilenstein M1)

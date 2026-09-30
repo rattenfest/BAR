@@ -61,6 +61,7 @@ Heute arbeiten einige Stadions mit Takeaway Apps zusammen, beispielsweise der Ky
   kind: image,
   caption: [Screenshot von `just-eat.ch`],
 )
+// Kein Beweis, dass das UI dasselbe ist im Stadion wie sonst...
 
 Die digitale Bestellplattform "Jamezz" verspricht, dass mithilfe eines QR-Codes die Bestellung geöffnet werden kann und der Sitzblock direkt mit dem QR-Code mitgeliefert wird. @Jamezz2026Sep
 // Viele der Vorteile wie eine erhöhte Bestellhäufigkeit und Blockzuordnung ist für uns jedoch nicht relevant.
