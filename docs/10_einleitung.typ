@@ -41,5 +41,25 @@ Die Arbeit wird als Studienarbeit (SA) im Umfang von 8 ECTS durchgeführt, was e
 // TODO: pro Person? Team, Betreuung, Zeitraum ergänzen
 
 
+== Vorgehen
+// muss der Zeitplan und die Organisation auch hier notiert werden
+Um diese Ziele zu erreichen, machen wir diese Schritte:
+
++ Problem genauer definieren // problem domain
++ Wie wurde es bisher gelöst
++ Rechereche
+  + Vorarbeit mit Prototyp wird analysiert und Erfahrungen für Anforderungen gessammelt
+  + Konkurrenzanalyse: was gibt es bereits, was können wir abschauen (Technologien, UI)
+  + Benutzung in spezieller Umgebung verbessern > betrachte ähnliche Beeinträchtigungen, erstelle eigene Guideline wie WCAG mit Elementen auch von WCAG
++ alles gelernte aus der Recherche in Anforderungen übernehmen, deklarieren woher
++ Umsetzung der Website
+  + Technologie auswählen
+  + DB Domain Modell und Architektur planen wo nötig
+  // + arbeit mit kanban?
+  + Programmierung
+  + kleiner User Test an simulierter Umgebung // hab ich jetzt einfach hier erfunden, fände ich noch cool
+  + Deployment
+  + Bedienungsanleitung für RF OK und BAR MA
+
 
 // Einleitung nicht mit Details zu bestehenden Lösungen und der Definition vom Problem ergänzen, soll separat sein
