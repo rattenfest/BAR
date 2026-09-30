@@ -67,8 +67,19 @@ Für die WCAG gibt es eine Quick Reference @wcagreference. Wir haben einige Rege
 // diese sollte dann rückgängig gemacht werden können.
 
 
-=== Zusammengefasst als Checkliste
+=== Guidelines für Rattenfest Website // TODO siehe Zeile 108
+// alternativer Titel: "Zusammengefasst als Checkliste"
+#import "@preview/cheq:0.4.0": checklist
+#show: checklist
 
+// TODO Formatierung: eventuell die einzelnen Abschnitte in eine Tabelle und mit Farben arbeiten und als 1-2 PDF Seiten.
+// Links anderst formatieren
+// siehe ähnliche Checklisten: (TODO inhalt vergleichen, evt. ergänzen)
+// - https://www.a11yproject.com/checklist/
+// - https://www.okabletech.org/wp-content/uploads/2022/05/Accessibility-Checklist-PDF.pdf
+
+
+Eine Zusammenfassung der oben besprochenen Accessibility Guidelines, angepasst auf die Umgebung am Rattenfest.
 Auf der verlinkten WCAG Website finden sich weitere Informationen.
 
 klarer Entscheidungsprozess (Bestellung aufnehmen, Vorbestellung)
