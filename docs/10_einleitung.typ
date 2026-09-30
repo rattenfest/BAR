@@ -13,11 +13,6 @@ Das Rattenfest ist ein jährlich stattfindendes Festival, das von Studierenden d
 Dieser Prozess wurde in den letzten Jahren versucht zunehmend zu digitalisieren, die bisherigen Lösungen blieben jedoch unzureichend.
 
 == Systemkontext und Domäne
-// Dieser Teil des Berichts beschreibt und analysiert die externen Schnittstellen des zu erstellenden oder zu
-// erweiternden Softwaresystems (Entwicklungszeit und/oder Laufzeit) sowie die bestehende oder zu
-// verwendende Infrastruktur wie z.B. Cloud-Provider. Er skizziert die fachliche Domäne, insbesondere ihre
-// softwaretechnischen Besonderheiten (Bsp. Design Hot Spots, Pattern-Nutzung).
-
 // nicht verwechseln mit "Problem Domain", welches fachlich nicht technisch ist
 
 Es gibt eine Website des Rattenfest `rattenfest.ch`, diese wird über Hostpoint gehostet.
@@ -45,4 +40,6 @@ Neben der Funktionalität soll die Lösung auf das Rattenfest zugeschnitten und 
 Die Arbeit wird als Studienarbeit (SA) im Umfang von 8 ECTS durchgeführt, was einem Aufwand von rund 240 Stunden entspricht.
 // TODO: pro Person? Team, Betreuung, Zeitraum ergänzen
 
-// weitere Dokumente zum Thema "einleitung" siehe Nummerierung 1x_....typ und in "Dokumentation-SA-BAR.typ" importiert
+
+
+// Einleitung nicht mit Details zu bestehenden Lösungen und der Definition vom Problem ergänzen, soll separat sein

@@ -8,3 +8,4 @@ Das System erfüllte seinen Zweck nur teilweise, da es für den Verkauf und nich
 - *Mehraufwand im Lager:* Das Lagerteam musste neben dem Bereitstellen jede Bestellung zusätzlich erfassen.
 - *Kein Lagerbestand:* Der aktuelle Bestand war im System nicht ersichtlich.
 - *Gebinde und Rückgaben:* Ausserdem kam es zu Unklarheiten bei Gebindegrössen, Rückgaben liessen sich nur umständlich erfassen. Fehler konnten nicht korrigiert werden und mussten in der Abrechnung berücksichtigt werden.
+

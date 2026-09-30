@@ -79,6 +79,8 @@ PDF für Bewertung
   - kapitel 16 separieren
 - projektmanagement notieren > wo wir unsere Tasks notieren, Kanban und so
 - persönlicher bericht privat oder gar nicht nötig
+-> Das im Leitfaden zählt, die Orientierungshilfe ist nur eine Hilfe.
+
 
 - informatikbegriffe nicht erklären, sondern domän begriffe ( gut so wie bis jetzt )
 

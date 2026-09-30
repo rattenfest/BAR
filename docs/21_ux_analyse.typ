@@ -4,6 +4,7 @@
 
 
 === Restaurant und Bars Umgebung
+// TODO: dieses Kapitel streichen?
 
 Die Umgebung am Rattenfest ist ähnlich zu der in einer Küche von einem Restaurant oder einer vollen Bar.
 
@@ -21,7 +22,8 @@ Gemäss ^ sind die wichtigsten Stressfaktoren "Content Overload, Service Instabi
 Wir suchen ein gutes Mass zwischen "Content Overload", zuviele Informationen die den Nutzer überfordern und zu wenige Informationen. Ein Bar-Mitarbeiter soll, nach einer kurzen Ablenkung, dort weitermachen können wo er aufgehört hat.
 Die weiteren Punkte .. können durch User Experience Tests des fertigen Produktes gelöst werden. NFR... Usability
 
-=== Beeinträchtigungen
+
+=== Accessibility Guidelines übernehmen // TODO: Titel?
 
 Ein schlechtes Beispiel: der Bar Mitarbeiter erhält den Auftrag, das Getränk XY nachzubestellen, dann öffnet dieser den Link zur Website und sucht den Button "neue Bestellung" und klickt darauf. Sofort kommt jemand und sagt ob er schnell ein Becher von XY abfüllen kann. Danach soll er fortsetzen aber jetzt sieht er eine Liste von ganz vielen Getränkeartikeln und weiss nicht mehr, wie er dahin gekomment ist und was er machen wollte. Er muss nochmals den Link öffnen und kann dieses Mal die Bestellung erstellen. Er klickt aber auf das falsche Getränk und da es schnell gehen muss hat er die Bestellung bereits abgeschickt.
 

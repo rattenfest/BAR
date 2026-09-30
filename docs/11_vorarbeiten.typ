@@ -26,6 +26,7 @@ Für die Benutzeroberfläche wurde die Komponentenbibliothek #link("https://ui.s
   ),
 )
 === Erfahrungen aus dem Einsatz
+
 Der Prototyp war während des gesamten Fests ohne nennenswerte Ausfälle im Einsatz. Die Rückmeldungen von Bar- und Lagerteam fielen überwiegend positiv aus. Der Einsatz unter realen Bedingungen lieferte zudem konkrete Hinweise auf fehlende Funktionen, die ohne Prototyp kaum erkannt worden wären, beispielsweise:
 
 - die Berücksichtigung von Pausen und Schichtwechseln,
@@ -33,6 +34,10 @@ Der Prototyp war während des gesamten Fests ohne nennenswerte Ausfälle im Eins
 - Einfache Kontaktmöglichkeit zur Security.
 
 Diese Erkenntnisse fliessen als Anforderungen in diese Arbeit ein.
+
+// TODO: sollen wir die Anforderungen verlinken? Aufzeigen welche?
+// dann die Anforderungen aufteilen in: was war gut > wird so übernommen, was war schlecht > wird geändert
+// Später: notieren welche Teile vom Code/Struktur wir übernehmen können
 
 === Grenzen
 Trotz des erfolgreichen Einsatzes genügt der Prototyp den Zielen dieser Arbeit nicht:
@@ -50,5 +55,4 @@ Der Prototyp dient dieser Arbeit als validierte Ausgangslage, nicht als Codebasi
 - das Zugangskonzept: Bars greifen über einen persönlichen Link ohne Passwort zu, Lagerteam und Administratoren melden sich mit Benutzername und Passwort an.
 
 Neu im Rahmen dieser Arbeit entstehen insbesondere ein mehrjahresfähiges Datenmodell, eine testbare Architektur, die Administration über die Applikation selbst sowie die Prozesse vor und nach dem Fest. Zudem wird die Bedienbarkeit unter Festbedingungen, auf Basis der Recherche in und der Rückmeldungen aus dem Einsatz, untersucht und weiterentwickelt.
-
 
