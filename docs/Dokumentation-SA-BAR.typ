@@ -53,7 +53,11 @@
 #include "10_einleitung.typ"
 
 #pagebreak()
+
 #include "11_vorarbeiten.typ"
+
+#include "11_bisherige_loesung.typ"
+#include "11_problem_domain.typ"
 
 #pagebreak()
 #include "20_analyse.typ"
