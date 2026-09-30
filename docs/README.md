@@ -66,3 +66,11 @@ Bilder und Tabellen müssen immer eine Beschreibung haben, damit ein Tabellen- u
   caption: [Beschreibung]
 ) <bild-label>
 ```
+
+```typ
+#figure(
+  image("resources/bild.png", width: 80%),
+  kind: image,
+  caption: [Beschreibung]
+)
+```

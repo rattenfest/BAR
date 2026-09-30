@@ -49,7 +49,10 @@ Um diese Ziele zu erreichen, machen wir diese Schritte:
 + Wie wurde es bisher gelöst
 + Rechereche
   + Vorarbeit mit Prototyp wird analysiert und Erfahrungen für Anforderungen gessammelt
-  + Konkurrenzanalyse: was gibt es bereits, was können wir abschauen (Technologien, UI)
+  + Konkurrenzanalyse: was gibt es bereits, was können wir abschauen
+    + Technologien
+    + Webshops
+    + ähnliche Umgebung Fussballstadion
   + Benutzung in spezieller Umgebung verbessern > betrachte ähnliche Beeinträchtigungen, erstelle eigene Guideline wie WCAG mit Elementen auch von WCAG
 + alles gelernte aus der Recherche in Anforderungen übernehmen, deklarieren woher
 + Umsetzung der Website
