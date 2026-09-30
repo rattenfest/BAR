@@ -33,9 +33,9 @@
   )
 ])
 
-// Remove numbering for headings after level 5, headings too long for example at "User Testings" but "Testing Concept" needs numbers up to level 4 for references
+// Remove numbering for headings after level 3
 #show heading: it => {
-  if (it.numbering == none or it.level >= 5) {
+  if (it.numbering == none or it.level >= 3) {
     block(it.body)
   } else {
     block(counter(heading).display() + " " + it.body)
