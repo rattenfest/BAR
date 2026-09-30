@@ -60,7 +60,7 @@
 #include "11_problem_domain.typ"
 
 #pagebreak()
-#include "20_analyse.typ"
+#include "20_aehnliche_loesungen.typ"
 #include "21_ux_analyse.typ"
 
 #pagebreak()
