@@ -56,6 +56,10 @@
 #include "11_vorarbeiten.typ"
 
 #pagebreak()
+
+#include "91_risikoanalyse.typ"
+
+
 #include "20_analyse.typ"
 #include "21_ux_analyse.typ"
 
