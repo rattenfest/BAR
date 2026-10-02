@@ -10,7 +10,7 @@
 
 
 // habe hier einfach mal was geschrieben, muss noch angepasst werden.
-Zuerst betrachten wir Technologien von ähnlichen Bereichen, danach schauen wir was das UI von einem Webshop abschauen kann und was anders sein soll. Wir betrachten was es für Lösungen für den Bereich direkt zu Kunden gibt und was uns unterscheidet.
+Zuerst betrachten wir Technologien von ähnlichen Bereichen, danach schauen wir was das UI von einem Webshop abschauen kann und was anders sein soll.
 
 === Können wir Technologien übernehmen von ähnlichen Bereichen?
 
@@ -75,15 +75,14 @@ Das UI differenziert sich nicht von einem Takeaway Website oder Restaurant Menü
   caption: [Screenshot von `jamezz.com/de`],
 )
 
-
-Diese Lösungen sind sehr an den Verkauf und die Bezahlung ausgerichtet. // Sie lösen das Problem vom Anstehen in der Schlange und werben mit mehr Verkäufen.
-Heutzutage ist mehr mit Webseiten und Web Apps möglich, so ist auch Just Eat ohne App nutzbar.
-// @andrin fazit erweitern?
-Die Benachrichtigungen auf SMS zu erweitern, könnte die schlechte Internetverbindung ausgleichen. Neben der zusätzlichen Komplexität und Kosten müsste dafür jeder Bar-MA sein eigenes Profil mit Telefonnummer speichern. Mit AWS End User Messaging wäre der Preis pro SMS ohne weitere Einrichtungskosten \$0.05124 @awssms.
-
-
 // === Display mit Bestellinfos
 // Restaurant digitales Bestellsystem
 // z.B. das von McDonalds
 // > zu langweilig und dort benötigen wir keine Verbesserung
 // https://nento.com/mcdonalds-digital-menu-board/?keyword=mcdonalds_digital_menu_board
+
+=== Fazit
+Diese Lösungen sind sehr an den Verkauf und die Bezahlung ausgerichtet. // Sie lösen das Problem vom Anstehen in der Schlange und werben mit mehr Verkäufen.
+Heutzutage ist mehr mit Webseiten und Web Apps möglich, so ist auch Just Eat ohne App nutzbar.
+// @andrin fazit erweitern?
+Die Benachrichtigungen auf SMS zu erweitern, könnte die schlechte Internetverbindung ausgleichen. Neben der zusätzlichen Komplexität und Kosten müsste dafür jeder Bar-MA sein eigenes Profil mit Telefonnummer speichern. Mit AWS End User Messaging wäre der Preis pro SMS ohne weitere Einrichtungskosten \$0.05124 @awssms.
