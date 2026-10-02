@@ -81,11 +81,12 @@ Abrechnung nachvollziehbar sind.
   oder als nicht abgeholt zu kennzeichnen.
 
 *US-13:* Als Bar-Team möchte ich bei technischen Problemen oder Zwischenfällen
-jemanden erreichen.
+jemanden erreichen. @vorarbeit-erfahrungen
 - *FR-22*: Das System muss eine Kontaktmöglichkeit zum Lagerteam und Sicherheitsverantwortlichen anzeigen.
 
 *US-14:* Als Lagerteam möchte ich eine Pause einlegen, damit die Bars wissen,
-dass Bestellungen vorübergehend nicht bearbeitet werden.
+dass Bestellungen vorübergehend nicht bearbeitet werden. @vorarbeit-erfahrungen
+
 - *FR-23*: Das System muss erlauben, das Lager als vorübergehend nicht besetzt zu
   markieren, was den Bars angezeigt wird.
 // siehe Status bei Problem Domain der Getränkerückgabe.
