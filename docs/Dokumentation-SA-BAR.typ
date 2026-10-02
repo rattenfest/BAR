@@ -54,16 +54,18 @@
 
 #pagebreak()
 
+#include "11_problem_domain.typ"
+
 #include "11_vorarbeiten.typ"
 
+#include "91_risikoanalyse.typ"
+
 #include "11_bisherige_loesung.typ"
-#include "11_problem_domain.typ"
 
 #pagebreak()
 #include "20_aehnliche_loesungen.typ"
 #include "21_ux_analyse.typ"
 
-#include "91_risikoanalyse.typ"
 
 
 #pagebreak()
@@ -90,37 +92,7 @@
 
 #pagebreak()
 
-= Hilfsmittelverzeichnis
-
-Die folgende Übersicht dokumentiert die im Projekt verwendeten Hilfsmittel nach Aufgabenbereich.
-Die konkreten Tools werden im Verlauf des Projekts ergänzt.
-
-#figure(
-  table(
-    columns: (1fr, 2fr),
-    stroke: 0.5pt + gray,
-    inset: 6pt,
-    align: (left, left),
-    table.header(
-      table.cell(text(weight: "bold")[Aufgabenbereich]),
-      table.cell(text(weight: "bold")[Tools]),
-    ),
-    [Literatur-Recherche und Verwaltung], [Google, DuckDuckGo, scholar.google.com],
-    [Datenanalyse und Visualisierung], [],
-    [Ideengenerierung], [Claude, Gemini, Typst],
-    [Übersetzung], [],
-    [Prototyping], [Figma],
-    [Coding], [Claude Code],
-    [Texterstellung, Textoptimierung, Rechtschreibe- und Grammatikprüfung], [Claude, Hunspell],
-    // siehe README.md für die Anleitung
-    [Zusammenarbeit und Projektmanagement], [Teams, GitHub, Outlook, Google Meet, Typst, WhatsApp],
-    [DevOps], [GitHub],
-    [Notizen], [Obsidian, Papier],
-  ),
-  kind: table,
-  caption: [Hilfsmittelverzeichnis],
-)
-
+#include "98_hilfsmittelverzeichnis.typ"
 
 = Bilderverzeichnis
 #outline(
