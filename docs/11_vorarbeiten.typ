@@ -25,13 +25,12 @@ Für die Benutzeroberfläche wurde die Komponentenbibliothek #link("https://ui.s
     [#figure(image("resources/prototype/bar-view.png", width: 100%), caption: [Ansicht der Bar])],
   ),
 )
-=== Erfahrungen aus dem Einsatz
-
+=== Erfahrungen aus dem Einsatz <vorarbeit-erfahrungen>
 Der Prototyp war während des gesamten Fests ohne nennenswerte Ausfälle im Einsatz. Die Rückmeldungen von Bar- und Lagerteam fielen überwiegend positiv aus. Der Einsatz unter realen Bedingungen lieferte zudem konkrete Hinweise auf fehlende Funktionen, die ohne Prototyp kaum erkannt worden wären, beispielsweise:
 
-- die Berücksichtigung von Pausen und Schichtwechseln,
-- Angabe von Preisen und Übersicht der Ausgaben,
-- Einfache Kontaktmöglichkeit zur Security.
+- die Berücksichtigung von Pausen und Schichtwechseln, // US-14
+- Angabe von Preisen und Übersicht der Ausgaben, // TODO
+- Einfache Kontaktmöglichkeit zur Security. // US-13
 
 Diese Erkenntnisse fliessen als Anforderungen in diese Arbeit ein.
 
@@ -55,4 +54,5 @@ Der Prototyp dient dieser Arbeit als validierte Ausgangslage, nicht als Codebasi
 - das Zugangskonzept: Bars greifen über einen persönlichen Link ohne Passwort zu, Lagerteam und Administratoren melden sich mit Benutzername und Passwort an.
 
 Neu im Rahmen dieser Arbeit entstehen insbesondere ein mehrjahresfähiges Datenmodell, eine testbare Architektur, die Administration über die Applikation selbst sowie die Prozesse vor und nach dem Fest. Zudem wird die Bedienbarkeit unter Festbedingungen, auf Basis der Recherche in und der Rückmeldungen aus dem Einsatz, untersucht und weiterentwickelt.
+
 
