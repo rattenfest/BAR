@@ -43,29 +43,18 @@ Ausserdem soll man sich nicht auf das mathematische Können der Nutzer verlassen
 @W3cCognitiveAccess
 // // TODO: in NFR, detailiertere Beschreibungen auf der Website
 
-Die "W3C Web Accessibility Initiative (WAI)" entwickelt weiter Standarde und Hilfen um die Accessibility (Zugänglichkeit) sicherzustellen @w3chomepage. Für uns sind die "Web Content Accessibility Guidelines (WCAG)" @wcag wichtig, aber User Agent Accessibility Guidelines (UAAG), WAI-ARIA und Authoring Tool Accessibility Guidelines (ATAG) weniger.
+Die "W3C Web Accessibility Initiative (WAI)" entwickelt weiter Standarde und Hilfen um die Accessibility (Zugänglichkeit) sicherzustellen @w3chomepage. Für uns sind die "Web Content Accessibility Guidelines (WCAG)" @wcag relevant, aber User Agent Accessibility Guidelines (UAAG), WAI-ARIA und Authoring Tool Accessibility Guidelines (ATAG) weniger.
 
 Für die WCAG gibt es eine Quick Reference @wcagreference. Wir haben einige Regeln für uns übernommen und in der Checkliste auf WCAG verlinkt.
+
 // Für "Wahrnehmbar" soll sichergestellt werden, dass der Inhalt auf dem Hintegrund gut sichtbar ist (1.4) dazu zählt eine passende Farbwahl, guter Kontrast .
-
-
-// aus dem web 1 spick:
-// Barrierefreiheit Anforderungen
-// Wahrnehmbar. Informationen und Komponenten des UI müssen für alle Benutzer
-// wahrnehmbar sein. Bedienbar. Komponenten des User Interface und die Navigation müssen
-// für alle Benutzer bedienbar sein. Verständlich. Informationen und die Bedienung des User
-// Interface müssen verständlich sein. Robust. Inhalte müssen so robust sein, dass sie von einer
-// Vielzahl von User Agents, einschliesslich assistiver Technologien, interpretiert werden können
-//
-// Grundprinzip (Welches Grundprinzip ist betroffen?)
-// Leitlinie (Was wollen wir erreichen?)
-// Erfolgskriterium (Wann haben wir die Leitlinie erreicht?)
-// Level (Wie wichtig/arbeitsintensiv/streng ist das Erfolgskriterium? A, AA, AAA)
-
 
 // Weshalb die wichtigen Funktionen sehr gut ersichtlich und erreichbar platziert sein müssen und wenig Klicks benötigen sollen.
 // diese sollte dann rückgängig gemacht werden können.
 
+// muss vielleicht auch weiter oben einmal erwähnt werden, ist mir spontan eingefallen:
+// TODO: Quelle finden
+Die Bar MA könnten nur eine Hand frei haben, beispielsweise beim nachschauen ob die Bestellung bereit ist. Deshalb sollen diese Aktionen so auf dem Bildschirm positioniert sein, damit sie gut mit dem Daumen erreicht werden. Weniger häufig genutzte Aktionen wie die Einstellungen können weiter weg platziert werden. <einhaendig>
 
 === Guidelines für Rattenfest Website // TODO siehe Zeile 108
 // alternativer Titel: "Zusammengefasst als Checkliste"
@@ -82,10 +71,20 @@ Für die WCAG gibt es eine Quick Reference @wcagreference. Wir haben einige Rege
 Eine Zusammenfassung der oben besprochenen Accessibility Guidelines, angepasst auf die Umgebung am Rattenfest.
 Auf der verlinkten WCAG Website finden sich weitere Informationen.
 
+Die Punkte wurden zusätzlich in passende Untertitel gruppiert, die sinnvoll sind für diese Punkte.
+
 klarer Entscheidungsprozess (Bestellung aufnehmen, Vorbestellung)
 - [ ] Klare Schritte aufzeigen // @bogza2020user
 - [ ] jeder Schritt ist sinnvoll getrennt und verständlich
 - [ ] In der Navigation ist der aktuelle Schritt, vorherige und nächste Schritt ersichtlich
+  - siehe auch https://www.w3.org/WAI/WCAG22/quickref/#location
+- [ ] Der Nutzer wird informiert, wenn eine Aktion den Kontext wechselt (Seitenwechsel, vorhandene Optionen werden geändert) https://www.w3.org/WAI/WCAG22/quickref/#on-input
+
+Einheitlichkeit
+- [ ] Die Navigationssteuerung ist einheitlich https://www.w3.org/WAI/WCAG22/quickref/#consistent-navigation
+- [ ] Komponente mit gleichen Funktionalitäten werden einheitlich dargestellt und genutzt https://www.w3.org/WAI/WCAG22/quickref/#consistent-identification
+
+- [ ] Kontextänderungen werden nur durch den Nutzer aufgerufen, oder können durch den Nutzer deaktiviert werden https://www.w3.org/WAI/WCAG22/quickref/#change-on-request (Beispielsweise wenn der Nutzer auf der Website ist und eine Nachricht erhält, soll entweder nicht ein Popup den Bildschirm damit verdecken oder der Nutzer kann diese Popups deaktivieren)
 
 einfache Sprache // @bogza2020user @W3cCognitiveAccess
 - [ ] einfache Wörter
@@ -105,10 +104,24 @@ Navigation und Bedienung
 - [ ] Es ist gibt keine Drop-Down Menüs // TODO: sinnvolle Alternative für das Navigationsmenü? z.B. immer ein zurück und vorwärts button und Daten werden gespeichert // @bogza2020user
 - [ ] Inhalt ist nicht hinter Hover/Focus versteckt // ähnlich zu https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus
 - [ ] Es gibt keine zeitbegrenzten Optionen oder der Nutzer kann den Timer deaktivieren. Ausser es ist an eine Real-Time Aktivität gebunden, beispielsweise die Bestellung ist bereits bereitgestellt worden. https://www.w3.org/WAI/WCAG22/quickref/#timing-adjustable
-- [ ] TODO weitermachen ab https://www.w3.org/WAI/WCAG22/quickref/#page-titled
+// - keine Optionen die nur mit Pop-Up / Toast erreichbar sind, sondern alles gehört zu den klaren Schritten, siehe "Klare Schritte aufzeigen"
+
+Aktionen ausführen/ Buttons und Links / Operable / Bedienbarkeit (aber ohne Bedienung oben ^)
+- [ ] Alles was mit Gestensteuerung möglich ist, kann auch durch Klicks erreicht werden https://www.w3.org/WAI/WCAG22/quickref/#pointer-gestures
+- [ ] Die Grösse von Targets (Buttons, Links, alles was anklickbar ist) sind mindestens 44 x 44 Pixels gross (Ausnahmen dokumentiert erlaubt) https://www.w3.org/WAI/WCAG22/quickref/#target-size-enhanced
+- [ ] Input ist mit einer Computermaus und Touchscreen möglich https://www.w3.org/WAI/WCAG22/quickref/#concurrent-input-mechanisms // stark geändert. Computermaus meint nicht physisch sondern auch ein Trackpad. Vielleicht zu Zeiger umbenennen?
+- [ ] Es werden keine Drag & Drop oder Mouse-Down Events genutzt. // ansonsten ist https://www.w3.org/WAI/WCAG22/quickref/#dragging-movements und https://www.w3.org/WAI/WCAG22/quickref/#multiple-ways nötig
+
+Eingabehilfen
+- [ ] Die Aktion von einem Link und Button ist eindeutig erkennbar https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context <link-purpose>
+- [ ] Input Fehler werden dem Nutzer sinnvoll als Text erklärt https://www.w3.org/WAI/WCAG22/quickref/#error-identification
+- [ ] Wenn möglich werden bei Input Fehlern Empfehlungen/Vorschläge angezeigt https://www.w3.org/WAI/WCAG22/quickref/#error-identification
+- [ ] Bei erfolgreicher Eingabe erhält Nutzer eine Erfolgsmeldung  // link unter https://www.w3.org/WAI/WCAG22/quickref/#error-identification führt zu https://www.w3.org/WAI/WCAG22/Techniques/general/G199.
+- [ ] Nachrichten wie eine Erfolgsmeldung oder Bestellnachrichten sollten nicht automatisch verschwinden, da es nicht sichergestellt ist, dass der Nutzer nicht wegschaut. // Aber kein WCAG dazu gefunden.
 
 Zusätzliche Hilfen
-- [ ] Informationen und Tipps als Pop-Up auffindbar // @bogza2020user
+- [ ] Informationen und Tipps als Pop-Up auffindbar // @bogza2020user + https://www.w3.org/WAI/WCAG22/quickref/#help
+- [ ] Hilfen sind einheitlich platziert https://www.w3.org/WAI/WCAG22/quickref/#consistent-help
 
 Lesbarkeit in speziellen Lichtverhältnissen
 - [ ] Passende Farbwahl https://www.w3.org/WAI/WCAG22/quickref/#use-of-color
@@ -116,12 +129,20 @@ Lesbarkeit in speziellen Lichtverhältnissen
 - [ ] Zoomen soll möglich sein https://www.w3.org/WAI/WCAG22/quickref/#resize-text
 - [ ] Es befindet sich kein Text in den Bildern https://www.w3.org/WAI/WCAG22/quickref/#images-of-text
 
+
 Sitzung
 - [ ] Daten sind gespeichert, wenn Nutzer sich neu authentifizieren musste https://www.w3.org/WAI/WCAG22/quickref/#re-authenticating
+// Rückgängig machen muss aber nicht mehr möglich sein nach Sitzungsverlust oder?
+
+Position der Bedienungselemente
+- [ ] Häufig nutzbare Aktionen befinden sich nahe beim Daumen (unten) @einhaendig
+
 
 Die Nutzung soll auf Smartphone und Laptops bedienbar sein. Der Prototyp der Vorarbeit wurde sogar von einer Bar mit einem Laptop genutzt, wobei die meisten das private Smartphone nutzten.
 
 Die Tastaturnavigation wird nicht speziell geprüft. Es wird semantisches HTML genutzt womit dies möglichst sichergestellt wird. // und sinnvolle library mit out of the box accessibility?? besser argumentieren? siehe Guideline 2.1 https://www.w3.org/WAI/WCAG22/quickref/#keyboard
+Auch spezifische Guidelines für Screen-Reader sind nicht in der Checkliste enthalten, da sie für die Zielgruppe irrelevant sind. // Screen Reader und SEO, Scraper... wie nennen?
+So wurde auch "2.4.2 Page Titled" nicht als Bedingung notiert, um Freiheit zu lassen beim Seitenaufbau und da die Bedingung "In der Navigation ist der aktuelle Schritt, vorherige und nächste Schritt ersichtlich" bereits diesen Punkt erfüllt.
 
 Das Kontrastverhältnis sollte wo möglich 7:1 betragen, darf aber an speziellen Orten 4.5:1 sein. Beim Prototyp aus der Vorarbeit genügt der Kontrast knapp, es hat grauen Text (\#737373) auf hellgrünem Hintergrund (\#F0FDF4) mit dem Kontrastverhältnis 4.52:1. Es soll auch die Schriftgrösse einbezogen werden bei der Überlegung, ob der Kontrast genügt.
 
@@ -129,8 +150,16 @@ Das Dashboard mit den Bestellungen wird automatisch mit neuen Bestellungen aktua
 
 Die Animationen können nicht deaktiviert werden. Es wird darauf geachtet, dass die Animationen den durchschnittlichen Nutzer nicht stören. https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions
 
+Der Punkt "2.4.4 Link Purpose (In Context)" wurde erweitert zu Buttons @link-purpose .
+
+
+
+
 // offene Fragen @andrin
-// Es gibt keine Timeouts oder?? https://www.w3.org/WAI/WCAG22/quickref/#timeouts
+// - Es gibt keine Timeouts oder?? https://www.w3.org/WAI/WCAG22/quickref/#timeouts
+
+
+
 
 
 https://www.w3.org/WAI/WCAG22/quickref/#contrast-enhanced
