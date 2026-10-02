@@ -28,7 +28,7 @@ Die Risiken sind in zwei Gruppen unterteilt: Projektrisiken gefährden die Durch
     inset: 10pt,
     stroke: 0.5pt + gray,
     [], table.cell(colspan: 3)[*Eintrittswahrscheinlichkeit*],
-    [*Auswirkung*], [*tief*], [*mittel*], [*hoch*],
+    [*Auswirkung*], [*unwahrscheinlich*], [*möglich*], [*wahrscheinlich*],
     [*hoch*], r(1, 3)[R-05], r(2, 3)[R-02, R-04], r(3, 3)[R-03],
     [*mittel*], r(1, 2)[P-02], r(2, 2)[P-01, R-06], r(3, 2)[R-01],
     [*tief*], r(1, 1)[], r(2, 1)[], r(3, 1)[],
