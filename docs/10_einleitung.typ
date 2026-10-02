@@ -36,6 +36,19 @@ Neben der Funktionalität soll die Lösung auf das Rattenfest zugeschnitten und 
 - *Zuverlässigkeit* während des Fests. Sobald die Bars auf den manuellen Weg ausweichen müssen, verliert die Applikation ihren Zweck.
 - *Verwendbarkeit und Wartbarkeit* durch ein jährlich wechselndes OK mit unterschiedlichen technischen Kenntnissen.
 
+#figure(
+  image("resources/prototype/Foto-Prototyp-Bar (1).jpg", width: 80%),
+  kind: image,
+  caption: [Foto vom Prototyp bei einer Studentenbar],
+)
+
+#figure(
+  image("resources/prototype/Foto-Prototyp-Bar (2).jpg", width: 80%),
+  kind: image,
+  caption: [Foto vom Prototyp bei einer Studentenbar],
+)
+// ich habe den Kontrast verringert und das Foto ein bisschen verdunkelt
+
 == Rahmenbedingungen
 Die Arbeit wird als Studienarbeit (SA) im Umfang von 8 ECTS durchgeführt, was einem Aufwand von rund 240 Stunden entspricht.
 // TODO: pro Person? Team, Betreuung, Zeitraum ergänzen
