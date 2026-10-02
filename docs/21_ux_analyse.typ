@@ -141,6 +141,7 @@ Die Punkte wurden zusätzlich in passende Untertitel gruppiert, die sinnvoll sin
   - [ ] Passende Farbwahl https://www.w3.org/WAI/WCAG22/quickref/#use-of-color
   - [ ] Kontrastverhältnis mindestens 4.5:1 wo möglich 7:1
   - [ ] Zoomen soll möglich sein https://www.w3.org/WAI/WCAG22/quickref/#resize-text
+  // lint:ignore [TODO: format checklist after content will not be changed anymore]
   - [ ] Es befindet sich kein Text in den Bildern https://www.w3.org/WAI/WCAG22/quickref/#images-of-text
 
 
@@ -149,22 +150,16 @@ Die Punkte wurden zusätzlich in passende Untertitel gruppiert, die sinnvoll sin
 
   Position der Bedienungselemente
   - [ ] Häufig nutzbare Aktionen befinden sich nahe beim Daumen (unten) @einhaendig
-] // lint:ignore [TODO: format checklist after content will not be changed anymore]
-
-//   ],
+]
+//
+// //
+// #figure(
+//   [],
 //   kind: "checklist",
 //   supplement: [Checkliste],
 //   caption: [Guidelines für die Bedienung am Rattenfest],
 // ) <guidelines>
-
-//
-#figure(
-  [],
-  kind: "checklist",
-  supplement: [Checkliste],
-  caption: [Guidelines für die Bedienung am Rattenfest],
-) <guidelines>
-//
+// //
 
 
 Die Nutzung soll auf Smartphone und Laptops bedienbar sein. Der Prototyp der Vorarbeit wurde sogar von einer Bar mit einem Laptop genutzt, wobei die meisten das private Smartphone nutzten.

@@ -74,3 +74,5 @@ Bilder und Tabellen müssen immer eine Beschreibung haben, damit ein Tabellen- u
   caption: [Beschreibung]
 )
 ```
+
+Scripts können lokal ausgeführt werden, beispielsweise `python .github/workflows/scripts/check_figures.py`
