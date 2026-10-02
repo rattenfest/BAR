@@ -42,18 +42,21 @@ Die Arbeit wird als Studienarbeit (SA) im Umfang von 8 ECTS durchgeführt, was e
 
 
 == Vorgehen
-// muss der Zeitplan und die Organisation auch hier notiert werden
+// muss der Zeitplan und die Organisation auch hier notiert werden?
+// Reihenfolge Struktur soll hiermit übereinstimmen
 Um diese Ziele zu erreichen, machen wir diese Schritte:
 
 + Problem genauer definieren // problem domain
 + Wie wurde es bisher gelöst
-+ Rechereche
-  + Vorarbeit mit Prototyp wird analysiert und Erfahrungen für Anforderungen gessammelt
++ Recherche
+  + Vorarbeit mit Prototyp wird analysiert und Erfahrungen für Anforderungen gesammelt >
+  /*mit Abgrenzung: "
+  Neu im Rahmen dieser Arbeit entstehen insbesondere ein über mehrere Jahre hinweg nutzbares Datenmodell und eine testbare Architektur. Ausserdem wird die Administration ergänzt, damit gibt es eine Verwaltung der Applikation selbst sowie der Prozesse vor und nach dem Fest. Zudem wird die Bedienbarkeit unter Festbedingungen, auf Basis der Recherche und den Rückmeldungen aus dem Einsatz, untersucht und weiterentwickelt."*/
+  + Risikoanalyse
   + Konkurrenzanalyse: was gibt es bereits, was können wir abschauen
     + Technologien
     + Webshops
     + ähnliche Umgebung Fussballstadion
-    + Risikoanalyse
   + Benutzung in spezieller Umgebung verbessern > betrachte ähnliche Beeinträchtigungen, erstelle eigene Guideline wie WCAG mit Elementen auch von WCAG
 + alles gelernte aus der Recherche in Anforderungen übernehmen, deklarieren woher
 + Umsetzung der Website

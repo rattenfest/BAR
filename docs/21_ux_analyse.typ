@@ -109,7 +109,7 @@ Navigation und Bedienung
 
 Aktionen ausführen/ Buttons und Links / Operable / Bedienbarkeit (aber ohne Bedienung oben ^)
 - [ ] Alles was mit Gestensteuerung möglich ist, kann auch durch Klicks erreicht werden https://www.w3.org/WAI/WCAG22/quickref/#pointer-gestures
-- [ ] Die Grösse von Targets (Buttons, Links, alles was anklickbar ist) sind mindestens 44 x 44 Pixels gross (Ausnahmen dokumentiert erlaubt) https://www.w3.org/WAI/WCAG22/quickref/#target-size-enhanced
+- [ ] Die Grösse von Targets (Buttons, Links, alles was anklickbar ist) sind mindestens 44 x 44 Pixel gross (Ausnahmen dokumentiert erlaubt) https://www.w3.org/WAI/WCAG22/quickref/#target-size-enhanced
 - [ ] Input ist mit einer Computermaus und Touchscreen möglich https://www.w3.org/WAI/WCAG22/quickref/#concurrent-input-mechanisms // stark geändert. Computermaus meint nicht physisch sondern auch ein Trackpad. Vielleicht zu Zeiger umbenennen?
 - [ ] Es werden keine Drag & Drop oder Mouse-Down Events genutzt. // ansonsten ist https://www.w3.org/WAI/WCAG22/quickref/#dragging-movements und https://www.w3.org/WAI/WCAG22/quickref/#multiple-ways nötig
 

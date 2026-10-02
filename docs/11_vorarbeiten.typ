@@ -42,17 +42,15 @@ Diese Erkenntnisse fliessen als Anforderungen in diese Arbeit ein.
 Trotz des erfolgreichen Einsatzes genügt der Prototyp den Zielen dieser Arbeit nicht:
 
 - *Architektur und Qualität*: Der Prototyp wurde aufgrund mangelnder Planung als Einweglösung entwickelt. Es besteht keine Testabdeckung und keine saubere Architektur, was eine Weiterentwicklung und Wartung durch ein wechselndes OK erschwert.
-- *Datenmodell*: Das Datenschema ist auf ein einzelnes Fest ausgelegt. Um die App für ein weiteres Fest zu verwenden, muss die DB gewiped werden und sämtliche Daten gehen verloren, womit ein Vergleich zwischen Jahrgängen nicht möglich ist.
+- *Datenmodell*: Das Datenschema ist auf ein einzelnes Fest ausgelegt. Um die App für ein weiteres Fest zu verwenden, muss die DB gewiped (gelöscht) werden und sämtliche Daten gehen verloren, womit ein Vergleich zwischen Jahrgängen nicht möglich ist. // TODO "gewiped" link zu neuem Eintrag in Glossar oder ist (gelöscht) gut?
 - *Funktionsumfang*: Abgedeckt ist nur der Bestell- und Rücknahmeprozess. Bedarfsschätzung und Vorbestellung, automatischer Lagerbestand, Preisaufstellungen und fertige Abrechnungen fehlen vollständig.
 - *Administration*: Viele Aufgaben wie der Import von Getränken, Bars, Benutzern und Telefonnummern erfolgen über das Dashboard der Datenbank oder mit Skripten. Ohne technische Kenntnisse ist die Applikation nicht betreibbar.
 
 == Abgrenzung zu dieser Arbeit
-Der Prototyp dient dieser Arbeit als validierte Ausgangslage, nicht als Codebasis, die unverändert übernommen wird. Da der Umfang dieser Arbeit deutlich grösser ist, erlauben wir uns bewiesene Konzepte zu uebernehmen.
+Der Prototyp dient dieser Arbeit als validierte Ausgangslage, nicht als Codebasis, die unverändert übernommen wird. Da der Umfang dieser Arbeit deutlich grösser ist, erlauben wir uns bewiesene Konzepte zu übernehmen.
 
 - der Technologie-Stack, da er sich im Einsatz bewährt hat und für ein wechselndes OK einfach zu warten ist. (Vercel & Supabase)
 - der grundlegende Ablauf des Bestellprozesses & Retouren
 - das Zugangskonzept: Bars greifen über einen persönlichen Link ohne Passwort zu, Lagerteam und Administratoren melden sich mit Benutzername und Passwort an.
 
-Neu im Rahmen dieser Arbeit entstehen insbesondere ein mehrjahresfähiges Datenmodell, eine testbare Architektur, die Administration über die Applikation selbst sowie die Prozesse vor und nach dem Fest. Zudem wird die Bedienbarkeit unter Festbedingungen, auf Basis der Recherche in und der Rückmeldungen aus dem Einsatz, untersucht und weiterentwickelt.
-
-
+Neu im Rahmen dieser Arbeit entstehen insbesondere ein über mehrere Jahre hinweg nutzbares Datenmodell und eine testbare Architektur. Ausserdem wird die Administration ergänzt, damit gibt es eine Verwaltung der Applikation selbst sowie der Prozesse vor und nach dem Fest. Zudem wird die Bedienbarkeit unter Festbedingungen, auf Basis der Recherche und den Rückmeldungen aus dem Einsatz, untersucht und weiterentwickelt.

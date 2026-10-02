@@ -4,6 +4,8 @@
 Die folgende Übersicht dokumentiert die im Projekt verwendeten Hilfsmittel nach Aufgabenbereich.
 Die konkreten Tools werden im Verlauf des Projekts ergänzt.
 
+// TODO: anstatt eine Tabelle es in paar Sätzen notieren und vermerken, dass wir alles manuell überprüft und angepasst haben?
+
 #figure(
   table(
     columns: (1fr, 2fr),
@@ -18,8 +20,10 @@ Die konkreten Tools werden im Verlauf des Projekts ergänzt.
     [Datenanalyse und Visualisierung], [],
     [Ideengenerierung], [Claude, Gemini, Typst],
     [Übersetzung], [],
+    [Qualitätsoptimierung des Textes (Synonyme/Formulierung von Begriffen und Satzstruktur)], [GPT-5.6 Luna Anonymized],
     [Prototyping], [Figma],
     [Coding], [Claude Code],
+    // TODO: konkreter, überprüfung, testgenerierung, optimierung oder auch Codegenerierung?
     [Texterstellung, Textoptimierung, Rechtschreibe- und Grammatikprüfung], [Claude, Hunspell],
     // siehe README.md für die Anleitung
     [Zusammenarbeit und Projektmanagement], [Teams, GitHub, Outlook, Google Meet, Typst, WhatsApp],
