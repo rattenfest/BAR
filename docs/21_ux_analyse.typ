@@ -62,8 +62,12 @@ Die Bar MA könnten nur eine Hand frei haben, beispielsweise beim nachschauen ob
 #import "@preview/cheq:0.4.0": checklist
 #show: checklist
 
-// TODO Formatierung: eventuell die einzelnen Abschnitte in eine Tabelle und mit Farben arbeiten und als 1-2 PDF Seiten.
+// TODO
+// 1. Zuerst prüfen ob Inhalt korrekt ist  und die Reihenfolge.
+// 2. Danach erst:
+// Formatierung: eventuell die einzelnen Abschnitte in eine Tabelle und mit Farben arbeiten und als 1-2 PDF Seiten.
 // Links anderst formatieren
+// in figure tag einbauen für Abbildungsverzeichnis?
 // siehe ähnliche Checklisten: (TODO inhalt vergleichen, evt. ergänzen)
 // - https://www.a11yproject.com/checklist/
 // - https://www.okabletech.org/wp-content/uploads/2022/05/Accessibility-Checklist-PDF.pdf
@@ -74,68 +78,93 @@ Auf der verlinkten WCAG Website finden sich weitere Informationen.
 
 Die Punkte wurden zusätzlich in passende Untertitel gruppiert, die sinnvoll sind für diese Punkte.
 
-klarer Entscheidungsprozess (Bestellung aufnehmen, Vorbestellung)
-- [ ] Klare Schritte aufzeigen // @bogza2020user
-- [ ] jeder Schritt ist sinnvoll getrennt und verständlich
-- [ ] In der Navigation ist der aktuelle Schritt, vorherige und nächste Schritt ersichtlich
-  - siehe auch https://www.w3.org/WAI/WCAG22/quickref/#location
-- [ ] Der Nutzer wird informiert, wenn eine Aktion den Kontext wechselt (Seitenwechsel, vorhandene Optionen werden geändert) https://www.w3.org/WAI/WCAG22/quickref/#on-input
-
-Einheitlichkeit
-- [ ] Die Navigationssteuerung ist einheitlich https://www.w3.org/WAI/WCAG22/quickref/#consistent-navigation
-- [ ] Komponente mit gleichen Funktionalitäten werden einheitlich dargestellt und genutzt https://www.w3.org/WAI/WCAG22/quickref/#consistent-identification
-
-- [ ] Kontextänderungen werden nur durch den Nutzer aufgerufen, oder können durch den Nutzer deaktiviert werden https://www.w3.org/WAI/WCAG22/quickref/#change-on-request (Beispielsweise wenn der Nutzer auf der Website ist und eine Nachricht erhält, soll entweder nicht ein Popup den Bildschirm damit verdecken oder der Nutzer kann diese Popups deaktivieren)
-
-einfache Sprache // @bogza2020user @W3cCognitiveAccess
-- [ ] einfache Wörter
-- [ ] Präsensform
-- [ ] kurze Sätze und kurze Textblöcke
-- [ ] unmissverständlichen Inhalt
-- [ ] klare Bilder und einfache Videos
-- [ ] Text ist nicht länger als 80 Zeichen pro Zeile // https://www.w3.org/WAI/WCAG22/quickref/#visual-presentation
-
-Informationen
-- [ ] Piktogramme, Bilder, Visualisierungen sinnvoll eingesetzt // @bogza2020user
-- [ ] Informationen auf ein Minimum reduzieren // @bogza2020user
-- [ ] Keine Rechnungen im Kopf vom Nutzer nötig // @W3cCognitiveAccess
-
-Navigation und Bedienung
-- [ ] Es ist möglichst kein Scrolling notwendig // @bogza2020user
-- [ ] Es ist gibt keine Drop-Down Menüs // TODO: sinnvolle Alternative für das Navigationsmenü? z.B. immer ein zurück und vorwärts button und Daten werden gespeichert // @bogza2020user
-- [ ] Inhalt ist nicht hinter Hover/Focus versteckt // ähnlich zu https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus
-- [ ] Es gibt keine zeitbegrenzten Optionen oder der Nutzer kann den Timer deaktivieren. Ausser es ist an eine Real-Time Aktivität gebunden, beispielsweise die Bestellung ist bereits bereitgestellt worden. https://www.w3.org/WAI/WCAG22/quickref/#timing-adjustable
-// - keine Optionen die nur mit Pop-Up / Toast erreichbar sind, sondern alles gehört zu den klaren Schritten, siehe "Klare Schritte aufzeigen"
-
-Aktionen ausführen/ Buttons und Links / Operable / Bedienbarkeit (aber ohne Bedienung oben ^)
-- [ ] Alles was mit Gestensteuerung möglich ist, kann auch durch Klicks erreicht werden https://www.w3.org/WAI/WCAG22/quickref/#pointer-gestures
-- [ ] Die Grösse von Targets (Buttons, Links, alles was anklickbar ist) sind mindestens 44 x 44 Pixel gross (Ausnahmen dokumentiert erlaubt) https://www.w3.org/WAI/WCAG22/quickref/#target-size-enhanced
-- [ ] Input ist mit einer Computermaus und Touchscreen möglich https://www.w3.org/WAI/WCAG22/quickref/#concurrent-input-mechanisms // stark geändert. Computermaus meint nicht physisch sondern auch ein Trackpad. Vielleicht zu Zeiger umbenennen?
-- [ ] Es werden keine Drag & Drop oder Mouse-Down Events genutzt. // ansonsten ist https://www.w3.org/WAI/WCAG22/quickref/#dragging-movements und https://www.w3.org/WAI/WCAG22/quickref/#multiple-ways nötig
-
-Eingabehilfen
-- [ ] Die Aktion von einem Link und Button ist eindeutig erkennbar https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context
-- [ ] Input Fehler werden dem Nutzer sinnvoll als Text erklärt https://www.w3.org/WAI/WCAG22/quickref/#error-identification
-- [ ] Wenn möglich werden bei Input Fehlern Empfehlungen/Vorschläge angezeigt https://www.w3.org/WAI/WCAG22/quickref/#error-identification
-- [ ] Bei erfolgreicher Eingabe erhält Nutzer eine Erfolgsmeldung  // link unter https://www.w3.org/WAI/WCAG22/quickref/#error-identification führt zu https://www.w3.org/WAI/WCAG22/Techniques/general/G199.
-- [ ] Nachrichten wie eine Erfolgsmeldung oder Bestellnachrichten sollten nicht automatisch verschwinden, da es nicht sichergestellt ist, dass der Nutzer nicht wegschaut. // Aber kein WCAG dazu gefunden.
-
-Zusätzliche Hilfen
-- [ ] Informationen und Tipps als Pop-Up auffindbar // @bogza2020user + https://www.w3.org/WAI/WCAG22/quickref/#help
-- [ ] Hilfen sind einheitlich platziert https://www.w3.org/WAI/WCAG22/quickref/#consistent-help
-
-Lesbarkeit in speziellen Lichtverhältnissen
-- [ ] Passende Farbwahl https://www.w3.org/WAI/WCAG22/quickref/#use-of-color
-- [ ] Kontrastverhältnis mindestens 4.5:1 wo möglich 7:1
-- [ ] Zoomen soll möglich sein https://www.w3.org/WAI/WCAG22/quickref/#resize-text
-- [ ] Es befindet sich kein Text in den Bildern https://www.w3.org/WAI/WCAG22/quickref/#images-of-text
 
 
-Sitzung
-- [ ] Daten sind gespeichert, wenn Nutzer sich neu authentifizieren musste https://www.w3.org/WAI/WCAG22/quickref/#re-authenticating
+// #figure(
+//   block(
+//     breakable: true,
+//   )[
+//
+//
+#block[
+  klarer Entscheidungsprozess (Bestellung aufnehmen, Vorbestellung)
+  - [ ] Klare Schritte aufzeigen // @bogza2020user
+  - [ ] jeder Schritt ist sinnvoll getrennt und verständlich
+  - [ ] In der Navigation ist der aktuelle Schritt, vorherige und nächste Schritt ersichtlich
+    - siehe auch https://www.w3.org/WAI/WCAG22/quickref/#location
+  - [ ] Der Nutzer wird informiert, wenn eine Aktion den Kontext wechselt (Seitenwechsel, vorhandene Optionen werden geändert) https://www.w3.org/WAI/WCAG22/quickref/#on-input
 
-Position der Bedienungselemente
-- [ ] Häufig nutzbare Aktionen befinden sich nahe beim Daumen (unten) @einhaendig
+  Einheitlichkeit
+  - [ ] Die Navigationssteuerung ist einheitlich https://www.w3.org/WAI/WCAG22/quickref/#consistent-navigation
+  - [ ] Komponente mit gleichen Funktionalitäten werden einheitlich dargestellt und genutzt https://www.w3.org/WAI/WCAG22/quickref/#consistent-identification
+
+  - [ ] Kontextänderungen werden nur durch den Nutzer aufgerufen, oder können durch den Nutzer deaktiviert werden https://www.w3.org/WAI/WCAG22/quickref/#change-on-request (Beispielsweise wenn der Nutzer auf der Website ist und eine Nachricht erhält, soll entweder nicht ein Popup den Bildschirm damit verdecken oder der Nutzer kann diese Popups deaktivieren)
+
+  einfache Sprache // @bogza2020user @W3cCognitiveAccess
+  - [ ] einfache Wörter
+  - [ ] Präsensform
+  - [ ] kurze Sätze und kurze Textblöcke
+  - [ ] unmissverständlichen Inhalt
+  - [ ] klare Bilder und einfache Videos
+  - [ ] Text ist nicht länger als 80 Zeichen pro Zeile // https://www.w3.org/WAI/WCAG22/quickref/#visual-presentation
+
+  Informationen
+  - [ ] Piktogramme, Bilder, Visualisierungen sinnvoll eingesetzt // @bogza2020user
+  - [ ] Informationen auf ein Minimum reduzieren // @bogza2020user
+  - [ ] Keine Rechnungen im Kopf vom Nutzer nötig // @W3cCognitiveAccess
+
+  Navigation und Bedienung
+  - [ ] Es ist möglichst kein Scrolling notwendig // @bogza2020user
+  - [ ] Es ist gibt keine Drop-Down Menüs // TODO: sinnvolle Alternative für das Navigationsmenü? z.B. immer ein zurück und vorwärts button und Daten werden gespeichert // @bogza2020user
+  - [ ] Inhalt ist nicht hinter Hover/Focus versteckt // ähnlich zu https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus
+  - [ ] Es gibt keine zeitbegrenzten Optionen oder der Nutzer kann den Timer deaktivieren. Ausser es ist an eine Real-Time Aktivität gebunden, beispielsweise die Bestellung ist bereits bereitgestellt worden. https://www.w3.org/WAI/WCAG22/quickref/#timing-adjustable
+  // - keine Optionen die nur mit Pop-Up / Toast erreichbar sind, sondern alles gehört zu den klaren Schritten, siehe "Klare Schritte aufzeigen"
+
+  Aktionen ausführen/ Buttons und Links / Operable / Bedienbarkeit (aber ohne Bedienung oben ^)
+  - [ ] Alles was mit Gestensteuerung möglich ist, kann auch durch Klicks erreicht werden https://www.w3.org/WAI/WCAG22/quickref/#pointer-gestures
+  - [ ] Die Grösse von Targets (Buttons, Links, alles was anklickbar ist) sind mindestens 44 x 44 Pixel gross (Ausnahmen dokumentiert erlaubt) https://www.w3.org/WAI/WCAG22/quickref/#target-size-enhanced
+  - [ ] Input ist mit einer Computermaus und Touchscreen möglich https://www.w3.org/WAI/WCAG22/quickref/#concurrent-input-mechanisms // stark geändert. Computermaus meint nicht physisch sondern auch ein Trackpad. Vielleicht zu Zeiger umbenennen?
+  - [ ] Es werden keine Drag & Drop oder Mouse-Down Events genutzt. // ansonsten ist https://www.w3.org/WAI/WCAG22/quickref/#dragging-movements und https://www.w3.org/WAI/WCAG22/quickref/#multiple-ways nötig
+
+  Eingabehilfen
+  - [ ] Die Aktion von einem Link und Button ist eindeutig erkennbar https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context
+  - [ ] Input Fehler werden dem Nutzer sinnvoll als Text erklärt https://www.w3.org/WAI/WCAG22/quickref/#error-identification
+  - [ ] Wenn möglich werden bei Input Fehlern Empfehlungen/Vorschläge angezeigt https://www.w3.org/WAI/WCAG22/quickref/#error-identification
+  - [ ] Bei erfolgreicher Eingabe erhält Nutzer eine Erfolgsmeldung  // link unter https://www.w3.org/WAI/WCAG22/quickref/#error-identification führt zu https://www.w3.org/WAI/WCAG22/Techniques/general/G199.
+  - [ ] Nachrichten wie eine Erfolgsmeldung oder Bestellnachrichten sollten nicht automatisch verschwinden, da es nicht sichergestellt ist, dass der Nutzer nicht wegschaut. // Aber kein WCAG dazu gefunden.
+
+  Zusätzliche Hilfen
+  - [ ] Informationen und Tipps als Pop-Up auffindbar // @bogza2020user + https://www.w3.org/WAI/WCAG22/quickref/#help
+  - [ ] Hilfen sind einheitlich platziert https://www.w3.org/WAI/WCAG22/quickref/#consistent-help
+
+  Lesbarkeit in speziellen Lichtverhältnissen
+  - [ ] Passende Farbwahl https://www.w3.org/WAI/WCAG22/quickref/#use-of-color
+  - [ ] Kontrastverhältnis mindestens 4.5:1 wo möglich 7:1
+  - [ ] Zoomen soll möglich sein https://www.w3.org/WAI/WCAG22/quickref/#resize-text
+  - [ ] Es befindet sich kein Text in den Bildern https://www.w3.org/WAI/WCAG22/quickref/#images-of-text
+
+
+  Sitzung
+  - [ ] Daten sind gespeichert, wenn Nutzer sich neu authentifizieren musste https://www.w3.org/WAI/WCAG22/quickref/#re-authenticating
+
+  Position der Bedienungselemente
+  - [ ] Häufig nutzbare Aktionen befinden sich nahe beim Daumen (unten) @einhaendig
+] // lint:ignore [TODO: format checklist after content will not be changed anymore]
+
+//   ],
+//   kind: "checklist",
+//   supplement: [Checkliste],
+//   caption: [Guidelines für die Bedienung am Rattenfest],
+// ) <guidelines>
+
+//
+#figure(
+  [],
+  kind: "checklist",
+  supplement: [Checkliste],
+  caption: [Guidelines für die Bedienung am Rattenfest],
+) <guidelines>
+//
 
 
 Die Nutzung soll auf Smartphone und Laptops bedienbar sein. Der Prototyp der Vorarbeit wurde sogar von einer Bar mit einem Laptop genutzt, wobei die meisten das private Smartphone nutzten.
