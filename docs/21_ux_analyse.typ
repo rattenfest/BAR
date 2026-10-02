@@ -24,7 +24,7 @@ Wir suchen ein gutes Mass zwischen "Content Overload", zuviele Informationen die
 Die weiteren Punkte .. können durch User Experience Tests des fertigen Produktes gelöst werden. NFR... Usability
 
 
-=== Accessibility Guidelines übernehmen // TODO: Titel?
+=== Accessibility Guidelines übertragen // TODO: Titel?
 
 Ein schlechtes Beispiel: der Bar Mitarbeiter erhält den Auftrag, das Getränk XY nachzubestellen, dann öffnet dieser den Link zur Website und sucht den Button "neue Bestellung" und klickt darauf. Sofort kommt jemand und sagt ob er schnell ein Becher von XY abfüllen kann. Danach soll er fortsetzen aber jetzt sieht er eine Liste von ganz vielen Getränkeartikeln und weiss nicht mehr, wie er dahin gekomment ist und was er machen wollte. Er muss nochmals den Link öffnen und kann dieses Mal die Bestellung erstellen. Er klickt aber auf das falsche Getränk und da es schnell gehen muss hat er die Bestellung bereits abgeschickt.
 
@@ -47,14 +47,15 @@ Die "W3C Web Accessibility Initiative (WAI)" entwickelt weiter Standarde und Hil
 
 Für die WCAG gibt es eine Quick Reference @wcagreference. Wir haben einige Regeln für uns übernommen und in der Checkliste auf WCAG verlinkt.
 
-// Für "Wahrnehmbar" soll sichergestellt werden, dass der Inhalt auf dem Hintegrund gut sichtbar ist (1.4) dazu zählt eine passende Farbwahl, guter Kontrast .
-
 // Weshalb die wichtigen Funktionen sehr gut ersichtlich und erreichbar platziert sein müssen und wenig Klicks benötigen sollen.
 // diese sollte dann rückgängig gemacht werden können.
 
+
+==== Einhändige Nutzung <einhaendig>
 // muss vielleicht auch weiter oben einmal erwähnt werden, ist mir spontan eingefallen:
 // TODO: Quelle finden
-Die Bar MA könnten nur eine Hand frei haben, beispielsweise beim nachschauen ob die Bestellung bereit ist. Deshalb sollen diese Aktionen so auf dem Bildschirm positioniert sein, damit sie gut mit dem Daumen erreicht werden. Weniger häufig genutzte Aktionen wie die Einstellungen können weiter weg platziert werden. <einhaendig>
+Die Bar MA könnten nur eine Hand frei haben, beispielsweise beim nachschauen ob die Bestellung bereit ist. Deshalb sollen diese Aktionen so auf dem Bildschirm positioniert sein, damit sie gut mit dem Daumen erreicht werden. Weniger häufig genutzte Aktionen wie die Einstellungen können weiter weg platziert werden.
+
 
 === Guidelines für Rattenfest Website // TODO siehe Zeile 108
 // alternativer Titel: "Zusammengefasst als Checkliste"
@@ -113,7 +114,7 @@ Aktionen ausführen/ Buttons und Links / Operable / Bedienbarkeit (aber ohne Bed
 - [ ] Es werden keine Drag & Drop oder Mouse-Down Events genutzt. // ansonsten ist https://www.w3.org/WAI/WCAG22/quickref/#dragging-movements und https://www.w3.org/WAI/WCAG22/quickref/#multiple-ways nötig
 
 Eingabehilfen
-- [ ] Die Aktion von einem Link und Button ist eindeutig erkennbar https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context <link-purpose>
+- [ ] Die Aktion von einem Link und Button ist eindeutig erkennbar https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context
 - [ ] Input Fehler werden dem Nutzer sinnvoll als Text erklärt https://www.w3.org/WAI/WCAG22/quickref/#error-identification
 - [ ] Wenn möglich werden bei Input Fehlern Empfehlungen/Vorschläge angezeigt https://www.w3.org/WAI/WCAG22/quickref/#error-identification
 - [ ] Bei erfolgreicher Eingabe erhält Nutzer eine Erfolgsmeldung  // link unter https://www.w3.org/WAI/WCAG22/quickref/#error-identification führt zu https://www.w3.org/WAI/WCAG22/Techniques/general/G199.
@@ -132,7 +133,6 @@ Lesbarkeit in speziellen Lichtverhältnissen
 
 Sitzung
 - [ ] Daten sind gespeichert, wenn Nutzer sich neu authentifizieren musste https://www.w3.org/WAI/WCAG22/quickref/#re-authenticating
-// Rückgängig machen muss aber nicht mehr möglich sein nach Sitzungsverlust oder?
 
 Position der Bedienungselemente
 - [ ] Häufig nutzbare Aktionen befinden sich nahe beim Daumen (unten) @einhaendig
@@ -150,7 +150,7 @@ Das Dashboard mit den Bestellungen wird automatisch mit neuen Bestellungen aktua
 
 Die Animationen können nicht deaktiviert werden. Es wird darauf geachtet, dass die Animationen den durchschnittlichen Nutzer nicht stören. https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions
 
-Der Punkt "2.4.4 Link Purpose (In Context)" wurde erweitert zu Buttons @link-purpose .
+Der Punkt "2.4.4 Link Purpose (In Context)" wurde erweitert zu Buttons (https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context).
 
 
 
